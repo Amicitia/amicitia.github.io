@@ -268,14 +268,3 @@ body {
 .unhide {
     background-color: background-color: transparent !important;
 }
-
-
-
-
-.contents ul a {
-	text-decoration: none;
-}
-
-.spinner {
-	width: 100%
-}
