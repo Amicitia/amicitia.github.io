@@ -18,35 +18,39 @@ namespace Amicitia.github.io
 
         static void Main(string[] args)
         {
-            //Exe Directory
+            // Exe Directory
             indexPath = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
-            //Order post post from .tsv files by most recent)
+            // Update posts from Gamebanana
+            Webscraper.GBUpdateTSVs(indexPath);
+
+            // Order post post from .tsv files by most recent)
             posts = Post.Get(indexPath).OrderBy(p => DateTime.Parse(p.Date, CultureInfo.CreateSpecificCulture("en-US"))).ToArray().Reverse().ToList();
-            //Delete files if they exist already
+            // Delete files if they exist already
             Page.DeleteExisting(indexPath);
-            //Create main page with all mods, tools, guides and cheats
+            // Create main page with all mods, tools, guides and cheats
             Page.CreateHtml(posts, "index");
 
-            //List all mods, tools, cheats and guides (per game as well)
+            // List all mods, tools, cheats and guides (per game as well)
             Page.CreateType("mod"); // amicitia.github.io/mods
             Page.CreateType("tool"); // amicitia.github.io/tools/p5
             Page.CreateType("cheat"); // amicitia.github.io/cheats/p4
             Page.CreateType("guide"); // amicitia.github.io/guides/p5r
 
-            //Create pages for all content per game (regardless of type)
+            // Create pages for all content per game (regardless of type)
             Page.CreateGames(posts); //amicitia.github.io/game/p3fes
 
-            //Searchable type ppostsages
+            // Searchable type ppostsages
             Page.CreateAuthors(posts); //amicitia.github.io/author/TGE
             Page.CreateTags(posts); //amicitia.github.io/tag/BF
 
-            //All individual posts (hyperlinks)
+            // All individual posts (hyperlinks)
             Page.CreateSingle(posts); //amicitia.github.io/post/amicitia
 
-            //Create flowscript docs*/
+            // Create flowscript docs
             Page.FlowscriptDocs(indexPath);
 
             Console.WriteLine("Done!");
+            Console.ReadKey();
         }
     }
 }

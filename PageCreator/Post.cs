@@ -10,7 +10,7 @@ namespace Amicitia.github.io.PageCreator
 {
     public class Post
     {
-        public Post(int ID, string Type, string Title, List<string> Games, List<string> Authors, float Version, string Date, List<string> Tags, string Hyperlink, string Description, string EmbedURL, string DownloadURL, string DownloadText, string DownloadIcon, string DownloadURL2, string DownloadText2, string DownloadIcon2, string UpdateText, string SourceURL, string GuideURL, string GuideText, string ThreadURL)
+        public Post(int ID = 0, string Type = "", string Title = "", List<string> Games = null, List<string> Authors = null, float Version = 0, string Date = "", List<string> Tags = null, string Hyperlink = "", string Description = "", string EmbedURL = "", string DownloadURL = "", string DownloadText = "", string DownloadIcon = "", string DownloadURL2 = "", string DownloadText2 = "", string DownloadIcon2 = "", string UpdateText = "", string SourceURL = "", string GuideURL = "", string GuideText = "", string ThreadURL = "")
         {
             this.ID = ID;
             this.Type = Type;
@@ -35,28 +35,28 @@ namespace Amicitia.github.io.PageCreator
             this.GuideText = GuideText;
             this.ThreadURL = ThreadURL;
         }
-        public int ID { get; set; }
-        public string Type { get; set; }
-        public string Title { get; set; }
-        public List<string> Games { get; set; }
-        public List<string> Authors { get; set; }
-        public float Version { get; set; }
-        public string Date { get; set; }
-        public List<string> Tags { get; set; }
-        public string Hyperlink { get; set; }
-        public string Description { get; set; }
-        public string EmbedURL { get; set; }
-        public string DownloadURL { get; set; }
-        public string DownloadText { get; set; }
-        public string DownloadIcon { get; set; }
-        public string DownloadURL2 { get; set; }
-        public string DownloadText2 { get; set; }
-        public string DownloadIcon2 { get; set; }
-        public string UpdateText { get; set; }
-        public string SourceURL { get; set; }
-        public string GuideURL { get; set; }
-        public string GuideText { get; set; }
-        public string ThreadURL { get; set; }
+        public int ID { get; set; } = 0;
+        public string Type { get; set; } = "";
+        public string Title { get; set; } = "";
+        public List<string> Games { get; set; } = new List<string>();
+        public List<string> Authors { get; set; } = new List<string>();
+        public float Version { get; set; } = 0;
+        public string Date { get; set; } = "";
+        public List<string> Tags { get; set; } = new List<string>();
+        public string Hyperlink { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string EmbedURL { get; set; } = "";
+        public string DownloadURL { get; set; } = "";
+        public string DownloadText { get; set; } = "";
+        public string DownloadIcon { get; set; } = "";
+        public string DownloadURL2 { get; set; } = "";
+        public string DownloadText2 { get; set; } = "";
+        public string DownloadIcon2 { get; set; } = "";
+        public string UpdateText { get; set; } = "";
+        public string SourceURL { get; set; } = "";
+        public string GuideURL { get; set; } = "";
+        public string GuideText { get; set; } = "";
+        public string ThreadURL { get; set; } = "";
         public static List<Post> Get(string indexPath)
         {
             List<Post> posts = new List<Post>();
