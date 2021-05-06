@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static Amicitia.github.io.Program;
 
@@ -36,7 +37,7 @@ namespace Amicitia.github.io.PageCreator
             foreach (var post in posts)
             {
                 List<Post> singlePost = new List<Post>() { post };
-                CreateHtml(singlePost, $"post\\{post.Hyperlink}");
+                CreateHtml(singlePost, $"post\\{post.Id}");
             }
         }
 
@@ -47,69 +48,62 @@ namespace Amicitia.github.io.PageCreator
             //Top of page, site navigation
             string pageName = "";
 
-            foreach (var split in url.Split('\\'))
+            foreach (var split in url.Replace(".html", "").Split('\\').Reverse())
             {
-                if (split == "mods" || split == "tools" || split == "guides" || split == "cheats")
+                if (gameList.Any(g => g.Item1.Equals(split)))
                 {
-                    //html += $" ► <a href=\"https://amicitia.github.io/{split}\">{split}</a>";
-                    pageName += $" {split.Replace(".html", "")}";
+                    html = html.Replace("class=\"underline-on-hover\">game", $"class=\"underline-on-hover\">{gameList.Single(x => x.Item1.Equals(split)).Item2}");
+                    html = html.Replace($"value=\"{split.ToUpper()}\">", $"value=\"{split.ToUpper()}\" selected>");
+                    pageName += gameList.Single(x => x.Item1.Equals(split)).Item2;
                 }
-                else if (gameList.Any(g => g.Equals(split)))
+                else if (split == "mods" || split == "tools" || split == "guides" || split == "cheats")
                 {
-                    //html += $" ► <a href=\"https://amicitia.github.io/game/{split}\">{split.ToUpper()}</a>";
-                    pageName += $" {split.Replace(".html", "")}";
-                }
-                else if (split != "index")
-                {
-                    //html += $" ► {split.Replace(".html", "")}";
-                    pageName += $" {split.Replace(".html", "")}";
+                    html = html.Replace("class=\"underline-on-hover\">mods &amp; resources", $"class=\"underline-on-hover\">{split}");
+                    pageName += $" {split} ";
                 }
             }
             //Change page title
             if (!String.IsNullOrEmpty(pageName))
-                html = html.Replace("Amicitia</title>", $"Amicitia -{pageName}</title>");
+                html = html.Replace("Amicitia Mods</title>", $"Amicitia - {pageName}</title>");
 
             //Closing header div before content
             html += Properties.Resources.IndexSidebar;
 
-            //Set up for pagination and ref link depth
+            // Set up for pagination and ref link depth
             int depth = url.Count(c => c == '\\');
             string url2 = url.Replace(".html", "");
             if (depth == 1)
                 url2 = url2.Replace($"{url}\\{url}", $"{url}");
-            //Table for pagination
-            string paginaion = "<table><tr>";
-            //Previous Page
+            // Table for pagination
+            string pagination = "<center><nav class=\"pagination\" role=\"navigation\"><div class=\"nav-links\">";
+
+            // Previous Page
             if (pageNumber > 1)
             {
                 if (pageNumber == 2)
-                    paginaion += $"<td><a href=\"https:\\\\amicitia.github.io\\{url2.Replace($"\\{pageNumber}", "")}\"><div class=\"unhide\"><i class=\"fa fa-angle-double-left\"></i></div></a></td>";
+                    pagination += $"<a class=\"page-numbers\" href=\"https:\\\\amicitia.github.io\\{url2.Replace($"\\{pageNumber}", "")}\">1</a>";
                 else
-                    paginaion += $"<td><a href=\"https:\\\\amicitia.github.io\\{url2.Replace($"\\{pageNumber}", $"\\{pageNumber - 1}")}\"><div class=\"unhide\"><i class=\"fa fa-angle-double-left\"></i></div></a></td>";
+                    pagination += $"<a class=\"page-numbers\" href=\"https:\\\\amicitia.github.io\\{url2.Replace($"\\{pageNumber}", $"\\{pageNumber - 1}")}\">{pageNumber - 1}</a>";
             }
-            else
-                paginaion += "<td></td>";
-            //Next Page
+            // Current Page
+            pagination += $"<span aria-current=\"page\" class=\"page-numbers current\">{pageNumber}</span>";
+            // Next Page
             if (morePages)
             {
                 if (pageNumber == 1)
-                    paginaion += $"<td><a href=\"https:\\\\amicitia.github.io\\{url2 + $"\\{pageNumber + 1}"}\"><div class=\"unhide\"> <i class=\"fa fa-angle-double-right\"></i></div></a></td>";
+                    pagination += $"<a class=\"page-numbers\" href=\"https:\\\\amicitia.github.io\\{url2}\\2\">2</a>";
                 else
-                    paginaion += $"<td><a href=\"https:\\\\amicitia.github.io\\{url2.Replace($"\\{pageNumber}", $"\\{pageNumber + 1}")}\"><div class=\"unhide\"> <i class=\"fa fa-angle-double-right\"></i></div></a></td>";
+                    pagination += $"<a class=\"page-numbers\" href=\"https:\\\\amicitia.github.io\\{url2.Replace($"\\{pageNumber}", $"\\{pageNumber + 1}")}\">{pageNumber + 1}</a>";
             }
-            else
-                paginaion += "<td></td>";
-            //End pagination table
-            paginaion += "</tr></table><br>";
+            // End pagination table
+            pagination += "</div></nav></center>";
 
-            //Append content header, navigation and footer to content
-            html += paginaion; //Top of page navigation
-            html += content; //Body Content
-            html += paginaion; //Bottom of page navigation
-            html += Properties.Resources.IndexFooter; //Footer
-            html = html.Replace("ShrineFox 2020 - 2021.", $"ShrineFox 2020 - {DateTime.Now.Year}. Last updated {DateTime.Now.Month}/{DateTime.Now.Day}/{DateTime.Now.Year}. <a href=\"https://github.com/Amicitia/Amicitia.github.io\"><i class=\"fa fa-github\"></i> Source available on Github</a>.<br><a href=\"https://twitter.com/AmicitiaTeam\"><i class=\"fa fa-twitter\"></i> Follow</a> for updates!");
+            // Append content, navigation and footer to content
+            html += content; // Body Content
+            html += Properties.Resources.IndexFooter; // Footer
+            html = html.Replace("<!--Pagination-->", pagination); // Pagination
 
-            //Replace links based on depth
+            // Replace links based on depth
             if (depth == 1)
             {
                 html = html.Replace("\"css", "\"../css");
@@ -131,20 +125,7 @@ namespace Amicitia.github.io.PageCreator
                 html = html.Replace("\"images", "\"../../../images");
             }
 
-            //Auto-select game and/or type from dropdown
-            foreach (var game in gameList)
-                if (url.Contains($"\\{game}"))
-                    html = html.Replace($"option value=\"{game.ToUpper()}\"", $"option value=\"{game.ToUpper()}\" selected");
-            if (url.Contains("mods"))
-                html = html.Replace($"option value=\"Mod\"", "option value=\"Mod\" selected");
-            if (url.Contains("tools"))
-                html = html.Replace($"option value=\"Tool\"", "option value=\"Tool\" selected");
-            if (url.Contains("guides"))
-                html = html.Replace($"option value=\"Guide\"", "option value=\"Guide\" selected");
-            if (url.Contains("cheats"))
-                html = html.Replace($"option value=\"Cheat\"", "option value=\"Cheat\" selected");
-
-            //Create page
+            // Create page
             string htmlPath = Path.Combine(indexPath, url);
             Directory.CreateDirectory(Path.GetDirectoryName(htmlPath));
             File.WriteAllText(htmlPath, html);
@@ -156,30 +137,32 @@ namespace Amicitia.github.io.PageCreator
             foreach (string page in new string[] { "compiling", "decompiling", "flowscript", "hookingfunctions", "importing", "messagescript" })
             {
                 string content = "";
-                content += Properties.Resources.FlowscriptHeader; //Head tags, static body content
-                content += File.ReadAllText(Path.Combine(Path.Combine(indexPath, "Templates"), page + ".html"));
-                content += Properties.Resources.FlowscriptFooter; //Static footer content
+                content += Properties.Resources.IndexHeader;
+                content += Properties.Resources.IndexSidebar;
+                content += File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Flowscript"), page + ".html"));
+                content += Properties.Resources.IndexFooter;
                 File.WriteAllText(Path.Combine(Path.Combine(indexPath, "docs"), page + ".html"), content);
             }
             
         }
 
-        public static void CreateHtml(List<Post> postpost, string url)
+        public static void CreateHtml(List<Post> posts, string url)
         {
             string content = "";
-            int pages = 1;
-            int pagePosts = 0;
+            int pages = 1; // Complete pages so far
+            int pagePosts = 0; // Posts on this page so far
+            int totalPages = Convert.ToInt32(RoundUp(Convert.ToDecimal(posts.Count) / Convert.ToDecimal(maxPosts), 0)); // Total number of pages
             //For each post...
-            for (int i = 0; i < postpost.Count; i++)
+            for (int i = 0; i < posts.Count; i++)
             {
                 //Start of page
                 if (pagePosts == 0)
                 {
-                    content += Properties.Resources.IndexContentHeader; //Head tags, static body content
-                    //Show total number of results
+                    content += Properties.Resources.PostTableHeader;
+                    //Show total number of results if not a single post page
                     if (!url.Contains("\\post\\"))
-                        content += $"({postpost.Count} results)<br>";
-                    if (postpost.Count == 0) //Inform user if no posts found
+                        content = content.Replace("(0 results)", $"({posts.Count} results)").Replace("Page 0/0", $"Page {pages}/{totalPages}");
+                    if (posts.Count == 0) //Inform user if no posts found
                         content += $"<br><center>Sorry! No posts matching your query were found. Please check again later.</center>";
                     else if (url.Contains("p5r")) //Show Pan thank you message
                         content += "<center>Special thanks to <a href=\"https://twitter.com/regularpanties\">@regularpanties</a> for the generous donation of a 6.72 PS4<br>and a plethora of documentation that made this section possible.</center><br>";
@@ -200,22 +183,26 @@ namespace Amicitia.github.io.PageCreator
                         matchFound = true;
                     }
                 }
-
-                //Add content to page after header
-                if (url.Contains("post"))
-                    content += Post.Write(postpost[i], true);
-                else
-                    content += Post.Write(postpost[i], false);
-
                 pagePosts++;
-                //End of page, create new page
-                if (pagePosts == maxPosts || postpost.Count - 1 == i)
+
+                // Add content to page after header
+                if (url.Contains("post"))
+                    content += Post.Write(posts[i], true);
+                else
+                    content += Post.Write(posts[i], false);
+
+                // Add new row if divislbe by 3
+                if (pagePosts % 3 == 0)
+                    content += "</tr><tr style=\"width:100%;\">";
+
+                // End of page, create new page
+                if (pagePosts == maxPosts || posts.Count - 1 == i)
                 {
                     pagePosts = 0;
                     if (pages == 1)
-                        Create(content, $"{url}.html", pages, postpost.Count - (pages * maxPosts) > 0);
+                        Create(content, $"{url}.html", pages, posts.Count - (pages * maxPosts) > 0);
                     else
-                        Create(content, $"{url}\\{pages}.html", pages, postpost.Count - (pages * maxPosts) > 0);
+                        Create(content, $"{url}\\{pages}.html", pages, posts.Count - (pages * maxPosts) > 0);
                     content = "";
 
                     pages++;
@@ -232,11 +219,11 @@ namespace Amicitia.github.io.PageCreator
                 List<Post> postsByGame = new List<Post>();
                 foreach (var post in posts)
                 {
-                    if (post.Games.Any(x => x.ToUpper().Equals(game.ToUpper())))
+                    if (post.Games.Any(x => x.ToUpper().Equals(game.Item1.ToUpper())))
                         postsByGame.Add(post);
                 }
                 //Create 
-                CreateHtml(postsByGame, $"game\\{game}");
+                CreateHtml(postsByGame, $"game\\{game.Item1}");
             }
         }
 
@@ -290,11 +277,51 @@ namespace Amicitia.github.io.PageCreator
                 List<Post> typepostByGame = new List<Post>();
                 foreach (var post in typepost)
                 {
-                    if (post.Games.Any(x => x.Trim().ToUpper().Equals(game.ToUpper())))
+                    if (post.Games.Any(x => x.Trim().ToUpper().Equals(game.Item1.ToUpper())))
                         typepostByGame.Add(post);
                 }
-                CreateHtml(typepostByGame, $"{type.ToLower()}s\\{game}");
+                CreateHtml(typepostByGame, $"{type.ToLower()}s\\{game.Item1}");
             }
+        }
+
+        public static decimal RoundUp(decimal numero, int numDecimales)
+        {
+            decimal valorbase = Convert.ToDecimal(Math.Pow(10, numDecimales));
+            decimal resultado = Decimal.Round(numero * 1.00000000M, numDecimales + 1, MidpointRounding.AwayFromZero) * valorbase;
+            decimal valorResiduo = 10M * (resultado - Decimal.Truncate(resultado));
+
+            if (valorResiduo > 0)
+            {
+                if (valorResiduo >= 5)
+                {
+                    var ajuste = Convert.ToDecimal(Math.Pow(10, -(numDecimales + 1)));
+                    numero += ajuste;
+                    return Decimal.Round(numero * 1.00000000M, numDecimales, MidpointRounding.AwayFromZero);
+                }
+                else
+                    return Decimal.Round(numero * 1.00M, numDecimales, MidpointRounding.AwayFromZero) + 1;
+            }
+            else
+            {
+                return Decimal.Round(numero * 1.00M, numDecimales, MidpointRounding.AwayFromZero);
+            }
+        }
+
+        private string[] splitUrl(string url)
+        {
+            Match match = Regex.Match(url, @"\:|\.(.{2,3}(?=/))"); // Regex Pattern
+            if (match.Success)  // check if it has a valid match
+            {
+                string split = match.Groups[0].Value; // get the matched text
+                int index = url.IndexOf(split);
+                return new string[]
+                {
+            url.Substring(0, index + split.Length),
+            url.Substring(index + (split.Length), url.Length - (index + split.Length))
+                };
+            }
+
+            return null;
         }
     }
 }

@@ -108,29 +108,21 @@
     <None Include="PageCreator\packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\amicitia.css" />
-    <Content Include="css\select.css" />
-    <Content Include="Templates\compiling.html" />
-    <Content Include="Templates\decompiling.html" />
-    <Content Include="Templates\flowscript.html" />
-    <Content Include="Templates\FlowscriptFooter.html" />
-    <Content Include="Templates\FlowscriptHeader.html" />
-    <Content Include="js\blogposts.js" />
-    <Content Include="js\bubbles.js" />
-    <Content Include="js\clipboard.min.js" />
-    <Content Include="js\jquery-3.3.1.min.js" />
-    <Content Include="js\navigation.js" />
-    <Content Include="js\showhide.js" />
-    <Content Include="Templates\hookingfunctions.html" />
-    <Content Include="Templates\importing.html" />
+    <Content Include="Templates\Flowscript\compiling.html" />
+    <Content Include="Templates\Flowscript\decompiling.html" />
+    <Content Include="Templates\Flowscript\flowscript.html" />
+    <Content Include="Templates\Flowscript\hookingfunctions.html" />
+    <Content Include="Templates\Flowscript\importing.html" />
+    <Content Include="Templates\Post.html" />
+    <Content Include="Templates\PostTableHeader.html" />
     <Content Include="Templates\IndexSidebar.html" />
-    <Content Include="Templates\IndexContentHeader.html" />
-    <Content Include="Templates\messagescript.html" />
+    <Content Include="Templates\Flowscript\messagescript.html" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Templates\IndexFooter.html" />
     <EmbeddedResource Include="Templates\IndexHeader.html" />

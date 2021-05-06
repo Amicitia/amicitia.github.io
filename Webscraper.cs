@@ -95,24 +95,22 @@ namespace Amicitia.github.io
                                     post.Authors = new List<string>() { record.ChildNodes[7].ChildNodes[3].ChildNodes[3].InnerText.Replace("\n", "") };
                                     try
                                     {
-                                        post.DownloadURL = record.ChildNodes[1].ChildNodes[1].ChildNodes[1].Attributes["href"].Value;
+                                        post.URL = record.ChildNodes[1].ChildNodes[1].ChildNodes[1].Attributes["href"].Value;
                                     }
                                     catch
                                     {
-                                        post.DownloadURL = record.ChildNodes[2].ChildNodes[1].ChildNodes[1].Attributes["href"].Value;
+                                        post.URL = record.ChildNodes[2].ChildNodes[1].ChildNodes[1].Attributes["href"].Value;
                                     }
-                                    post.ID = Convert.ToInt32(post.DownloadURL.Split('/').Last());
+                                    post.Id = post.URL.Split('/').Last();
                                     string date = record.ChildNodes[3].ChildNodes[1].ChildNodes[2].Attributes["title"].Value.Split('@')[0].Trim();
                                     string format = "MMM dd yyyy";
                                     if (date.Split(' ')[1].Length < 2)
                                         format = "MMM d yyyy";
                                     post.Date = DateTime.ParseExact(date, format, CultureInfo.CreateSpecificCulture("en-US")).ToString("d", DateTimeFormatInfo.InvariantInfo);
-                                    post.DownloadText = "View on Gamebanana";
-                                    post.DownloadIcon = "fa fa-pepper-hot";
 
                                     Console.WriteLine($"Loading {post.Title} from Gamebanana...");
                                     // Download post page and get rest of required data
-                                    string postPage = client.DownloadString(post.DownloadURL);
+                                    string postPage = client.DownloadString(post.URL);
                                     HtmlAgilityPack.HtmlDocument postDoc = new HtmlAgilityPack.HtmlDocument();
                                     postDoc.LoadHtml(postPage);
 
@@ -134,10 +132,10 @@ namespace Amicitia.github.io
                                     }
 
                                     // If post is already accounted for in tsv...
-                                    if (Posts.Any(x => x.DownloadURL.Equals(post.DownloadURL)))
+                                    if (Posts.Any(x => x.URL.Equals(post.URL)))
                                     {
                                         // Remove existing post from list
-                                        Post tempPost = Posts.First(x => x.DownloadURL.Equals(post.DownloadURL));
+                                        Post tempPost = Posts.First(x => x.URL.Equals(post.URL));
                                         int index = Posts.IndexOf(tempPost);
                                         Posts.Remove(tempPost);
                                         // ... Update post and add back to list
@@ -153,24 +151,10 @@ namespace Amicitia.github.io
             }
             // Save new TSVs
             Console.WriteLine("Updating TSV files with Gamebanana posts...");
-            List<Post> Mods = Posts.Where(x => x.Type.ToUpper().Equals("MOD")).ToList();
-            List<Post> Tools = Posts.Where(x => x.Type.ToUpper().Equals("TOOL")).ToList();
-            List<Post> Guides = Posts.Where(x => x.Type.ToUpper().Equals("GUIDE")).ToList();
             List<string> lines = new List<string>();
-            // Mods
-            foreach (var post in Mods)
-                lines.Add($"{post.ID}\t{post.Title}\t{String.Join(", ", post.Games)}\t{String.Join(", ", post.Authors)}\t1\t{post.Date}\t{String.Join(", ", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.DownloadURL}\t{post.DownloadText}\t{post.DownloadIcon}\t{post.SourceURL}\t{post.ThreadURL}\t{post.DownloadURL2}\t{post.DownloadText2}\t{post.DownloadIcon2}\t{post.GuideURL}\t{post.GuideText}");
-            File.WriteAllLines($"{indexPath}//db//mods.tsv", lines.ToArray());
-            // Tools
-            lines = new List<string>();
-            foreach (var post in Tools)
-                lines.Add($"{post.ID}\t{post.Title}\t{String.Join(", ", post.Games)}\t{String.Join(", ", post.Authors)}\t1\t{post.Date}\t{String.Join(", ", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.DownloadURL}\t{post.DownloadText}\t{post.DownloadIcon}\t{post.SourceURL}\t{post.ThreadURL}\t{post.DownloadURL2}\t{post.DownloadText2}\t{post.DownloadIcon2}\t{post.GuideURL}\t{post.GuideText}");
-            File.WriteAllLines($"{indexPath}//db//tools.tsv", lines.ToArray());
-            // Guides
-            lines = new List<string>();
-            foreach (var post in Guides)
-                lines.Add($"{post.ID}\t{post.Title}\t{String.Join(", ", post.Games)}\t{String.Join(", ", post.Authors)}\t1\t{post.Date}\t{String.Join(", ", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.DownloadURL}\t{post.DownloadText}\t{post.DownloadIcon}\t{post.SourceURL}\t{post.ThreadURL}\t{post.DownloadURL2}\t{post.DownloadText2}\t{post.DownloadIcon2}\t{post.GuideURL}\t{post.GuideText}");
-            File.WriteAllLines($"{indexPath}//db//guides.tsv", lines.ToArray());
+            foreach (var post in Posts)
+                lines.Add($"{post.Id}\t{post.Type}\t{post.Title}\t{String.Join(", ", post.Games)}\t{String.Join(", ", post.Authors)}\t1\t{post.Date}\t{String.Join(", ", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.URL}");
+            File.WriteAllLines($"{indexPath}//db//amicitia_gb.tsv", lines.ToArray());
         }
     }
 }

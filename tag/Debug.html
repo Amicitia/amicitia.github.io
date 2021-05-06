@@ -3,282 +3,733 @@
 <head>
     <link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
     <meta charset="utf-8">
-    <title>Amicitia - tag Debug</title>
-    <script src="https://shrinefox.com/Scripts/Amicitia/jquery-3.3.1.min.js"></script>
+    <title>Amicitia Mods</title>
     <link href="https://shrinefox.com/css/index.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/sidebar.css" rel="stylesheet" type="text/css">
     <link href="https://shrinefox.com/css/waves.css" rel="stylesheet" type="text/css">
-    <link href="../css/select.css" rel="stylesheet" type="text/css">
-    <link href="../css/amicitia.css" rel="stylesheet" type="text/css">
-    <script src="../js/bubbles.js"></script>
-    <script src="../js/showhide.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/hidenav.js"></script>
+    <link href="https://shrinefox.com/css/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/grid.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/post.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/select.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/pagination.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/amicitia.css" rel="stylesheet" type="text/css">
+    <script src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
+    <script src="https://shrinefox.com/js/bubbles.js"></script>
+    <script src="https://shrinefox.com/js/clipboard.js"></script>
+    <script src="https://shrinefox.com/js/showhide.js"></script>
+    <script src="https://shrinefox.com/js/hidenav.js"></script>
+    <script src="https://shrinefox.com/js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-<main>
-    <div id="wrapper">
+    <main>
         <div class="copied">Cheat copied to clipboard!</div>
-        <!--Sidebar Toggle-->
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-        </label>
-        <!--Sidebar Menu-->
-        <aside class="sidebar">
-            <div class="component">
-                <div class="sidebarheader"></div>
-                <div class="contents">
-                    <ul class="items list">
-                        <a href="https://shrinefox.com/">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-home" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">ShrineFox.com</div>
-                                    <div class="subtitle">Home Page</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/blog">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-wordpress" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">ShrineFox.com Blog</div>
-                                    <div class="subtitle">Misc Development</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/projects">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-cogs" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Projects</div>
-                                    <div class="subtitle">Things I Made</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/amicitia">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-globe" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Amicitia</div>
-                                    <div class="subtitle">About the Project</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/credits">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-heart" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Credits</div>
-                                    <div class="subtitle"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <h5>Amicitia Network</h5>
-                        <br>
-                        <a href="https://amicitia.github.io">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">amicitia.github.io</div>
-                                    <div class="subtitle">Mods & Tools</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia-team.tumblr.com">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-newspaper" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">News</div>
-                                    <div class="subtitle">Modding Announcements</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia.miraheze.org/wiki/Main_Page">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-users" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Wiki</div>
-                                    <div class="subtitle">Documentation</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/forum">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Forum</div>
-                                    <div class="subtitle">Support & Submissions</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/guides/">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Guides</div>
-                                    <div class="subtitle">Modding Tutorials</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/forum/app.php/faqpage">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">FAQs</div>
-                                    <div class="subtitle">Frequently Asked Q&A</div>
-                                </div>
-                            </div>
-                        </a>
-                        <h5>Apps</h5>
-                        <br>
-                        <a href="https://shrinefox.com/textsearch">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-search" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Text Search</div>
-                                    <div class="subtitle">Locate Files With Dialog</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia.github.io/docs/flowscript">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-file-code" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Flowscript Docs</div>
-                                    <div class="subtitle">Learn .flow/.msg</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia.github.io/files">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Files</div>
-                                    <div class="subtitle">Download assets</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/PatchCreator">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-check-square" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Patch.yml Creator</div>
-                                    <div class="subtitle">P5 RPCS3 Patches</div>
-                                </div>
-                            </div>
-                        </a>
-                    </ul>
-                </div> <!--End Contents-->
-            </div>  <!--End Component-->
-        </aside>  <!--End Sidebar Menu-->
-        <div class="article">
-            <!--Header-->
-            <div class="header">
-                <canvas id="bgCanvas"></canvas>
-                <!--Logo and Header Text-->
-                <div>
-                    <center>
+        <div id="wrapper">
+            <div id="wrapper">
+                <!--Navbar-->
+                <div class="navbar" style="top: 0px;">
+                    <div class="navbar-container">
                         <table>
-                            <tr>
-                                <td style="width:25%;"></td>
-                                <td>
-                                    <div class="image" style="max-width: calc(var(--space-md) * 2.5);min-width: calc(var(--space-md) * 0.5);"><a href="https://amicitia.github.io/"><img src="https://amicitia.github.io/images/logo.svg"></a></div>
-                                </td>
-                                <td style="width:55%;">
-                                    <h1>amicitia.github.io</h1>
-                                    <h2>mods • tools • guides</h2>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 95px;padding-left: 20px;">
+                                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                                            <div class="spinner diagonal part-1"></div>
+                                            <div class="spinner horizontal"></div>
+                                            <div class="spinner diagonal part-2"></div>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <div class="navbar-outer">
+                                            <div class="navbar-inner">
+                                                <a href="https://amicitia.github.io">
+                                                    <div class="navbar-item">
+                                                        <div class="amicitia-logo">
+                                                            <div class="amicitia-svg"></div>
+                                                        </div>Mods
+                                                    </div>
+                                                </a>
+                                                <!--Top Navbar-->
+                                                <a href="https://shrinefox.com/news">
+                                                    <div class="navbar-item">
+                                                        <span><i class="fa fa-newspaper" aria-hidden="true"></i>&nbsp;News</span>
+                                                    </div>
+                                                </a>
+                                                <a href="https://shrinefox.com/guides">
+                                                    <div class="navbar-item">
+                                                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Guides</span>
+                                                    </div>
+                                                </a>
+                                                <a href="https://shrinefox.com/blog">
+                                                    <div class="navbar-item">
+                                                        <span><i class="fab fa-wordpress" aria-hidden="true"></i>&nbsp;Blog</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
-                    </center>
+                    </div>
                 </div>
-                <!--Waves-->
-                <div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                        <defs>
-                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                        </defs>
-                        <g class="parallax">
-                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(17,17,17,0.33)" />
-                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(17,17,17,0.6)" />
-                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(17,17,17,0.6)" />
-                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(17,17,17,1)" />
-                        </g>
-                    </svg>
+                <!--Sidebar Toggle-->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
+                <aside class="sidebar">
+                    <div class="component">
+                        <div class="contents">
+                            <ul class="items list">
+                                <!--Sidebar Items-->
+                                <div class="sidebarheader">
+                                    <i class="fa fa-cube" aria-hidden="true"></i> &nbsp;&nbsp;Resources
+                                </div>
+                                <a href="https://amicitia.miraheze.org/wiki/Main_Page">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-users" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Wiki</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/forum">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Support Forum</div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/forum/app.php/faqpage">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Frequently Asked Q&amp;A</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <br>
+                                <div class="sidebarheader">
+                                    <i class="fa fa-terminal" aria-hidden="true"></i>&nbsp;&nbsp;Apps
+                                </div>
+                                <a href="https://shrinefox.com/textsearch">
+                                    <div class="item">
+                                        <div class="thumbnail">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Text Search</div>
+                                            <div class="subtitle">&nbsp;Locate Files With Dialog</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://amicitia.github.io/docs/flowscript">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-file-code" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Flowscript Docs</div>
+                                            <div class="subtitle">&nbsp;Learn .flow/.msg</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://amicitia.github.io/files">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Files</div>
+                                            <div class="subtitle">&nbsp;Download assets</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/PatchCreator">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-check-square" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Patch.yml Creator</div>
+                                            <div class="subtitle">&nbsp;P5 RPCS3 Patches</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </ul>
+                        </div> <!--End Contents-->
+                    </div>  <!--End Component-->
+                </aside>  <!--End Sidebar Menu-->
+                <div class="article">
+                    <!--Header-->
+                    <div class="header">
+                        <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
+                        <center>
+                            <div class="header-inner" style="margin-top: 150px;">
+                                <!--Title-->
+                                <h1>
+                                    <span class="underline-on-hover">game</span>
+                                    <select class="select-css" onchange="navigate()" id="game" name="game">
+                                        <option value="" disabled=""></option>
+                                        <option value="All">All</option>
+                                        <option value="P5">Persona 5</option>
+                                        <option value="P5R">Persona 5 Royal</option>
+                                        <option value="P5S">Persona 5 Strikers</option>
+                                        <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                        <option value="P4">Persona 4</option>
+                                        <option value="P4G">Persona 4 Golden</option>
+                                        <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                        <option value="P4D">Persona 4 Dancing All Night</option>
+                                        <option value="P3FES">Persona 3 FES</option>
+                                        <option value="P3P">Persona 3 Portable</option>
+                                        <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                        <option value="PQ">Persona Q</option>
+                                        <option value="PQ2">Persona Q2</option>
+                                        <option value="CFB">Catherine Full Body</option>
+                                        <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                    </select>
+                                    <span class="underline-on-hover">mods &amp; resources</span>
+                                    <select class="select-css" onchange="navigate()" id="type" name="type">
+                                        <option value="" disabled=""></option>
+                                        <option value="All">All</option>
+                                        <option value="Mod">Mods</option>
+                                        <option value="Tool">Tools</option>
+                                        <option value="Cheat">Cheats</option>
+                                        <option value="Guide">Guides</option>
+                                    </select>
+                                </h1>
+                        </center>
+                        <!--Waves-->
+                        <div>
+                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(17,17,17,0.33)"></use>
+                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(17,17,17,0.6)"></use>
+                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(17,17,17,0.6)"></use>
+                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(17,17,17,1)"></use>
+                                </g>
+                            </svg>
+                        </div>
+                        <!--Waves End-->
+                    </div>
+                    <!--Header End-->
                 </div>
-                <!--Waves End-->
+                <!--Article End-->
             </div>
-            <!--Header End-->
-</div>
 <div class="content">
     <table>
         <tbody>
             <tr>
-                <td width="25%" style="vertical-align:top">
-                    <div id="bloglinks">
-                        <div class"text">
-                            <h3><i class="fas fa-newspaper"></i> Latest News</h3>
-                            <script src="../js/blogposts.js"></script>
-                        <br /><div class="widget"><table><tr><td></td><td></td></tr></table><br>    <td width="75%">
+                <td style="vertical-align:top;width: 25%;padding-left: 10px;">
+                    <div class="bloglinks">
+                        <a href="https://amicitia-team.tumblr.com/">
+                            <h3>
+                                <i class="fas fa-newspaper" aria-hidden="true"></i> News
+                            </h3>
+                        </a>
+                        <div class="widget">
+                            <h5><a href="https://amicitia-team.tumblr.com/post/638012597777629184">Modding Support for P5R USA!</a></h5><br> 12/20/20
+                            <br>
+                        </div>
+                        <a href="https://shrinefox.com/guides/">
+                            <h3>
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Guides
+                            </h3>
+                        </a>
+                        <div class="widget">
+                            <h5><a href="https://shrinefox.com/guides/2020/09/30/modding-persona-5-royal-jp-on-ps4-fw-6-72/">Modding P5R USA on PS4 FW 5.05 - 6.72</a></h5><br> 1/11/2021
+                        </div>
+                        <br>
+                    </div>
+                </td>
+                <td width="75%" style="width: 75%;padding-right: 20px;">
+                    <div class="text"><!--Result Count and Submission Link-->
+<table style="padding: 0 20px 0 15px;">
+    <tbody>
+        <tr>
+            <td width="25%">Page 1/2 (18 results)</td>
+            <td width="50%"><center><nav class="pagination" role="navigation"><div class="nav-links"><span aria-current="page" class="page-numbers current">1</span><a class="page-numbers" href="https:\\amicitia.github.io\tag\Debug\2">2</a></div></nav></center></td>
+            <td width="25%" style="text-align: right;">
+                <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
+                    <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!--Post Grid-->
+<table>
+    <tbody>
+        <tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
         <div class="text">
-            <b>Type</b>:
-            <select class="select-css" onchange="navigate()" id="type" name="type">
-                <option value="All">All</option>
-                <option value="Mod">Mods</option>
-                <option value="Tool">Tools</option>
-                <option value="Cheat">Cheats</option>
-                <option value="Guide">Guides</option>
-            </select>
-            <b>Game</b>:
-            <select class="select-css" onchange="navigate()" id="game" name="game">
-                <option value="All">All</option>
-                <option value="P5">Persona 5</option>
-                <option value="P5R">Persona 5 Royal</option>
-                <option value="P5S">Persona 5 Strikers</option>
-                <option value="P5D">Persona 5 Dancing in Starlight</option>
-                <option value="P4">Persona 4</option>
-                <option value="P4G">Persona 4 Golden</option>
-                <option value="P4AU">Persona 4 Arena Ultimax</option>
-                <option value="P4D">Persona 4 Dancing All Night</option>
-                <option value="P3FES">Persona 3 FES</option>
-                <option value="P3P">Persona 3 Portable</option>
-                <option value="P3D">Persona 3 Dancing in Moonlight</option>
-                <option value="PQ">Persona Q</option>
-                <option value="PQ2">Persona Q2</option>
-                <option value="CFB">Catherine Full Body</option>
-                <option value="SMT3">Shin Megami Tensei Nocturne</option>
-            </select> <b> <a href="https://shrinefox.com/forum/viewtopic.php?f=4&t=682&p=2649#p2649"> <span style="color: #fb9e3b"> <i class="fa fa-upload"></i> Submit</span></a></b>
-            <br>
-            <br>
-(9 results)<br><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/aemulus-package-mgr"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><div class="ribbon"><div class="new">NEW</div></div><img src="https://screenshots.gamebanana.com/img/ss/tools/5f83f47f2b703.jpg" height="auto" width="auto"></td><td width='50%'><h2>Aemulus Package Manager</h2><h5>P4G tool by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>, <a href="https://amicitia.github.io/author/T-Pose Ratkechi">T-Pose Ratkechi</a>, <a href="https://amicitia.github.io/author/Pixelguin">Pixelguin</a>, <a href="https://amicitia.github.io/author/Brolijah">Brolijah</a>, <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a></h5></td><td width='25%'><center><h5>3/31/2021</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>No longer will you have to manually merge conflicting bin files found in different mods. This is the latest and greatest mod package manager, made specifically for Persona 4 Golden on PC (as well as P3FES, P5 and P5S). See Source for how to use.</td><td><center><font size="4"><a href="https://github.com/TekkaGB/AemulusModManager/releases"><i class="fas fa-file" aria-hidden="true"></i> Download Application</a><br><a href="https://github.com/TekkaGB/AemulusModManager"><i class="fas fa-file-code" aria-hidden="true"></i> Source Code</a></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=7&p=2742"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/BIN"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">BIN</p></div></a><a href="https://amicitia.github.io/tag/TBL"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> TBL</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4g-pc-modloader"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>p4gpc.modloader</h2><h5>P4G tool by <a href="https://amicitia.github.io/author/TGE">TGE</a></h5></td><td width='25%'><center><h5>11/2/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>A mod loader for the Steam version of Persona 4 Golden, using Reloaded II for DLL injection. See <a href=""https://github.com/TGEnigma/p4gpc.modloader/blob/master/README.md"">the readme</a> for more information.<br><div class="update"><b>Update 11/2/2020 (Development)</b>: CPK Redirection (use folder named cpk_e for mods instead of data00004 etc.) use <a href=""https://shrinefox.com/post/preappfile"">preappfile</a> to dump files referenced by cpk rather than extract PAKs.<br><b>Update 7/10/2020</b>: Log to p4gpc.modloader.log.txt in the P4G installation folder when the console is enabled</div></td><td><center><font size="4"><a href="https://github.com/TGEnigma/p4gpc.modloader/releases"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Plugin (Stable)</a><br><a href="https://ci.appveyor.com/project/TGEnigma/p4gpc-modloader/build/artifacts"><i class="fas fa-folder-open" aria-hidden="true"></i> Download (Development, Up To Date)</a><br><a href="https://github.com/TGEnigma/p4gpc.modloader"><i class="fas fa-file-code" aria-hidden="true"></i> Source Code</a></center></div><center><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2136739364"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4g-cheatengine"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://github.com/zarroboogs/p4g-ct/raw/master/preview.png" height="auto" width="auto"></td><td width='50%'><h2>Persona 4 Golden CheatEngine Table</h2><h5>P4G tool by <a href="https://amicitia.github.io/author/lipsum">lipsum</a></h5></td><td width='25%'><center><h5>6/22/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>A cheat table for the PC version of Persona 4 Golden.</td><td><center><font size="4"><a href="https://github.com/zarroboogs/p4g-ct/archive/master.zip"><i class="fas fa-folder-open" aria-hidden="true"></i> Download File</a><br><a href="https://github.com/zarroboogs/p4g-ct"><i class="fas fa-file-code" aria-hidden="true"></i> Source Code</a></center></div></tr></tbody></table><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/hostfs-guide"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><a href="https://www.youtube.com/watch?v=0Jft05FbFLw"><img src="https://img.youtube.com/vi/0Jft05FbFLw/default.jpg" height="auto" width="auto"></td><td width='50%'><h2>Modding Using HostFS on PCSX2 (P3/P4/SMT3)</h2><h5>P4 guide by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a></h5></td><td width='25%'><center><h5>4/10/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This guide explains how to mod P3, P4, and SMT3 without ever needing to repack your ISO.</td><td><br><center><a href="https://shrinefox.com/guides/modding-using-hostfs-on-pcsx2-p3-p4-smt3"><i class="fas fa-info-circle" aria-hidden="true"></i> Modding using HostFS on PCSX2</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/PNACH"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">PNACH</p></div></a><a href="https://amicitia.github.io/tag/CVM"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> CVM</p></div></a><a href="https://amicitia.github.io/tag/Executable"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> Executable</p></div></a><a href="https://amicitia.github.io/tag/ISO"><div class="tag" style="border-left: 4px solid #7AF379; "><p class="noselect"> ISO</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #7998F3; "><p class="noselect"> Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/smt3-hostfs"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Nocturne hostFS Patch</h2><h5>SMT3 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a></h5></td><td width='25%'><center><h5>3/28/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Replace/Add files to the dds3.img and MOVIE folder without repacking.<br>1. Edit PCSX2_vm.ini inside the PCSX2 ini folder and change the line with 'HostFs=disabled' to 'HostFs=enabled'.<br>2. Extract the SLUS from the ISO and add the .ELF extension to it.<br>3. Extract contents of dds3.img and MOVIE to a folder named ""dds3data"", which goes in the same directory as the .ELF.<br>4. Load the game's ISO in PCSX2 (with cheats enabled), and then select ""Run ELF"" from the ""File"" menu.</td><td><center><font size="4"><a href="https://shrinefox.com/txt/E8FCF8EC.pnach.txt"><i class="fas fa-code" aria-hidden="true"></i> Download .PNACH</a><br></center></div><br><center><a href="https://shrinefox.com/guides/modding-using-hostfs-on-pcsx2-p3-p4-smt3"><i class="fas fa-info-circle" aria-hidden="true"></i> Modding using HostFS on PCSX2</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/PNACH"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">PNACH</p></div></a><a href="https://amicitia.github.io/tag/CVM"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> CVM</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p3fes-hostfs"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Persona 3 FES hostFS Patch</h2><h5>P3FES mod by <a href="https://amicitia.github.io/author/TGE">TGE</a></h5></td><td width='25%'><center><h5>3/28/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Replace/Add files to the CVMs without repacking.<br>1. Edit PCSX2_vm.ini inside the PCSX2 ini folder and change the line with 'HostFs=disabled' to 'HostFs=enabled'.<br>2. Extract the SLUS from the ISO and add the .ELF extension to it.<br>3. Place replacement files in a folder named after the CVM, which goes in the same directory as the .ELF.<br>4. Load the game's ISO in PCSX2 (with cheats enabled), and then select ""Run ELF"" from the ""File"" menu.</td><td><center><font size="4"><a href="https://shrinefox.com/txt/94A82AAA.pnach.txt"><i class="fas fa-code" aria-hidden="true"></i> Download .PNACH</a><br></center></div><br><center><a href="https://shrinefox.com/guides/modding-using-hostfs-on-pcsx2-p3-p4-smt3"><i class="fas fa-info-circle" aria-hidden="true"></i> Modding using HostFS on PCSX2</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/PNACH"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">PNACH</p></div></a><a href="https://amicitia.github.io/tag/CVM"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> CVM</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4-hostfs"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Persona 4 hostFS Patch</h2><h5>P4 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a></h5></td><td width='25%'><center><h5>3/28/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Replace/Add files to the CVMs without repacking.<br>1. Edit PCSX2_vm.ini inside the PCSX2 ini folder and change the line with 'HostFs=disabled' to 'HostFs=enabled'.<br>2. Extract the SLUS from the ISO and add the .ELF extension to it.<br>3. Place replacement files in a folder named after the CVM, which goes in the same directory as the .ELF.<br>4. Load the game's ISO in PCSX2 (with cheats enabled), and then select ""Run ELF"" from the ""File"" menu.</td><td><center><font size="4"><a href="https://shrinefox.com/txt/DEDC3B71.pnach.txt"><i class="fas fa-code" aria-hidden="true"></i> Download .PNACH</a><br></center></div><br><center><a href="https://shrinefox.com/guides/modding-using-hostfs-on-pcsx2-p3-p4-smt3"><i class="fas fa-info-circle" aria-hidden="true"></i> Modding using HostFS on PCSX2</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/PNACH"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">PNACH</p></div></a><a href="https://amicitia.github.io/tag/CVM"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> CVM</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4-debugoptions"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Enable Debug Options in TV World</h2><h5>P4 cheat by </h5></td><td width='25%'><center><h5>6/9/2018</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This cheat grants you an extra menu option in dungeons that can be used to skip to the next floor or return to the entrance.https://i.imgur.com/5I5Vos8.png</td><td><div id="cheat18" onclick="copyDivToClipboard('cheat18')"><div class="cheatcode">// Debug Mode ONpatch=1,EE,D08C0142,extended,00007FFFpatch=1,EE,0079B34C,extended,000000FFpatch=1,EE,D08C0142,extended,0000BFFFpatch=1,EE,0079B34C,extended,000000FF</div></div></tr></tbody></table><a href="https://amicitia.github.io/tag/PNACH"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">PNACH</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> Debug</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4-debuglog"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Enable Debug Log</h2><h5>P4 cheat by <a href="https://amicitia.github.io/author/TGE">TGE</a></h5></td><td width='25%'><center><h5>6/9/2018</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This cheat prints string output from the game's original debug functions into the PCSX2 log. TGE's modification also prints the filename and path of each file the game accesses in real time, which is extremely helpful for finding and narrowing down the location of assets like models, fields etc. https://i.imgur.com/5I5Vos8.png</td><td><div id="cheat17" onclick="copyDivToClipboard('cheat17')"><div class="cheatcode">// Enable debug logpatch=1,EE,00421DE8,word,00000000 // always branch even if not debug</div></div></tr></tbody></table><a href="https://amicitia.github.io/tag/PNACH"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">PNACH</p></div></a><a href="https://amicitia.github.io/tag/Debug"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> Debug</p></div></a></div></div></div><table><tr><td></td><td></td></tr></table><br><br>
-<br>
-<p style="font-size: 12px;line-height: 0.9;text-align:right;padding-right:10px;color:#fff;">
-    We are NOT affiliated, associated, authorized, endorsed by, or in any way
-    <br>officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-    <br>The official ATLUS website can be found at <a href="https://atlus.com">https://atlus.com</a>.
-    <br>ATLUS and SEGA are registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
-    <br>either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
-</p>
-        </table>
-<br>
-<br>
-<br>
-<br>
-<center>© ShrineFox 2020 - 2021. Last updated 4/6/2021. <a href="https://github.com/Amicitia/Amicitia.github.io"><i class="fa fa-github"></i> Source available on Github</a>.<br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> Follow</a> for updates! <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee" aria-hidden="true"></i> Support</a></center>
-<br>
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/aemulus-package-mgr"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://screenshots.gamebanana.com/img/ss/tools/5f83f47f2b703.jpg"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://screenshots.gamebanana.com/img/ss/tools/5f83f47f2b703.jpg">
+                <div class="card__body">
+                    P4G tool by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>, <a href="https://amicitia.github.io/author/T-Pose Ratkechi">T-Pose Ratkechi</a>, <a href="https://amicitia.github.io/author/Pixelguin">Pixelguin</a>, <a href="https://amicitia.github.io/author/Brolijah">Brolijah</a>, <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://github.com/TekkaGB/AemulusModManager/releases">Aemulus Package Manager</a>
+                    </h4>
+                    <br>3/31/2021<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    No longer will you have to manually merge conflicting bin files found in different mods. This is the latest and greatest mod package manager, made specifically for Persona 4 Golden on PC (as well as P3FES, P5 and P5S). See Source for how to use.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/PAC" rel="tag">PAC</a><a href="https://amicitia.github.io/tag/Table" rel="tag"> Table</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
     </div>
-<!--Content End-->
-<div class="footer"></div>
-<!--Footer End-->
-		</div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-nightmare-hardcore&lite"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=9ULgwtcLdoQ&feature=emb_title"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/9ULgwtcLdoQ&feature=emb_title/default.jpg">
+                <div class="card__body">
+                    Persona 4 Golden mod by <a href="https://amicitia.github.io/author/SCArkadia">SCArkadia</a>
+                    <h4>
+                        <a href="https://gamebanana.com/games/8263">Persona 4 Golden Nightmare Hardcore & Lite Difficulty</a>
+                    </h4>
+                    <br>1/21/2021<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>THIS MOD IS DESIGNED FOR NEW GAME FRESH. Also, the difference between Hardcore and Lite is that Hardcore changes many enemies' AI behavior and their skillsets while Lite doesn't.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Script" rel="tag">Script</a><a href="https://amicitia.github.io/tag/Table" rel="tag"> Table</a><a href="https://amicitia.github.io/tag/Script" rel="tag"> Script</a><a href="https://amicitia.github.io/tag/PAC" rel="tag"> PAC</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-pc-modloader"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P4G tool by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <h4>
+                        <a href="https://github.com/TGEnigma/p4gpc.modloader/releases">p4gpc.modloader</a>
+                    </h4>
+                    <br>11/2/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 11/2/2020 (Development)</b>: CPK Redirection (use folder named cpk_e for mods instead of data00004 etc.) use <a href=""https://shrinefox.com/post/preappfile"">preappfile</a> to dump files referenced by cpk rather than extract PAKs.<br><b>Update 7/10/2020</b>: Log to p4gpc.modloader.log.txt in the P4G installation folder when the console is enabled</div><br><br>A mod loader for the Steam version of Persona 4 Golden, using Reloaded II for DLL injection. See <a href=""https://github.com/TGEnigma/p4gpc.modloader/blob/master/README.md"">the readme</a> for more information.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-modloader"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/153593230024245248/353253118659657728/unknown.png?width=989&height=560"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/153593230024245248/353253118659657728/unknown.png?width=989&height=560">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <h4>
+                        <a href="https://shrinefox.com/PatchCreator">Persona 5 Mod Support (patch.yml)</a>
+                    </h4>
+                    <br>9/13/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 9/13/2020</b>: Include new format for RPCS3's new patch manager (use old version with <a href=""https://github.com/TGEnigma/RPCS3PatchEboot"">RPCS3PatchEboot</a>)</div><br><br>An EBOOT modification for loading modded files from a custom mod.cpk file in the USRDIR folder. <br>Also includes the following optional mods: 60 FPS, logging of accessed files to debug console, HUD/blur/distortion toggle, randomized battle music, skipping DLC unlock messages, skipping opening logos
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/RPCS3" rel="tag">RPCS3</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a><a href="https://amicitia.github.io/tag/Executable" rel="tag"> Executable</a><a href="https://amicitia.github.io/tag/FPS" rel="tag"> FPS</a><a href="https://amicitia.github.io/tag/TTY" rel="tag"> TTY</a><a href="https://amicitia.github.io/tag/Patch" rel="tag"> Patch</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-cheatengine"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://github.com/zarroboogs/p4g-ct/raw/master/preview.png"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://github.com/zarroboogs/p4g-ct/raw/master/preview.png">
+                <div class="card__body">
+                    P4G tool by <a href="https://amicitia.github.io/author/lipsum">lipsum</a>
+                    <h4>
+                        <a href="https://github.com/zarroboogs/p4g-ct/archive/master.zip">Persona 4 Golden CheatEngine Table</a>
+                    </h4>
+                    <br>6/22/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    A cheat table for the PC version of Persona 4 Golden.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/hostfs-guide"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P4 guide by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://shrinefox.com/guides/modding-using-hostfs-on-pcsx2-p3-p4-smt3">Modding Using HostFS on PCSX2 (P3/P4/SMT3)</a>
+                    </h4>
+                    <br>4/10/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;">https://www.youtube.com/watch?v=0Jft05FbFLw</div><br><br>This guide explains how to mod P3, P4, and SMT3 without ever needing to repack your ISO.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/CVM" rel="tag">CVM</a><a href="https://amicitia.github.io/tag/Executable" rel="tag"> Executable</a><a href="https://amicitia.github.io/tag/ISO" rel="tag"> ISO</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/smt3-hostfs"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    SMT3 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <h4>
+                        <a href="https://shrinefox.com/txt/E8FCF8EC.pnach.txt">Nocturne hostFS Patch</a>
+                    </h4>
+                    <br>3/28/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>Replace/Add files to the dds3.img and MOVIE folder without repacking.<br>1. Edit PCSX2_vm.ini inside the PCSX2 ini folder and change the line with 'HostFs=disabled' to 'HostFs=enabled'.<br>2. Extract the SLUS from the ISO and add the .ELF extension to it.<br>3. Extract contents of dds3.img and MOVIE to a folder named ""dds3data"", which goes in the same directory as the .ELF.<br>4. Load the game's ISO in PCSX2 (with cheats enabled), and then select ""Run ELF"" from the ""File"" menu.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/CVM" rel="tag">CVM</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3fes-hostfs"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P3FES mod by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <h4>
+                        <a href="https://shrinefox.com/txt/94A82AAA.pnach.txt">Persona 3 FES hostFS Patch</a>
+                    </h4>
+                    <br>3/28/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>Replace/Add files to the CVMs without repacking.<br>1. Edit PCSX2_vm.ini inside the PCSX2 ini folder and change the line with 'HostFs=disabled' to 'HostFs=enabled'.<br>2. Extract the SLUS from the ISO and add the .ELF extension to it.<br>3. Place replacement files in a folder named after the CVM, which goes in the same directory as the .ELF.<br>4. Load the game's ISO in PCSX2 (with cheats enabled), and then select ""Run ELF"" from the ""File"" menu.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/CVM" rel="tag">CVM</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4-hostfs"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P4 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <h4>
+                        <a href="https://shrinefox.com/txt/DEDC3B71.pnach.txt">Persona 4 hostFS Patch</a>
+                    </h4>
+                    <br>3/28/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>Replace/Add files to the CVMs without repacking.<br>1. Edit PCSX2_vm.ini inside the PCSX2 ini folder and change the line with 'HostFs=disabled' to 'HostFs=enabled'.<br>2. Extract the SLUS from the ISO and add the .ELF extension to it.<br>3. Place replacement files in a folder named after the CVM, which goes in the same directory as the .ELF.<br>4. Load the game's ISO in PCSX2 (with cheats enabled), and then select ""Run ELF"" from the ""File"" menu.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/CVM" rel="tag">CVM</a><a href="https://amicitia.github.io/tag/Debug" rel="tag"> Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-randombgm"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 guide by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://shrinefox.com/guides/adding-randomized-battle-tracks-to-persona-5-ps3">Adding Randomized Battle Tracks to Persona 5 (PS3)</a>
+                    </h4>
+                    <br>6/12/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This is an advanced tutorial on adding extra DLC music tracks to the game and shuffling them randomly between battles using an EBOOT modification.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a><a href="https://amicitia.github.io/tag/Patch" rel="tag"> Patch</a><a href="https://amicitia.github.io/tag/BGM" rel="tag"> BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-ebootpatchingguide"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 guide by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://shrinefox.com/guides/persona-5-ps3-eboot-patching">Persona 5 EBOOT Patching</a>
+                    </h4>
+                    <br>6/12/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This tutorial goes into detail on how to add patches from patch.yml to an EBOOT.BIN on a CFW PS3.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a><a href="https://amicitia.github.io/tag/Patch" rel="tag"> Patch</a><a href="https://amicitia.github.io/tag/RPCS3" rel="tag"> RPCS3</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-rpcs3-modcreationguide"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 guide by <a href="https://amicitia.github.io/author/Cryptoss">Cryptoss</a>, <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://shrinefox.com/guides/persona-5-rpcs3-modding-guide-2-creating-and-installing-mods">Persona 5 RPCS3: Creating Mods</a>
+                    </h4>
+                    <br>4/24/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Find out how to create your own Persona 5 mods using the Mod Compendium.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a><a href="https://amicitia.github.io/tag/Patch" rel="tag"> Patch</a><a href="https://amicitia.github.io/tag/RPCS3" rel="tag"> RPCS3</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-rpcs3-setupguide"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 guide by <a href="https://amicitia.github.io/author/Cryptoss">Cryptoss</a>, <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://shrinefox.com/guides/persona-5-rpcs3-modding-guide-1-downloads-and-setup">Persona 5 RPCS3: Setup & Installing Mods</a>
+                    </h4>
+                    <br>4/19/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This straightforward tutorial lists everything you need in order to run Persona 5 mods on RPCS3.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a><a href="https://amicitia.github.io/tag/Patch" rel="tag"> Patch</a><a href="https://amicitia.github.io/tag/RPCS3" rel="tag"> RPCS3</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4-debugoptions"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp4-debugoptions')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <div id="cheatp4-debugoptions" class="cheatcode">// Debug Mode ONpatch=1,EE,D08C0142,extended,00007FFFpatch=1,EE,0079B34C,extended,000000FFpatch=1,EE,D08C0142,extended,0000BFFFpatch=1,EE,0079B34C,extended,000000FF</div>
+                <div class="card__body">
+                    P4 cheat by 
+                    <h4>
+                        <a href="POSTURL">Enable Debug Options in TV World</a>
+                    </h4>
+                    <br>6/9/2018 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This cheat grants you an extra menu option in dungeons that can be used to skip to the next floor or return to the entrance.https://i.imgur.com/5I5Vos8.png
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4-debuglog"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp4-debuglog')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <div id="cheatp4-debuglog" class="cheatcode">// Enable debug logpatch=1,EE,00421DE8,word,00000000 // always branch even if not debug</div>
+                <div class="card__body">
+                    P4 cheat by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <h4>
+                        <a href="POSTURL">Enable Debug Log</a>
+                    </h4>
+                    <br>6/9/2018 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This cheat prints string output from the game's original debug functions into the PCSX2 log. TGE's modification also prints the filename and path of each file the game accesses in real time, which is extremely helpful for finding and narrowing down the location of assets like models, fields etc. https://i.imgur.com/5I5Vos8.png
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;">                                </tr>
+							</tbody>
+						</table>
+                        <center><nav class="pagination" role="navigation"><div class="nav-links"><span aria-current="page" class="page-numbers current">1</span><a class="page-numbers" href="https:\\amicitia.github.io\tag\Debug\2">2</a></div></nav></center>
+                        <br>
+                        <br>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+<br>
+<!--Footer-->
+<footer style="backdrop-filter: blur(6px);background-color: rgba(17,17,17,0.7);padding-left: 50px;padding-top: 25px;color: #ffffff7f;">
+    <table>
+        <tbody>
+            <tr>
+                <td style="vertical-align: top;width: 25%;">
+                    <h4>About</h4>
+                    <center>
+                        <img src="https://pbs.twimg.com/profile_images/1347312450895572993/ZfHnzfcq_400x400.jpg" style="clip-path: circle(39px at center);width: 75px;">
+                    </center>
+                    <br>
+                    <a href="https://shrinefox.com/">ShrineFox</a> is passionate about customizing games, consoles and devices.
+                    <br>This site explores cutting-edge jailbreaking techniques for beginners and end-users.
+                </td>
+                <td style="vertical-align: top;width: 35%;padding-left: 20px;">
+                    <h4>Social Links</h4>
+                    <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube" aria-hidden="true"></i> <b>YouTube</b></a>
+                    <br><br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter" aria-hidden="true"></i> <b>ShrineFox</b></a>
+                    <br><br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter" aria-hidden="true"></i> <b>AmicitiaTeam</b></a>
+                    <br><br><a href="https://github.com/ShrineFox"><i class="fa fa-github" aria-hidden="true"></i> <b>GitHub</b></a>
+                    <br><br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord" aria-hidden="true"></i> <b>Discord</b></a>
+                </td>
+                <td style="width: 40%;vertical-align: top;padding-right: 20px;">
+                    <h4>Disclaimer</h4>
+                    <br><br>
+                    We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                    officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                    The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                    registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                    either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                    <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <center>
+        <!--AdSense-->
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <br>
+        <!--Credits-->
+        <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee" aria-hidden="true"></i> Support</a>
+        <br><br>
+    </center>
+</footer>
+			</div>
+<!--Wrapper End-->
+			</div>
 		</form>
-	</main>
-</div>
+		</main>
+	</body>
+</html>

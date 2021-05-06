@@ -1,0 +1,89 @@
+<div class="container body-content">
+	<table>
+        <tr>
+            <td width="25%" style="vertical-align:top">
+                <div class="content-outer">
+                    <div class="content"><br>
+						Basics
+						<br>↳ <a href="https://amicitia.github.io/docs/flowscript">Flowscript</a>
+						<br>↳ <a href="https://amicitia.github.io/docs/messagescript">Messagescript</a>
+						<br>↳ <a href="https://amicitia.github.io/docs/decompiling">Decompiling</a>
+						<br>↳ <a href="https://amicitia.github.io/docs/compiling">Compiling</a>
+						<br>
+						<br>Features
+						<br>↳ <a href="https://amicitia.github.io/docs/importing">Importing</a>
+						<br>↳ Declaring Functions
+						<br>↳ Declaring Variables
+						<br>↳ <a href="https://amicitia.github.io/docs/hookingfunctions">Hooking Functions</a>
+						<br>
+						<br>P5 Functions
+						<br>↳ AI
+						<br>↳ Common
+						<br>↳ Facility
+						<br>↳ Field
+						<br>↳ Net
+						<br>↳ Social
+					</div>
+				</div>
+			</td>
+			<td style="width: 75%; padding-right:20px; vertical-align: top;">
+				<div class="content-outer">
+					<div class="content">
+						<h1>Flowscript</h1><br><b>Flowscript</b> is a scripting language created by <b>TGEnigma</b> for use with his <a href="https://shrinefox.com/?tool=atlusscriptcompiler">AtlusScriptCompiler</a>. It is the decompiled form of <b>BF</b>, the binary output of Atlus's scripts which many of their games use to perform various logical procedures.
+						<br><h2>Decompiling</h2>
+						You can convert <b>.BF</b> to <b>.FLOW</b> and open it with your text editor of choice <a href="https://amicitia.github.io/docs/decompiling">by following this guide</a>.
+						<br />Likewise, you can also convert <b>.BMD</b> to <b>.MSG</b> for easy reading and editing.
+						<br />If you're looking for a full dump of P5's scripts for reference, <a href="https://cdn.discordapp.com/attachments/143149937247387649/604106240695599124/AtlusFlowScriptExtractorOutput.zip">you can get one here</a>.
+						<h2>Compiling</h2>
+						To turn <b>.FLOW</b> files back into <b>.BF</b>, or <b>.MSG</b> files back into <b>.BMD</b>, be sure to <a href="https://amicitia.github.io/docs/compiling">read this guide</a>.
+						<br><br />Below is an example of a custom flowscript that uses <b>Persona 5 (PS3)</b>'s scripting functions.
+						<br><h2>Sample Script</h2>
+<pre><code class="c#">// Import the MessageScript into the script
+import( "TestScript2.msg" );
+// Constants can be defined with the const modifier
+const int FLD_SCRIPT_TIMING_BEFORE_LOAD	= 0;
+// Can define static variable but can't initialize it outside of a procedure.
+static bool sHasRun;
+// You can define enum values and refer to them like so
+enum PadButton
+{<br>	Select,<br>	LStick,<br>	RStick,<br>	Start,<br>	Up,<br>	Down,<<br>	L1,<br>	R1,<br>	L2,<br>	Triangle,<br>	Circle,<br>	X,<br>	Any<br>}
+<br>void Main()
+{
+	// Display dialog window
+	MSG_WND_DSP(); 
+	MSG( HelloDialog, 0 ); 
+	int selection = SEL( 1 );
+	MSG_WND_CLS(); 
+	switch ( selection )
+	{
+		case 0:
+			int playerResHandle = FLD_PC_GET_RESHND( 0 );		
+			FLD_MODEL_SET_SCALE( playerResHandle, 2f );
+			break;
+		case 1:
+			CALL_FIELD( 0, 2, 0, 0 );
+			break;
+		case 2:
+			StartBossrushMode();
+			break;
+		case 3:
+			StartTeleportMode();
+			break;
+		case 4:
+			StartButtonTestMode();
+			break;
+		case 5:
+			StartSoundTestMode();
+			break;
+		default:
+			break;
+	}
+}
+<br>...
+</code></pre>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

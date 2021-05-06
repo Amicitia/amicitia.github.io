@@ -3,282 +3,733 @@
 <head>
     <link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
     <meta charset="utf-8">
-    <title>Amicitia - mods 9</title>
-    <script src="https://shrinefox.com/Scripts/Amicitia/jquery-3.3.1.min.js"></script>
+    <title>Amicitia -  mods </title>
     <link href="https://shrinefox.com/css/index.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/sidebar.css" rel="stylesheet" type="text/css">
     <link href="https://shrinefox.com/css/waves.css" rel="stylesheet" type="text/css">
-    <link href="../css/select.css" rel="stylesheet" type="text/css">
-    <link href="../css/amicitia.css" rel="stylesheet" type="text/css">
-    <script src="../js/bubbles.js"></script>
-    <script src="../js/showhide.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/hidenav.js"></script>
+    <link href="https://shrinefox.com/css/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/grid.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/post.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/select.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/pagination.css" rel="stylesheet" type="text/css">
+    <link href="https://shrinefox.com/css/amicitia.css" rel="stylesheet" type="text/css">
+    <script src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
+    <script src="https://shrinefox.com/js/bubbles.js"></script>
+    <script src="https://shrinefox.com/js/clipboard.js"></script>
+    <script src="https://shrinefox.com/js/showhide.js"></script>
+    <script src="https://shrinefox.com/js/hidenav.js"></script>
+    <script src="https://shrinefox.com/js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-<main>
-    <div id="wrapper">
+    <main>
         <div class="copied">Cheat copied to clipboard!</div>
-        <!--Sidebar Toggle-->
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-        </label>
-        <!--Sidebar Menu-->
-        <aside class="sidebar">
-            <div class="component">
-                <div class="sidebarheader"></div>
-                <div class="contents">
-                    <ul class="items list">
-                        <a href="https://shrinefox.com/">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-home" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">ShrineFox.com</div>
-                                    <div class="subtitle">Home Page</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/blog">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-wordpress" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">ShrineFox.com Blog</div>
-                                    <div class="subtitle">Misc Development</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/projects">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-cogs" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Projects</div>
-                                    <div class="subtitle">Things I Made</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/amicitia">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-globe" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Amicitia</div>
-                                    <div class="subtitle">About the Project</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/credits">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-heart" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Credits</div>
-                                    <div class="subtitle"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <h5>Amicitia Network</h5>
-                        <br>
-                        <a href="https://amicitia.github.io">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">amicitia.github.io</div>
-                                    <div class="subtitle">Mods & Tools</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia-team.tumblr.com">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-newspaper" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">News</div>
-                                    <div class="subtitle">Modding Announcements</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia.miraheze.org/wiki/Main_Page">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-users" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Wiki</div>
-                                    <div class="subtitle">Documentation</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/forum">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Forum</div>
-                                    <div class="subtitle">Support & Submissions</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/guides/">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Guides</div>
-                                    <div class="subtitle">Modding Tutorials</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/forum/app.php/faqpage">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">FAQs</div>
-                                    <div class="subtitle">Frequently Asked Q&A</div>
-                                </div>
-                            </div>
-                        </a>
-                        <h5>Apps</h5>
-                        <br>
-                        <a href="https://shrinefox.com/textsearch">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-search" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Text Search</div>
-                                    <div class="subtitle">Locate Files With Dialog</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia.github.io/docs/flowscript">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-file-code" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Flowscript Docs</div>
-                                    <div class="subtitle">Learn .flow/.msg</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://amicitia.github.io/files">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Files</div>
-                                    <div class="subtitle">Download assets</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://shrinefox.com/PatchCreator">
-                            <div class="item">
-                                <div class="thumbnail"><i class="fa fa-check-square" aria-hidden="true"></i></div>
-                                <div class="info">
-                                    <div class="title">Patch.yml Creator</div>
-                                    <div class="subtitle">P5 RPCS3 Patches</div>
-                                </div>
-                            </div>
-                        </a>
-                    </ul>
-                </div> <!--End Contents-->
-            </div>  <!--End Component-->
-        </aside>  <!--End Sidebar Menu-->
-        <div class="article">
-            <!--Header-->
-            <div class="header">
-                <canvas id="bgCanvas"></canvas>
-                <!--Logo and Header Text-->
-                <div>
-                    <center>
+        <div id="wrapper">
+            <div id="wrapper">
+                <!--Navbar-->
+                <div class="navbar" style="top: 0px;">
+                    <div class="navbar-container">
                         <table>
-                            <tr>
-                                <td style="width:25%;"></td>
-                                <td>
-                                    <div class="image" style="max-width: calc(var(--space-md) * 2.5);min-width: calc(var(--space-md) * 0.5);"><a href="https://amicitia.github.io/"><img src="https://amicitia.github.io/images/logo.svg"></a></div>
-                                </td>
-                                <td style="width:55%;">
-                                    <h1>amicitia.github.io</h1>
-                                    <h2>mods • tools • guides</h2>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 95px;padding-left: 20px;">
+                                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                                            <div class="spinner diagonal part-1"></div>
+                                            <div class="spinner horizontal"></div>
+                                            <div class="spinner diagonal part-2"></div>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <div class="navbar-outer">
+                                            <div class="navbar-inner">
+                                                <a href="https://amicitia.github.io">
+                                                    <div class="navbar-item">
+                                                        <div class="amicitia-logo">
+                                                            <div class="amicitia-svg"></div>
+                                                        </div>Mods
+                                                    </div>
+                                                </a>
+                                                <!--Top Navbar-->
+                                                <a href="https://shrinefox.com/news">
+                                                    <div class="navbar-item">
+                                                        <span><i class="fa fa-newspaper" aria-hidden="true"></i>&nbsp;News</span>
+                                                    </div>
+                                                </a>
+                                                <a href="https://shrinefox.com/guides">
+                                                    <div class="navbar-item">
+                                                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Guides</span>
+                                                    </div>
+                                                </a>
+                                                <a href="https://shrinefox.com/blog">
+                                                    <div class="navbar-item">
+                                                        <span><i class="fab fa-wordpress" aria-hidden="true"></i>&nbsp;Blog</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
-                    </center>
+                    </div>
                 </div>
-                <!--Waves-->
-                <div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                        <defs>
-                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                        </defs>
-                        <g class="parallax">
-                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(17,17,17,0.33)" />
-                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(17,17,17,0.6)" />
-                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(17,17,17,0.6)" />
-                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(17,17,17,1)" />
-                        </g>
-                    </svg>
+                <!--Sidebar Toggle-->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
+                <aside class="sidebar">
+                    <div class="component">
+                        <div class="contents">
+                            <ul class="items list">
+                                <!--Sidebar Items-->
+                                <div class="sidebarheader">
+                                    <i class="fa fa-cube" aria-hidden="true"></i> &nbsp;&nbsp;Resources
+                                </div>
+                                <a href="https://amicitia.miraheze.org/wiki/Main_Page">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-users" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Wiki</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/forum">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Support Forum</div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/forum/app.php/faqpage">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Frequently Asked Q&amp;A</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <br>
+                                <div class="sidebarheader">
+                                    <i class="fa fa-terminal" aria-hidden="true"></i>&nbsp;&nbsp;Apps
+                                </div>
+                                <a href="https://shrinefox.com/textsearch">
+                                    <div class="item">
+                                        <div class="thumbnail">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Text Search</div>
+                                            <div class="subtitle">&nbsp;Locate Files With Dialog</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://amicitia.github.io/docs/flowscript">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-file-code" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Flowscript Docs</div>
+                                            <div class="subtitle">&nbsp;Learn .flow/.msg</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://amicitia.github.io/files">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Files</div>
+                                            <div class="subtitle">&nbsp;Download assets</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/PatchCreator">
+                                    <div class="item">
+                                        <div class="thumbnail"><i class="fa fa-check-square" aria-hidden="true"></i></div>
+                                        <div class="info">
+                                            <div class="title">&nbsp;Patch.yml Creator</div>
+                                            <div class="subtitle">&nbsp;P5 RPCS3 Patches</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </ul>
+                        </div> <!--End Contents-->
+                    </div>  <!--End Component-->
+                </aside>  <!--End Sidebar Menu-->
+                <div class="article">
+                    <!--Header-->
+                    <div class="header">
+                        <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
+                        <center>
+                            <div class="header-inner" style="margin-top: 150px;">
+                                <!--Title-->
+                                <h1>
+                                    <span class="underline-on-hover">game</span>
+                                    <select class="select-css" onchange="navigate()" id="game" name="game">
+                                        <option value="" disabled=""></option>
+                                        <option value="All">All</option>
+                                        <option value="P5">Persona 5</option>
+                                        <option value="P5R">Persona 5 Royal</option>
+                                        <option value="P5S">Persona 5 Strikers</option>
+                                        <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                        <option value="P4">Persona 4</option>
+                                        <option value="P4G">Persona 4 Golden</option>
+                                        <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                        <option value="P4D">Persona 4 Dancing All Night</option>
+                                        <option value="P3FES">Persona 3 FES</option>
+                                        <option value="P3P">Persona 3 Portable</option>
+                                        <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                        <option value="PQ">Persona Q</option>
+                                        <option value="PQ2">Persona Q2</option>
+                                        <option value="CFB">Catherine Full Body</option>
+                                        <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                    </select>
+                                    <span class="underline-on-hover">mods</span>
+                                    <select class="select-css" onchange="navigate()" id="type" name="type">
+                                        <option value="" disabled=""></option>
+                                        <option value="All">All</option>
+                                        <option value="Mod">Mods</option>
+                                        <option value="Tool">Tools</option>
+                                        <option value="Cheat">Cheats</option>
+                                        <option value="Guide">Guides</option>
+                                    </select>
+                                </h1>
+                        </center>
+                        <!--Waves-->
+                        <div>
+                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(17,17,17,0.33)"></use>
+                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(17,17,17,0.6)"></use>
+                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(17,17,17,0.6)"></use>
+                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(17,17,17,1)"></use>
+                                </g>
+                            </svg>
+                        </div>
+                        <!--Waves End-->
+                    </div>
+                    <!--Header End-->
                 </div>
-                <!--Waves End-->
+                <!--Article End-->
             </div>
-            <!--Header End-->
-</div>
 <div class="content">
     <table>
         <tbody>
             <tr>
-                <td width="25%" style="vertical-align:top">
-                    <div id="bloglinks">
-                        <div class"text">
-                            <h3><i class="fas fa-newspaper"></i> Latest News</h3>
-                            <script src="../js/blogposts.js"></script>
-                        <br /><div class="widget"><table><tr><td><a href="https:\\amicitia.github.io\mods\8"><div class="unhide"><i class="fa fa-angle-double-left"></i></div></a></td><td><a href="https:\\amicitia.github.io\mods\10"><div class="unhide"> <i class="fa fa-angle-double-right"></i></div></a></td></tr></table><br>    <td width="75%">
+                <td style="vertical-align:top;width: 25%;padding-left: 10px;">
+                    <div class="bloglinks">
+                        <a href="https://amicitia-team.tumblr.com/">
+                            <h3>
+                                <i class="fas fa-newspaper" aria-hidden="true"></i> News
+                            </h3>
+                        </a>
+                        <div class="widget">
+                            <h5><a href="https://amicitia-team.tumblr.com/post/638012597777629184">Modding Support for P5R USA!</a></h5><br> 12/20/20
+                            <br>
+                        </div>
+                        <a href="https://shrinefox.com/guides/">
+                            <h3>
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Guides
+                            </h3>
+                        </a>
+                        <div class="widget">
+                            <h5><a href="https://shrinefox.com/guides/2020/09/30/modding-persona-5-royal-jp-on-ps4-fw-6-72/">Modding P5R USA on PS4 FW 5.05 - 6.72</a></h5><br> 1/11/2021
+                        </div>
+                        <br>
+                    </div>
+                </td>
+                <td width="75%" style="width: 75%;padding-right: 20px;">
+                    <div class="text"><!--Result Count and Submission Link-->
+<table style="padding: 0 20px 0 15px;">
+    <tbody>
+        <tr>
+            <td width="25%">Page 9/18 (261 results)</td>
+            <td width="50%"><center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods\8">8</a><span aria-current="page" class="page-numbers current">9</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\10">10</a></div></nav></center></td>
+            <td width="25%" style="text-align: right;">
+                <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
+                    <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!--Post Grid-->
+<table>
+    <tbody>
+        <tr style="width:100%;"><br><center>To learn how to use these mods, see <a href="https://shrinefox.com/guides/2019/04/19/persona-5-rpcs3-modding-guide-1-downloads-and-setup">this guide.</a> Although it's focused on Persona 5, the latter half applies to other games as well.</center><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
         <div class="text">
-            <b>Type</b>:
-            <select class="select-css" onchange="navigate()" id="type" name="type">
-                <option value="All">All</option>
-                <option value="Mod" selected>Mods</option>
-                <option value="Tool">Tools</option>
-                <option value="Cheat">Cheats</option>
-                <option value="Guide">Guides</option>
-            </select>
-            <b>Game</b>:
-            <select class="select-css" onchange="navigate()" id="game" name="game">
-                <option value="All">All</option>
-                <option value="P5">Persona 5</option>
-                <option value="P5R">Persona 5 Royal</option>
-                <option value="P5S">Persona 5 Strikers</option>
-                <option value="P5D">Persona 5 Dancing in Starlight</option>
-                <option value="P4">Persona 4</option>
-                <option value="P4G">Persona 4 Golden</option>
-                <option value="P4AU">Persona 4 Arena Ultimax</option>
-                <option value="P4D">Persona 4 Dancing All Night</option>
-                <option value="P3FES">Persona 3 FES</option>
-                <option value="P3P">Persona 3 Portable</option>
-                <option value="P3D">Persona 3 Dancing in Moonlight</option>
-                <option value="PQ">Persona Q</option>
-                <option value="PQ2">Persona Q2</option>
-                <option value="CFB">Catherine Full Body</option>
-                <option value="SMT3">Shin Megami Tensei Nocturne</option>
-            </select> <b> <a href="https://shrinefox.com/forum/viewtopic.php?f=4&t=682&p=2649#p2649"> <span style="color: #fb9e3b"> <i class="fa fa-upload"></i> Submit</span></a></b>
-            <br>
-            <br>
-(261 results)<br><br><center>To learn how to use these mods, see <a href="https://shrinefox.com/guides/2019/04/19/persona-5-rpcs3-modding-guide-1-downloads-and-setup">this guide.</a> Although it's focused on Persona 5, the latter half applies to other games as well.</center><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p5-faithful-bgm"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>P5 The Faithful Music Pack</h2><h5>P5 mod by <a href="https://amicitia.github.io/author/shibe">shibe</a></h5></td><td width='25%'><center><h5>9/2/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This mod aims to create an enhanced, yet faithful listening experience for Persona 5. It has a heavy focus on songs from Persona 5 Royal and Persona 5 the Animation, but contains songs from other media such as Persona 5 Scramble, Persona Q2, Persona 3 and Persona 4 the Animation. I have tried to maintain the same tone of the game's original audio, but this has not been thoroughly tested, so let me know if you think any of the songs don't fit the scenario where they play.<br><br><a href=""https://shrinefox.com/forum/viewtopic.php?f=15&t=596"">Song List</a></td><td><center><font size="4"><a href="https://mega.nz/file/Rr5CDIjS#GaexQYngqb7MNP_v8x3cOdzVDpBB3Zx208LpzHmK5OI"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=15&t=596"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/BGM"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">BGM</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p5-hd2x-environments"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.ibb.co/JcSFjKL/rpcs3-2020-07-23-15-39-53.png" height="auto" width="auto"></td><td width='50%'><h2>HD2x Persona 5</h2><h5>P5 mod by <a href="https://amicitia.github.io/author/Zelkin">Zelkin</a></h5></td><td width='25%'><center><h5>8/31/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>an AI upscaled texture mod of all the environment textures for Persona 5. All textures have been upscaled using the waifu2x caffe software, increasing the dimension by 2 times in width and length. Pixel count is increased 4 times. As a side effect, many baked light sources and shadows have been upscaled as well.<br><div class="update"><b>Update 4:</b> fixed transparency related issues on some textures, sharpened a bit more all textures</div></td><td><center><font size="4"><a href="https://drive.google.com/file/d/1daC-HzOVxD4Ah8LnOaqOQ1jGOTbAWsM4/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=15&t=504"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/Textures"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Textures</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p5-disableconfidantskills"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Disable Confidant Skills</h2><h5>P5 mod by <a href="https://amicitia.github.io/author/Zelkin">Zelkin</a></h5></td><td width='25%'><center><h5>8/27/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This mod disables the Persona evolution of Makoto, Haru, Yusuke, Ann and Ryuji, as well as his instakill ability. Futaba's mementos scan, position hack, and treasure reboot was also removed as well as several of Ohya's Scoops. <br>This mod is mostly untested, so please report any bugs you find.</td><td><center><font size="4"><a href="https://drive.google.com/file/d/1hSVYUsIy1fOfACfH191GelwODm1ZDwil/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=15&t=583"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/CTD"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">CTD</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p5-p3fesmovieintro"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>P3FES Intro (Movie ver)</h2><h5>P5 mod by <a href="https://amicitia.github.io/author/HulaHoopla">HulaHoopla</a></h5></td><td width='25%'><center><h5>8/26/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This replaces the opening cutscene with CozyFlich's edit of P3 FES's intro with clips from the movie.</td><td><center><font size="4"><a href="https://drive.google.com/file/d/1WSjZmg7F6deY8oK2FLSFagODQp16baTy/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=15&t=578"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/USM"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">USM</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p5-costumedialog"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><a href="https://www.youtube.com/watch?v=j49vivy3J5E"><img src="https://img.youtube.com/vi/j49vivy3J5E/default.jpg" height="auto" width="auto"></td><td width='50%'><h2>Costume Dialog Mod (WIP)</h2><h5>P5 mod by <a href="https://amicitia.github.io/author/chlorophylls">chlorophylls</a></h5></td><td width='25%'><center><h5>8/25/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This mod restores the unused costume dialogue found in P5R, which has been translated from the originally-Japanese text to English, thanks to the efforts of various fan translators and editors. <br>The unused script originally also had no portraits except for the neutral one; these have been edited with portraits to better fit the dialogue. Keep in mind that this is a fan translation of unused dialogue. <br>Note that the only dialogue that has been fully translated, edited, and coded into this mod so far is for Haru, Yusuke, and Makoto, due to the differing speeds at which different translators and editors work. This mod is a beta/work in progress, and will be updated for the other characters when possible. (The next party member to be updated with translated dialogue is Ann.) <br>To use it, with an outfit equipped (on Joker and/or any of the party members), talk to any one of your party members at the dungeon entrance (not safe rooms) and select ""How's the clothes?"" (this option only pops up if Joker or the party member has a non-default costume equipped).</td><td><center><font size="4"><a href="https://drive.google.com/file/d/1tTk_xIZQPKDS7OoMttf-7_6NkBl1l659/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=15&t=575"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/BF"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">BF</p></div></a><a href="https://amicitia.github.io/tag/BMD"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> BMD</p></div></a><a href="https://amicitia.github.io/tag/Dialog"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> Dialog</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p3fes-battletendency"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>Battle Tendency Music</h2><h5>P3FES mod by <a href="https://amicitia.github.io/author/slasherguy21">slasherguy21</a></h5></td><td width='25%'><center><h5>8/7/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Just replacing some of the ost from Jojo Part 2 Battle Tendency. <a href=""https://shrinefox.com/forum/viewtopic.php?f=11&t=544"">Here are songs are replaced with.</a></td><td><center><font size="4"><a href="https://drive.google.com/file/d/1uH3wxDcqSdBzUo-Pb4DBR9sOjETMZz_B/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=11&t=544"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/BGM"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">BGM</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p5-shadowpog"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://media.discordapp.net/attachments/410951708274065409/740503552061079603/Capture.png?width=1202&height=677" height="auto" width="auto"></td><td width='50%'><h2>Shadow Pog</h2><h5>P5 mod by <a href="https://amicitia.github.io/author/Scarltz">Scarltz</a></h5></td><td width='25%'><center><h5>8/5/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Poggers in chat</td><td><center><font size="4"><a href="https://drive.google.com/file/d/1pmVxmdF8E9sMB27tKK7zwC2kp2bXc7ep/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=15&t=532&p=2055#p2055"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/GMD"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">GMD</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/smt3-hardtype-port"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/tYMHh2O.jpg" height="auto" width="auto"></td><td width='50%'><h2>Shin Megami Tensei: Nocturne Chronicle (English Patched)</h2><h5>SMT3 mod by <a href="https://amicitia.github.io/author/zombero">zombero</a>, <a href="https://amicitia.github.io/author/FuxorLuck">FuxorLuck</a></h5></td><td width='25%'><center><h5>8/5/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Port of Hardtype Hack to Nocturne Chronicle Edition (B7479F4C). Note: it's Not a perfect port but you get All Hardtype features.<br><br>Known Issues:<br>-Demi-Fiend can only swap himself in battle.<br>- The maximum are 4 -Kaja stacks on the player and 2 -Kunda stacks on enemies instead of 2 -Kaja 2 -Kunda<br> The second message in Battles like: Missed, Defense improved, limit reached etc.. wont appear<br><br><a href=""https://shrinefox.com/forum/viewtopic.php?f=13&t=533"">See workarounds in thread</a></td><td><center><font size="4"><a href="https://drive.google.com/file/d/1dTMhz_HEtLAF6cQS-D3Xbnlwcwb85X3u/view"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=13&t=533"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/Translation"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Translation</p></div></a><a href="https://amicitia.github.io/tag/Difficulty"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> Difficulty</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4gweedyosuke"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><a href="https://www.youtube.com/watch?v=SEDpQy5EPR4"><img src="https://img.youtube.com/vi/SEDpQy5EPR4/default.jpg" height="auto" width="auto"></td><td width='50%'><h2>P4G Weed Yosuke</h2><h5>P4G mod by <a href="https://amicitia.github.io/author/Yeoldecoot">Yeoldecoot</a>, <a href="https://amicitia.github.io/author/swindlesmccoop">swindlesmccoop</a>, <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a></h5></td><td width='25%'><center><h5>8/2/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>A mod for Persona 4 Golden that replaces Yosuke Hanamura's voice clips and textures with ones from Yuri Lowenthal's performance in GTA V.<br><div class="update"><b>Update 8/2/2020</b>: Added P4G PC Port by swindlesmccoop</div></td><td><center><font size="4"><a href="https://mega.nz/#F!Hc8FQYLD!jKWdOCF26Q7Ty964an99Ng"><i class="fas fa-folder-open" aria-hidden="true"></i> Download (Vita)</a><br><a href="https://gamebanana.com/skins/179643"><i class="fas fa-pepper-hot" aria-hidden="true"></i> Download Download (PC)</a><br><a href="https://github.com/yeoldecoot/Persona-420-Golden"><i class="fas fa-file-code" aria-hidden="true"></i> Source Code</a></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=19&t=524"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/Voice Clips"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Voice Clips</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p3fes-epicbgm"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>An EPIC P3FES Music Mod</h2><h5>P3FES mod by <a href="https://amicitia.github.io/author/Century_">Century_</a></h5></td><td width='25%'><center><h5>7/27/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>I made changes to 32 songs in the Persona 3 FES Original Soundtrack. And while most of the changes made are for the journey, I still changed some of the songs from the Answer. <a href=""https://shrinefox.com/forum/viewtopic.php?f=11&t=512"">Change List</a></td><td><center><font size="4"><a href="https://drive.google.com/drive/folders/1sSkJZVdfaAWGTAIjXlueRE6MB0QdW8MB"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=11&t=512"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/BGM"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">BGM</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4g-remastered-cutscenes"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/Drh5IV4.jpg" height="auto" width="auto"></td><td width='50%'><h2>Remastered Cutscenes Pack</h2><h5>P4G mod by <a href="https://amicitia.github.io/author/rudiger__sf">rudiger__sf</a></h5></td><td width='25%'><center><h5>7/11/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This mod aims to provide an improved visual experience.<br><br>FEATURES <br>- Completely new .USM files that have been reassembled and re-encoded from upscales of the original, Japanese PS Vita files <br>- Frame rates restored to (native) 29.97 FPS - an improvement over the initial PC version's 15 FPS files (REV 2008) <br>- Original aspect ratio restored, fixing the cropped (and in the beta, stretched) images present in the original PC videos <br>- Improved noise reduction with manually re-edited transitions and fades <br>- Redrawn text sequences (e.g. the opening disclaimer, ""Characters, art and storylines depicted..."") <br>- English and Japanese language tracks retained from the original PC files</td><td><center><font size="4"><a href="https://drive.google.com/drive/folders/1E1kAUeI-kwWk6m5upIrypQ_AdR1IPkdl"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod (PC)</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=19&t=478"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/USM"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">USM</p></div></a><a href="https://amicitia.github.io/tag/QoL"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> QoL</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p3fes-nanako"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/gdilLFc.png" height="auto" width="auto"></td><td width='50%'><h2>Playable Nanako (WIP Alpha)</h2><h5>P3FES mod by <a href="https://amicitia.github.io/author/Pioziomgames">Pioziomgames</a></h5></td><td width='25%'><center><h5>7/10/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>Changes several of the player models to Nanako (including various new outfits) and changes the Battle/Pause UI.<br><div class="update"><b>Update 1.8</b>:<br>- Nanako now has portrait outside of battle<br>- fixed glitch with photo of nanako in menu <br>- fixed a little blue photo of nanako in menu</div></td><td><center><font size="4"><a href="https://drive.google.com/drive/folders/14psJ2fXqGONdJ22XEzKiY5-Pgrh5N3Wd"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=11&t=468&p=1753#p1753"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/Player Model"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Player Model</p></div></a><a href="https://amicitia.github.io/tag/HUD"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> HUD</p></div></a><a href="https://amicitia.github.io/tag/UI"><div class="tag" style="border-left: 4px solid #F3D979; "><p class="noselect"> UI</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/smt3-chronicles-translation"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/Xx2jbOP.png" height="auto" width="auto"></td><td width='50%'><h2>SMTIII: Chronicles Edition - Translation</h2><h5>SMT3 mod by <a href="https://amicitia.github.io/author/KrisanThyme">KrisanThyme</a></h5></td><td width='25%'><center><h5>6/27/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>The first and only translation of Shin Megami Tensei: Devil Summoner 2: Raidou Kuzunoha vs. King Abaddon.<br><div class="update"><b>Update 1.1.3</b>:<br>- Fixed a crash that would occur after clearing the Labyrinth of Amala and returning to Shinjuku Hospital. <br>- Fixed a bug where the tutorial didn't display a button prompt for opening your menu.</div></td><td><center><font size="4"><a href="https://mega.nz/file/xV5nTCIb#iHBLWZyf2OeeitnWonyZARICLi6TakZSWwk-ku-8mAE"><i class="fas fa-file" aria-hidden="true"></i> Download Mod (MEGA)</a><br><a href="https://drive.google.com/file/d/12q2ft_9PuUpYInVnUi6gVd8HKF4a-gPF/view"><i class="fas fa-file" aria-hidden="true"></i> Download Mod (GDrive)</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=13&p=1981#p1981"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/Translation"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">Translation</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/notvstatic"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><a href="https://www.youtube.com/watch?v=cGx-b48CFIs"><img src="https://img.youtube.com/vi/cGx-b48CFIs/default.jpg" height="auto" width="auto"></td><td width='50%'><h2>No TV Static</h2><h5>P4G mod by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a></h5></td><td width='25%'><center><h5>6/25/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>A modded BIN file that removes the static effect (noise/scanlines) in the TV World. Great for livestreaming or taking clear screenshots!<br><div class="update"><b>Update 6/25/2020</b>: Add PC version</div></td><td><center><font size="4"><a href="https://drive.google.com/open?id=1Owzw8t9aCnEw0Unvkdu6GUNA8wNo-gch"><i class="fas fa-folder-open" aria-hidden="true"></i> Download (Vita)</a><br><a href="https://drive.google.com/file/d/1UR4wwObJzD9-FoUGL3RU8TKt1tg2kqQ1/view?usp=sharing"><i class="fas fa-folder-open" aria-hidden="true"></i> Download (PC)</a><br></center></div></tr></tbody></table><a href="https://amicitia.github.io/tag/UI"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">UI</p></div></a><a href="https://amicitia.github.io/tag/HUD"><div class="tag" style="border-left: 4px solid #F3BF79; "><p class="noselect"> HUD</p></div></a></div></div></div><div class="toggle"><div class="toggle-title"><table><tbody><tr><td width='25%'><a href="https://amicitia.github.io/post/p4-almightyloop"><div class="getlink"><i class="fas fa-link" aria-hidden="true"></i></div></a><img src="https://i.imgur.com/5I5Vos8.png" height="auto" width="auto"></td><td width='50%'><h2>The Almighty Loop Fix</h2><h5>P4 mod by <a href="https://amicitia.github.io/author/Qlonever">Qlonever</a></h5></td><td width='25%'><center><h5>6/21/2020</h5></center></td></tr></tbody></table></div><div class="toggle-inner"><div class="cheat"><table><tbody><tr><td>This mod fixes the looping on Ameno-Sagiri's boss fight theme, which is broken in the original version of Persona 4.</td><td><center><font size="4"><a href="https://drive.google.com/u/0/uc?id=1fdbLhXEl91dcfRaDnM15ULJVIbfvgx_G&export=download"><i class="fas fa-folder-open" aria-hidden="true"></i> Download Mod</a><br></center></div><center><a href="https://shrinefox.com/forum/viewtopic.php?f=12&p=1414#p1414"><i class="fas fa-comment" aria-hidden="true"></i> Feedback</a></center></tr></tbody></table><a href="https://amicitia.github.io/tag/BGM"><div class="tag" style="border-left: 4px solid #F37E79; "><p class="noselect">BGM</p></div></a></div></div></div><table><tr><td><a href="https:\\amicitia.github.io\mods\8"><div class="unhide"><i class="fa fa-angle-double-left"></i></div></a></td><td><a href="https:\\amicitia.github.io\mods\10"><div class="unhide"> <i class="fa fa-angle-double-right"></i></div></a></td></tr></table><br><br>
-<br>
-<p style="font-size: 12px;line-height: 0.9;text-align:right;padding-right:10px;color:#fff;">
-    We are NOT affiliated, associated, authorized, endorsed by, or in any way
-    <br>officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-    <br>The official ATLUS website can be found at <a href="https://atlus.com">https://atlus.com</a>.
-    <br>ATLUS and SEGA are registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
-    <br>either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
-</p>
-        </table>
-<br>
-<br>
-<br>
-<br>
-<center>© ShrineFox 2020 - 2021. Last updated 4/6/2021. <a href="https://github.com/Amicitia/Amicitia.github.io"><i class="fa fa-github"></i> Source available on Github</a>.<br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> Follow</a> for updates! <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee" aria-hidden="true"></i> Support</a></center>
-<br>
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-faithful-bgm"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/shibe">shibe</a>
+                    <h4>
+                        <a href="https://mega.nz/file/Rr5CDIjS#GaexQYngqb7MNP_v8x3cOdzVDpBB3Zx208LpzHmK5OI">P5 The Faithful Music Pack</a>
+                    </h4>
+                    <br>9/2/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>This mod aims to create an enhanced, yet faithful listening experience for Persona 5. It has a heavy focus on songs from Persona 5 Royal and Persona 5 the Animation, but contains songs from other media such as Persona 5 Scramble, Persona Q2, Persona 3 and Persona 4 the Animation. I have tried to maintain the same tone of the game's original audio, but this has not been thoroughly tested, so let me know if you think any of the songs don't fit the scenario where they play.<br><br><a href=""https://shrinefox.com/forum/viewtopic.php?f=15&t=596"">Song List</a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
     </div>
-<!--Content End-->
-<div class="footer"></div>
-<!--Footer End-->
-		</div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-hd2x-environments"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.ibb.co/JcSFjKL/rpcs3-2020-07-23-15-39-53.png"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.ibb.co/JcSFjKL/rpcs3-2020-07-23-15-39-53.png">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/Zelkin">Zelkin</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1daC-HzOVxD4Ah8LnOaqOQ1jGOTbAWsM4/view">HD2x Persona 5</a>
+                    </h4>
+                    <br>8/31/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 4:</b> fixed transparency related issues on some textures, sharpened a bit more all textures</div><br><br>an AI upscaled texture mod of all the environment textures for Persona 5. All textures have been upscaled using the waifu2x caffe software, increasing the dimension by 2 times in width and length. Pixel count is increased 4 times. As a side effect, many baked light sources and shadows have been upscaled as well.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Texture" rel="tag">Texture</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-disableconfidantskills"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/Zelkin">Zelkin</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1hSVYUsIy1fOfACfH191GelwODm1ZDwil/view">Disable Confidant Skills</a>
+                    </h4>
+                    <br>8/27/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>This mod disables the Persona evolution of Makoto, Haru, Yusuke, Ann and Ryuji, as well as his instakill ability. Futaba's mementos scan, position hack, and treasure reboot was also removed as well as several of Ohya's Scoops. <br>This mod is mostly untested, so please report any bugs you find.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/CTD" rel="tag">CTD</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-p3fesmovieintro"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/HulaHoopla">HulaHoopla</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1WSjZmg7F6deY8oK2FLSFagODQp16baTy/view">P3FES Intro (Movie ver)</a>
+                    </h4>
+                    <br>8/26/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>This replaces the opening cutscene with CozyFlich's edit of P3 FES's intro with clips from the movie.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/FMV" rel="tag">FMV</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-costumedialog"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=j49vivy3J5E"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/j49vivy3J5E/default.jpg">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/chlorophylls">chlorophylls</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1tTk_xIZQPKDS7OoMttf-7_6NkBl1l659/view">Costume Dialog Mod (WIP)</a>
+                    </h4>
+                    <br>8/25/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>This mod restores the unused costume dialogue found in P5R, which has been translated from the originally-Japanese text to English, thanks to the efforts of various fan translators and editors. <br>The unused script originally also had no portraits except for the neutral one; these have been edited with portraits to better fit the dialogue. Keep in mind that this is a fan translation of unused dialogue. <br>Note that the only dialogue that has been fully translated, edited, and coded into this mod so far is for Haru, Yusuke, and Makoto, due to the differing speeds at which different translators and editors work. This mod is a beta/work in progress, and will be updated for the other characters when possible. (The next party member to be updated with translated dialogue is Ann.) <br>To use it, with an outfit equipped (on Joker and/or any of the party members), talk to any one of your party members at the dungeon entrance (not safe rooms) and select ""How's the clothes?"" (this option only pops up if Joker or the party member has a non-default costume equipped).
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Script" rel="tag">Script</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3fes-battletendency"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P3FES mod by <a href="https://amicitia.github.io/author/slasherguy21">slasherguy21</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1uH3wxDcqSdBzUo-Pb4DBR9sOjETMZz_B/view">Battle Tendency Music</a>
+                    </h4>
+                    <br>8/7/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>Just replacing some of the ost from Jojo Part 2 Battle Tendency. <a href=""https://shrinefox.com/forum/viewtopic.php?f=11&t=544"">Here are songs are replaced with.</a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-shadowpog"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/410951708274065409/740503552061079603/Capture.png?width=1202&height=677"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/410951708274065409/740503552061079603/Capture.png?width=1202&height=677">
+                <div class="card__body">
+                    P5 mod by <a href="https://amicitia.github.io/author/Scarltz">Scarltz</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1pmVxmdF8E9sMB27tKK7zwC2kp2bXc7ep/view">Shadow Pog</a>
+                    </h4>
+                    <br>8/5/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Poggers in chat
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Skin" rel="tag">Skin</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/smt3-hardtype-port"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/tYMHh2O.jpg"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/tYMHh2O.jpg">
+                <div class="card__body">
+                    SMT3 mod by <a href="https://amicitia.github.io/author/zombero">zombero</a>, <a href="https://amicitia.github.io/author/FuxorLuck">FuxorLuck</a>
+                    <h4>
+                        <a href="https://drive.google.com/file/d/1dTMhz_HEtLAF6cQS-D3Xbnlwcwb85X3u/view">Shin Megami Tensei: Nocturne Chronicle (English Patched)</a>
+                    </h4>
+                    <br>8/5/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>Port of Hardtype Hack to Nocturne Chronicle Edition (B7479F4C). Note: it's Not a perfect port but you get All Hardtype features.<br><br>Known Issues:<br>-Demi-Fiend can only swap himself in battle.<br>- The maximum are 4 -Kaja stacks on the player and 2 -Kunda stacks on enemies instead of 2 -Kaja 2 -Kunda<br> The second message in Battles like: Missed, Defense improved, limit reached etc.. wont appear<br><br><a href=""https://shrinefox.com/forum/viewtopic.php?f=13&t=533"">See workarounds in thread</a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Translation" rel="tag">Translation</a><a href="https://amicitia.github.io/tag/Difficulty" rel="tag"> Difficulty</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4gweedyosuke"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=SEDpQy5EPR4"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/SEDpQy5EPR4/default.jpg">
+                <div class="card__body">
+                    P4G mod by <a href="https://amicitia.github.io/author/Yeoldecoot">Yeoldecoot</a>, <a href="https://amicitia.github.io/author/swindlesmccoop">swindlesmccoop</a>, <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://mega.nz/#F!Hc8FQYLD!jKWdOCF26Q7Ty964an99Ng">P4G Weed Yosuke</a>
+                    </h4>
+                    <br>8/2/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 8/2/2020</b>: Added P4G PC Port by swindlesmccoop</div><br><br>A mod for Persona 4 Golden that replaces Yosuke Hanamura's voice clips and textures with ones from Yuri Lowenthal's performance in GTA V.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Voice" rel="tag">Voice</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3fes-epicbgm"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P3FES mod by <a href="https://amicitia.github.io/author/Century_">Century_</a>
+                    <h4>
+                        <a href="https://drive.google.com/drive/folders/1sSkJZVdfaAWGTAIjXlueRE6MB0QdW8MB">An EPIC P3FES Music Mod</a>
+                    </h4>
+                    <br>7/27/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>I made changes to 32 songs in the Persona 3 FES Original Soundtrack. And while most of the changes made are for the journey, I still changed some of the songs from the Answer. <a href=""https://shrinefox.com/forum/viewtopic.php?f=11&t=512"">Change List</a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-remastered-cutscenes"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/Drh5IV4.jpg"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/Drh5IV4.jpg">
+                <div class="card__body">
+                    P4G mod by <a href="https://amicitia.github.io/author/rudiger__sf">rudiger__sf</a>
+                    <h4>
+                        <a href="https://drive.google.com/drive/folders/1E1kAUeI-kwWk6m5upIrypQ_AdR1IPkdl">Remastered Cutscenes Pack</a>
+                    </h4>
+                    <br>7/11/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>This mod aims to provide an improved visual experience.<br><br>FEATURES <br>- Completely new .USM files that have been reassembled and re-encoded from upscales of the original, Japanese PS Vita files <br>- Frame rates restored to (native) 29.97 FPS - an improvement over the initial PC version's 15 FPS files (REV 2008) <br>- Original aspect ratio restored, fixing the cropped (and in the beta, stretched) images present in the original PC videos <br>- Improved noise reduction with manually re-edited transitions and fades <br>- Redrawn text sequences (e.g. the opening disclaimer, ""Characters, art and storylines depicted..."") <br>- English and Japanese language tracks retained from the original PC files
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/FMV" rel="tag">FMV</a><a href="https://amicitia.github.io/tag/QoL" rel="tag"> QoL</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3fes-nanako"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/gdilLFc.png"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/gdilLFc.png">
+                <div class="card__body">
+                    P3FES mod by <a href="https://amicitia.github.io/author/Pioziomgames">Pioziomgames</a>
+                    <h4>
+                        <a href="https://drive.google.com/drive/folders/14psJ2fXqGONdJ22XEzKiY5-Pgrh5N3Wd">Playable Nanako (WIP Alpha)</a>
+                    </h4>
+                    <br>7/10/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 1.8</b>:<br>- Nanako now has portrait outside of battle<br>- fixed glitch with photo of nanako in menu <br>- fixed a little blue photo of nanako in menu</div><br><br>Changes several of the player models to Nanako (including various new outfits) and changes the Battle/Pause UI.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Player" rel="tag">Player</a><a href="https://amicitia.github.io/tag/UI" rel="tag"> UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/smt3-chronicles-translation"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/Xx2jbOP.png"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/Xx2jbOP.png">
+                <div class="card__body">
+                    SMT3 mod by <a href="https://amicitia.github.io/author/KrisanThyme">KrisanThyme</a>
+                    <h4>
+                        <a href="https://mega.nz/file/xV5nTCIb#iHBLWZyf2OeeitnWonyZARICLi6TakZSWwk-ku-8mAE">SMTIII: Chronicles Edition - Translation</a>
+                    </h4>
+                    <br>6/27/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 1.1.3</b>:<br>- Fixed a crash that would occur after clearing the Labyrinth of Amala and returning to Shinjuku Hospital. <br>- Fixed a bug where the tutorial didn't display a button prompt for opening your menu.</div><br><br>The first and only translation of Shin Megami Tensei: Devil Summoner 2: Raidou Kuzunoha vs. King Abaddon.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Translation" rel="tag">Translation</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/notvstatic"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=cGx-b48CFIs"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/cGx-b48CFIs/default.jpg">
+                <div class="card__body">
+                    P4G mod by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <h4>
+                        <a href="https://drive.google.com/open?id=1Owzw8t9aCnEw0Unvkdu6GUNA8wNo-gch">No TV Static</a>
+                    </h4>
+                    <br>6/25/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"><b>Update 6/25/2020</b>: Add PC version</div><br><br>A modded BIN file that removes the static effect (noise/scanlines) in the TV World. Great for livestreaming or taking clear screenshots!
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/UI" rel="tag">UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
+    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4-almightyloop"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;right: auto; left: 0; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    P4 mod by <a href="https://amicitia.github.io/author/Qlonever">Qlonever</a>
+                    <h4>
+                        <a href="https://drive.google.com/u/0/uc?id=1fdbLhXEl91dcfRaDnM15ULJVIbfvgx_G&export=download">The Almighty Loop Fix</a>
+                    </h4>
+                    <br>6/21/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <div style="background-color:#0000007F;border-radius:6px;"> </div><br><br>This mod fixes the looping on Ameno-Sagiri's boss fight theme, which is broken in the original version of Persona 4.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+</td></tr><tr style="width:100%;">                                </tr>
+							</tbody>
+						</table>
+                        <center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods\8">8</a><span aria-current="page" class="page-numbers current">9</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\10">10</a></div></nav></center>
+                        <br>
+                        <br>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+<br>
+<!--Footer-->
+<footer style="backdrop-filter: blur(6px);background-color: rgba(17,17,17,0.7);padding-left: 50px;padding-top: 25px;color: #ffffff7f;">
+    <table>
+        <tbody>
+            <tr>
+                <td style="vertical-align: top;width: 25%;">
+                    <h4>About</h4>
+                    <center>
+                        <img src="https://pbs.twimg.com/profile_images/1347312450895572993/ZfHnzfcq_400x400.jpg" style="clip-path: circle(39px at center);width: 75px;">
+                    </center>
+                    <br>
+                    <a href="https://shrinefox.com/">ShrineFox</a> is passionate about customizing games, consoles and devices.
+                    <br>This site explores cutting-edge jailbreaking techniques for beginners and end-users.
+                </td>
+                <td style="vertical-align: top;width: 35%;padding-left: 20px;">
+                    <h4>Social Links</h4>
+                    <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube" aria-hidden="true"></i> <b>YouTube</b></a>
+                    <br><br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter" aria-hidden="true"></i> <b>ShrineFox</b></a>
+                    <br><br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter" aria-hidden="true"></i> <b>AmicitiaTeam</b></a>
+                    <br><br><a href="https://github.com/ShrineFox"><i class="fa fa-github" aria-hidden="true"></i> <b>GitHub</b></a>
+                    <br><br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord" aria-hidden="true"></i> <b>Discord</b></a>
+                </td>
+                <td style="width: 40%;vertical-align: top;padding-right: 20px;">
+                    <h4>Disclaimer</h4>
+                    <br><br>
+                    We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                    officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                    The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                    registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                    either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                    <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <center>
+        <!--AdSense-->
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <br>
+        <!--Credits-->
+        <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee" aria-hidden="true"></i> Support</a>
+        <br><br>
+    </center>
+</footer>
+			</div>
+<!--Wrapper End-->
+			</div>
 		</form>
-	</main>
-</div>
+		</main>
+	</body>
+</html>

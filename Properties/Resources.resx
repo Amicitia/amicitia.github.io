@@ -118,35 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cheats" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\db\cheats.tsv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="compiling" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\compiling.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Templates\Flowscript\compiling.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="decompiling" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\decompiling.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Templates\Flowscript\decompiling.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="flowscript" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\flowscript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="FlowscriptFooter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\FlowscriptFooter.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="FlowscriptHeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\FlowscriptHeader.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="guides" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\db\guides.tsv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    <value>..\Templates\Flowscript\flowscript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="hookingfunctions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\hookingfunctions.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Templates\Flowscript\hookingfunctions.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="importing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\importing.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="IndexContentHeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\IndexContentHeader.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Templates\Flowscript\importing.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="IndexFooter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Templates\IndexFooter.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
@@ -158,12 +143,12 @@
     <value>..\Templates\IndexSidebar.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="messagescript" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Templates\messagescript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Templates\Flowscript\messagescript.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="mods" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\db\mods.tsv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\Post.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\db\tools.tsv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="PostTableHeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Templates\PostTableHeader.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

@@ -61,27 +61,17 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID	Title	Game	Author	Date	Tags	Description	Update Text	ThreadID
-        ///p3fes-controllableparty	P3FES Controllable Party Members	P3FES	TGE	6/9/2018	PNACH	&quot;This cheat allows you to choose a skill or item on your party member&apos;s turn, similar to in Persona 4 and 5. Known side effects: the protagonist&apos;s fusion skills can be used by everyone on their turns.&quot;	&quot;//Controllable Party Members by TGE&lt;br&gt;&lt;br&gt;patch=1,EE,0029AFC8,word,00000000 // nop check for if battle unit is not mc -&gt; ai&lt;br&gt;patch=1,EE,0020207C,word,00000000  [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string cheats {
-            get {
-                return ResourceManager.GetString("cheats", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
-        ///	&lt;table&gt;
-        ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
+        ///   Looks up a localized string similar to 
         ///                &lt;div class=&quot;content-outer&quot;&gt;
         ///                    &lt;div class=&quot;content&quot;&gt;&lt;br&gt;
         ///						Basics
         ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/flowscript&quot;&gt;Flowscript&lt;/a&gt;
         ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/messagescript&quot;&gt;Messagescript&lt;/a&gt;
         ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/decompiling&quot;&gt;Decompiling&lt;/a&gt;
-        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amiciti [rest of string was truncated]&quot;;.
+        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.github.io/docs/compiling&quot;&gt;Compiling&lt;/a&gt;
+        ///						&lt;br&gt;
+        ///						&lt;br&gt;Features
+        ///						&lt;br&gt;↳ &lt;a href=&quot;https://amicitia.gith [rest of string was truncated]&quot;;.
         /// </summary>
         public static string compiling {
             get {
@@ -128,53 +118,6 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;br&gt;
-        ///&lt;br&gt;
-        ///&lt;br&gt;
-        ///&lt;p style=&quot;font-size: 12px;line-height: 0.9;text-align:right;padding-right:10px;color:#fff;&quot;&gt;
-        ///    We are NOT affiliated, associated, authorized, endorsed by, or in any way
-        ///    &lt;br&gt;officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-        ///    &lt;br&gt;The official ATLUS website can be found at &lt;a href=&quot;https://atlus.com&quot;&gt;https://atlus.com&lt;/a&gt;.
-        ///    &lt;br&gt;ATLUS and SEGA are registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
-        ///    &lt;br&gt;either registe [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string FlowscriptFooter {
-            get {
-                return ResourceManager.GetString("FlowscriptFooter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;!doctype html&gt;
-        ///&lt;html&gt;
-        ///&lt;head&gt;
-        ///    &lt;link rel=&apos;shortcut icon&apos; href=&apos;images/favicon.png&apos; type=&apos;image/x-icon&apos; /&gt;
-        ///    &lt;meta charset=&quot;utf-8&quot;&gt;
-        ///    &lt;title&gt;Amicitia - Flowscript&lt;/title&gt;
-        ///    &lt;link href=&quot;../css/waves.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;../css/index.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;../css/sidebar.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;../css/select.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;../css/amicitia.css&quot; rel=&quot;styleshe [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string FlowscriptHeader {
-            get {
-                return ResourceManager.GetString("FlowscriptHeader", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ID	Title	Game	Author	Date	Tags	Description	Embed	Guide URL	Guide Text
-        ///p5-rpcs3-setupguide	Persona 5 RPCS3: Setup &amp; Installing Mods	P5	&quot;Cryptoss, ShrineFox&quot;	4/19/2019	&quot;CRIPAKGUI, MOD COMPENDIUM, MOD LOADER, MOD.CPK, PATCH.YML, PERSONA 5, RPCS3&quot;	This straightforward tutorial lists everything you need in order to run Persona 5 mods on RPCS3.		https://shrinefox.com/guides/persona-5-rpcs3-modding-guide-1-downloads-and-setup	P5 RPCS3: Setup &amp; Installing Mods
-        ///p5-rpcs3-modcreationguide	Persona 5 RPCS3: Creating M [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string guides {
-            get {
-                return ResourceManager.GetString("guides", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;div class=&quot;container body-content&quot;&gt;
         ///	&lt;table&gt;
         ///        &lt;tr&gt;
@@ -213,34 +156,26 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to     &lt;td width=&quot;75%&quot;&gt;
-        ///        &lt;div class=&quot;text&quot;&gt;
-        ///            &lt;b&gt;Type&lt;/b&gt;:
-        ///            &lt;select class=&quot;select-css&quot; onchange=&quot;navigate()&quot; id=&quot;type&quot; name=&quot;type&quot;&gt;
-        ///                &lt;option value=&quot;All&quot;&gt;All&lt;/option&gt;
-        ///                &lt;option value=&quot;Mod&quot;&gt;Mods&lt;/option&gt;
-        ///                &lt;option value=&quot;Tool&quot;&gt;Tools&lt;/option&gt;
-        ///                &lt;option value=&quot;Cheat&quot;&gt;Cheats&lt;/option&gt;
-        ///                &lt;option value=&quot;Guide&quot;&gt;Guides&lt;/option&gt;
-        ///            &lt;/select&gt;
-        ///            &lt;b&gt;Game&lt;/b&gt;:
-        ///            &lt;select class=&quot;select-css&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string IndexContentHeader {
-            get {
-                return ResourceManager.GetString("IndexContentHeader", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;br&gt;
+        ///   Looks up a localized string similar to                                 &lt;/tr&gt;
+        ///							&lt;/tbody&gt;
+        ///						&lt;/table&gt;
+        ///                        &lt;!--Pagination--&gt;
+        ///                        &lt;br&gt;
+        ///                        &lt;br&gt;
+        ///					&lt;/div&gt;
+        ///				&lt;/td&gt;
+        ///			&lt;/tr&gt;
+        ///		&lt;/tbody&gt;
+        ///	&lt;/table&gt;
         ///&lt;br&gt;
-        ///&lt;p style=&quot;font-size: 12px;line-height: 0.9;text-align:right;padding-right:10px;color:#fff;&quot;&gt;
-        ///    We are NOT affiliated, associated, authorized, endorsed by, or in any way
-        ///    &lt;br&gt;officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-        ///    &lt;br&gt;The official ATLUS website can be found at &lt;a href=&quot;https://atlus.com&quot;&gt;https://atlus.com&lt;/a&gt;.
-        ///    &lt;br&gt;ATLUS and SEGA are registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
-        ///    &lt;br&gt;either registered tr [rest of string was truncated]&quot;;.
+        ///&lt;!--Footer--&gt;
+        ///&lt;footer style=&quot;backdrop-filter: blur(6px);background-color: rgba(17,17,17,0.5);padding-left: 50px;padding-top: 25px;&quot;&gt;
+        ///    &lt;table&gt;
+        ///        &lt;tbody&gt;
+        ///            &lt;tr&gt;
+        ///                &lt;td style=&quot;vertical-align: top;width: 25%;&quot;&gt;
+        ///                    &lt;h4&gt;About&lt;/h4&gt;
+        ///             [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexFooter {
             get {
@@ -254,13 +189,11 @@ namespace Amicitia.github.io.Properties {
         ///&lt;head&gt;
         ///    &lt;link rel=&apos;shortcut icon&apos; href=&apos;images/favicon.png&apos; type=&apos;image/x-icon&apos; /&gt;
         ///    &lt;meta charset=&quot;utf-8&quot;&gt;
-        ///    &lt;title&gt;Amicitia&lt;/title&gt;
-        ///    &lt;link href=&quot;css/waves.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;css/index.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;css/sidebar.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;css/select.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;css/amicitia.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;s [rest of string was truncated]&quot;;.
+        ///    &lt;title&gt;Amicitia Mods&lt;/title&gt;
+        ///    &lt;link href=&quot;https://shrinefox.com/css/index.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+        ///    &lt;link href=&quot;https://shrinefox.com/css/waves.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+        ///    &lt;link href=&quot;https://shrinefox.com/css/sidebar.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+        ///    &lt;link href=&quot;https://shrinefox.com/css/navbar.css&quot; rel=&quot;stylesheet&quot;  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexHeader {
             get {
@@ -269,17 +202,19 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;/div&gt;
-        ///&lt;div class=&quot;content&quot;&gt;
+        ///   Looks up a localized string similar to &lt;div class=&quot;content&quot;&gt;
         ///    &lt;table&gt;
         ///        &lt;tbody&gt;
         ///            &lt;tr&gt;
-        ///                &lt;td width=&quot;25%&quot; style=&quot;vertical-align:top&quot;&gt;
-        ///                    &lt;div id=&quot;bloglinks&quot;&gt;
-        ///                        &lt;div class&quot;text&quot;&gt;
-        ///                            &lt;h3&gt;&lt;i class=&quot;fas fa-newspaper&quot;&gt;&lt;/i&gt; Latest News&lt;/h3&gt;
-        ///                            &lt;script src=&quot;js/blogposts.js&quot;&gt;&lt;/script&gt;
-        ///                        &lt;br /&gt;&lt;div class=&quot;widget&quot;&gt;.
+        ///                &lt;td style=&quot;vertical-align:top;width: 25%;padding-left: 10px;&quot;&gt;
+        ///                    &lt;div class=&quot;bloglinks&quot;&gt;
+        ///                        &lt;a href=&quot;https://amicitia-team.tumblr.com/&quot;&gt;
+        ///                            &lt;h3&gt;
+        ///                                &lt;i class=&quot;fas fa-newspaper&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; News
+        ///                            &lt;/h3&gt;
+        ///                        &lt;/a&gt;
+        ///                        &lt;div class=&quot;widget&quot;&gt;
+        ///            [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexSidebar {
             get {
@@ -307,23 +242,49 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID	Title	Game	Author	Version	Date	Tags	Description	Update	Embed	URL	Text	Icon	Source	Thread	Alt URL	Alt Text	Alt Icon	Guide URL	Guide Text		
-        ///p4adachinavi	P4 Adachi Navigator	P4	ShrineFox	1	1/3/2016	&quot;Voice Clips, HUD, UI, Text&quot;	A mod that replaces Teddie&apos;s navigator dialog with Tohru Adachi&apos;s clips from Persona 4 Arena Ultimax.	 	https://www.youtube.com/watch?v=nukx1gSCF4c	https://drive.google.com/open?id=1nrml3H3qFUfZUarUEyvEno-2xqKfofF1	Mod	folder-open	 	 	 	 	 	 	 		
-        ///p3adachi	P3FES Playable Adachi	P3FES [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;td style=&quot;display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;&quot;&gt;
+        ///    &lt;div class=&quot;card&quot;&gt;
+        ///        &lt;div class=&quot;toggle&quot;&gt;
+        ///            &lt;div class=&quot;toggle-title&quot;&gt;
+        ///                &lt;a href=&quot;EMBEDURL&quot;&gt;&lt;img src=&quot;POSTEMBED&quot;&gt;&lt;/a&gt;
+        ///                &lt;div class=&quot;card__body&quot;&gt;
+        ///                    POSTTYPE by POSTAUTHORS
+        ///                    &lt;h4&gt;
+        ///                        &lt;a href=&quot;POSTURL&quot;&gt;POSTTITLE&lt;/a&gt;
+        ///                    &lt;/h4&gt;
+        ///                    &lt;br&gt;POSTDATE&lt;br&gt;
+        ///                &lt;/div&gt;
+        ///         [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string mods {
+        public static string Post {
             get {
-                return ResourceManager.GetString("mods", resourceCulture);
+                return ResourceManager.GetString("Post", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ID	Title	Game	Author	Version	Date	Tags	Description	Update	Embed	URL	Text	Icon	Source	Thread	Alt URL	Alt Text	Alt Icon	Guide URL	Guide Text
-        ///atomencd	AtomEncd	&quot;P3FES, P4, P4D, P4G, P5, P5D, P5R, CFB, PQ, PQ2&quot;	Du&apos;Slingr	1	8/31/2016	&quot;ADX, WAV&quot;	&quot;A GUI interface for creating custom ADX and HCA audio files using &lt;a href=&quot;&quot;https://www.mediafire.com/?9f7d1oydfccf95v&quot;&quot;&gt;CriAtomEncoder&lt;/a&gt;.&quot;		http://i.imgur.com/FpXO5a3.png	https://drive.google.com/open?id=0B1u1OW7aCWULcENyRTNlUUFad1U	Application	file	https://github.co [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;!--Result Count and Submission Link--&gt;
+        ///&lt;table style=&quot;padding: 0 20px 0 15px;&quot;&gt;
+        ///    &lt;tbody&gt;
+        ///        &lt;tr&gt;
+        ///            &lt;td width=&quot;50%&quot;&gt;Page 0/0 (0 results)&lt;/td&gt;
+        ///            &lt;td style=&quot;text-align: right;&quot;&gt;
+        ///                &lt;a href=&quot;https://shrinefox.com/forum/viewtopic.php?f=4&amp;amp;t=682&amp;amp;p=2649#p2649&quot;&gt;
+        ///                    &lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;How to Submit
+        ///                &lt;/a&gt;
+        ///            &lt;/td&gt;
+        ///        &lt;/tr&gt;
+        ///    &lt;/tbody&gt;
+        ///&lt;/table&gt;
+        ///&lt;br&gt;
+        ///&lt;!--Post Grid--&gt;
+        ///&lt;table&gt;
+        ///    &lt;tbody&gt;
+        ///        &lt;tr [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string tools {
+        public static string PostTableHeader {
             get {
-                return ResourceManager.GetString("tools", resourceCulture);
+                return ResourceManager.GetString("PostTableHeader", resourceCulture);
             }
         }
     }
