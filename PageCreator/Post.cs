@@ -129,7 +129,7 @@ namespace Amicitia.github.io.PageCreator
                 result = result.Replace("POSTDATE", post.Date);
             //Hide Post Details Unless Single Post
             if (single)
-                result = result.Replace("toggle-inner", "");
+                result = result.Replace("class=\"toggle-inner\" style=\"display: none;", "class=\"toggle-inner\" style=\"display: block;").Replace("min-width: 32%;", "min-width: 100%;");
             //Updates & Description
             if (post.Type != "cheat" && !String.IsNullOrEmpty(post.UpdateText))
                 result = result.Replace("POSTDESCRIPTION", $"<div style=\"background-color:#0000007F;border-radius:6px;\">{post.UpdateText}</div><br><br>{post.Description}");
