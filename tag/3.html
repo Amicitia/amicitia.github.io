@@ -4,246 +4,249 @@
     <link rel='shortcut icon' href='https://amicitia.github.io/images/favicon.png' type='image/x-icon' />
     <meta charset="utf-8">
     <title>Amicitia Mods</title>
-    <link href="https://shrinefox.com/css/index.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/waves.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/sidebar.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/navbar.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/grid.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/post.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/select.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/pagination.css" rel="stylesheet" type="text/css">
-    <link href="https://shrinefox.com/css/amicitia.css" rel="stylesheet" type="text/css">
     <script src="https://shrinefox.com/js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://shrinefox.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://shrinefox.com/css/amicitia.css" rel="stylesheet" type="text/css">
     <script src="https://shrinefox.com/js/bubbles.js"></script>
     <script src="https://shrinefox.com/js/clipboard.js"></script>
     <script src="https://shrinefox.com/js/showhide.js"></script>
     <script src="https://shrinefox.com/js/hidenav.js"></script>
     <script src="https://shrinefox.com/js/navigation.js"></script>
-    <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-    <main>
-        <div class="copied">Cheat copied to clipboard!</div>
-        <div id="wrapper">
-            <div id="wrapper">
-                <!--Navbar-->
-                <div class="navbar" style="top: 0px;">
-                    <div class="navbar-container">
-                        <table>
-                            <tbody>
+    <div class="flex">
+        <!--TopRow-->
+        <div class="row top">
+            <!--Navbar-->
+            <div class="navbar">
+                <div class="navbar-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://amicitia.github.io">
+                                    <div class="navbar-item">
+                                        <div class="amicitia-logo">
+                                            <div class="amicitia-svg"></div>
+                                        </div>Mods
+                                    </div>
+                                </a>
+                                <!--Top Navbar-->
+                                <a href="https://shrinefox.com/news">
+                                    <div class="navbar-item">
+                                        <span><i class="fa fa-newspaper"></i>&nbsp;News</span>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/guides">
+                                    <div class="navbar-item">
+                                        <span><i class="fa fa-graduation-cap"></i>&nbsp;Guides</span>
+                                    </div>
+                                </a>
+                                <a href="https://shrinefox.com/blog">
+                                    <div class="navbar-item">
+                                        <span><i class="fab fa-wordpress"></i>&nbsp;Blog</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td id="sidebartoggle">
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--Sidebar Toggle-->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
+            <aside class="sidebar">
+                <div class="component">
+                    <div class="contents">
+                        <ul class="items list">
+                            <!--Sidebar Items-->
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-users"></i> &nbsp;&nbsp;Forum</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/ucp.php">
+                                <div class="item">
+                                    <i class="fa fa-address-card"></i> &nbsp;Account Settings
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/ucp.php?i=pm&folder=inbox">
+                                <div class="item">
+                                    <i class="fa fa-envelope"></i> &nbsp;Inbox
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php">
+                                <div class="item">
+                                    <i class="fa fa-search"></i> &nbsp;Search
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=egosearch">
+                                <div class="item">
+                                    <i class="fa fa-sticky-note"></i> &nbsp;Your Posts
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=active_topics">
+                                <div class="item">
+                                    <i class="fa fa-star"></i> &nbsp;Active Threads
+                                </div>
+                            </a>
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-cube"></i> &nbsp;&nbsp;Resources</h4>
+                            </div>
+                            <a href="https://amicitia.miraheze.org/wiki/Main_Page">
+                                <div class="item">
+                                    <i class="fa fa-book"></i> &nbsp;Wiki
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/app.php/faqpage">
+                                <div class="item">
+                                    <i class="fa fa-question-circle"></i> &nbsp;FAQs
+                                </div>
+                            </a>
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-terminal"></i>&nbsp;&nbsp;Apps</h4>
+                            </div>
+                            <a href="https://shrinefox.com/PatchCreator">
+                                <div class="item">
+                                    <i class="fa fa-check-square"></i> &nbsp;P5 RPCS3 Patch.yml Creator
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/textsearch">
+                                <div class="item">
+                                    <i class="fab fa-searchengin"></i> &nbsp;Dialog Search
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/files">
+                                <div class="item">
+                                    <i class="fa fa-folder-open"></i> &nbsp;Dumps
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/docs/flowscript">
+                                <div class="item">
+                                    <i class="fa fa-file-code"></i> &nbsp;Flowscript Docs
+                                </div>
+                            </a>
+                        </ul>
+                    </div> <!--End Contents-->
+                </div>  <!--End Component-->
+            </aside>  <!--End Sidebar Menu-->
+            <!--Header-->
+            <div class="header">
+                <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
+                <div class="header-inner" style="margin-top: 150px;">
+                    <center>
+                        <!--Title-->
+                        <div class="headerselect">
+                            <!--Game Select required for bubbles.js themeing-->
+                            <select id="game" name="game" onchange="navigate()">
+                                <option value="all">Game</option>
+                                <option value="P5">Persona 5</option>
+                                <option value="P5R">Persona 5 Royal</option>
+                                <option value="P5S">Persona 5 Strikers</option>
+                                <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                <option value="P4">Persona 4</option>
+                                <option value="P4G">Persona 4 Golden</option>
+                                <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                <option value="P4D">Persona 4 Dancing All Night</option>
+                                <option value="P3FES">Persona 3 FES</option>
+                                <option value="P3P">Persona 3 Portable</option>
+                                <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                <option value="PQ">Persona Q</option>
+                                <option value="PQ2">Persona Q2</option>
+                                <option value="CFB">Catherine Full Body</option>
+                                <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                            </select>
+                        </div>
+                        <div class="subheaderselect">
+                            <!--Select serving as website navigation-->
+                            <select id="type" name="type" onchange="navigate()">
+                                <option value="all">Modding Resources</option>
+                                <option value="mods">Mods</option>
+                                <option value="tools">Tools</option>
+                                <option value="cheats">Cheats</option>
+                                <option value="guides">Guides</option>
+                            </select>
+                        </div>
+                    </center>
+                    <!--Waves-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="3"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="5"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="7"></use>
+                            </g>
+                        </svg>
+                    </div>
+                    <!--Waves End-->
+                </div>
+                <!--Header End-->
+            </div>
+            <!--Navbar End-->
+        </div>
+        <!--Top End--><!--Middle-->
+<div class="row middle">
+    <!--Page Body-->
+    <div class="content">
+        <table>
+            <!--Sidebar-->
+            <tr>
+                <td style="vertical-align:top;">
+                    <div class="bloglinks">
+                        <div class="blogtype">
+                            <table>
                                 <tr>
-                                    <td style="width: 95px;padding-left: 20px;">
-                                        <label for="openSidebarMenu" class="sidebarIconToggle">
-                                            <div class="spinner diagonal part-1"></div>
-                                            <div class="spinner horizontal"></div>
-                                            <div class="spinner diagonal part-2"></div>
-                                        </label>
-                                    </td>
                                     <td>
-                                        <div class="navbar-outer">
-                                            <div class="navbar-inner">
-                                                <a href="https://amicitia.github.io">
-                                                    <div class="navbar-item">
-                                                        <div class="amicitia-logo">
-                                                            <div class="amicitia-svg"></div>
-                                                        </div>Mods
-                                                    </div>
-                                                </a>
-                                                <!--Top Navbar-->
-                                                <a href="https://shrinefox.com/news">
-                                                    <div class="navbar-item">
-                                                        <span><i class="fa fa-newspaper" aria-hidden="true"></i>&nbsp;News</span>
-                                                    </div>
-                                                </a>
-                                                <a href="https://shrinefox.com/guides">
-                                                    <div class="navbar-item">
-                                                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Guides</span>
-                                                    </div>
-                                                </a>
-                                                <a href="https://shrinefox.com/blog">
-                                                    <div class="navbar-item">
-                                                        <span><i class="fab fa-wordpress" aria-hidden="true"></i>&nbsp;Blog</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <a href="https://shrinefox.com/news/">
+                                            <h4>
+                                                <i class="fas fa-newspaper"></i> News
+                                            </h4>
+                                        </a>
+                                    </td>
+                                    <td class="blogdate">
+                                        Dec 20
                                     </td>
                                 </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!--Sidebar Toggle-->
-                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
-                <aside class="sidebar">
-                    <div class="component">
-                        <div class="contents">
-                            <ul class="items list">
-                                <!--Sidebar Items-->
-                                <div class="sidebarheader">
-                                    <i class="fa fa-cube" aria-hidden="true"></i> &nbsp;&nbsp;Resources
-                                </div>
-                                <a href="https://amicitia.miraheze.org/wiki/Main_Page">
-                                    <div class="item">
-                                        <div class="thumbnail"><i class="fa fa-users" aria-hidden="true"></i></div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Wiki</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://shrinefox.com/forum">
-                                    <div class="item">
-                                        <div class="thumbnail"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Support Forum</div>
-
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://shrinefox.com/forum/app.php/faqpage">
-                                    <div class="item">
-                                        <div class="thumbnail"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Frequently Asked Q&amp;A</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <br>
-                                <div class="sidebarheader">
-                                    <i class="fa fa-terminal" aria-hidden="true"></i>&nbsp;&nbsp;Apps
-                                </div>
-                                <a href="https://shrinefox.com/textsearch">
-                                    <div class="item">
-                                        <div class="thumbnail">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Text Search</div>
-                                            <div class="subtitle">&nbsp;Locate Files With Dialog</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://amicitia.github.io/docs/flowscript">
-                                    <div class="item">
-                                        <div class="thumbnail"><i class="fa fa-file-code" aria-hidden="true"></i></div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Flowscript Docs</div>
-                                            <div class="subtitle">&nbsp;Learn .flow/.msg</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://amicitia.github.io/files">
-                                    <div class="item">
-                                        <div class="thumbnail"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Files</div>
-                                            <div class="subtitle">&nbsp;Download assets</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://shrinefox.com/PatchCreator">
-                                    <div class="item">
-                                        <div class="thumbnail"><i class="fa fa-check-square" aria-hidden="true"></i></div>
-                                        <div class="info">
-                                            <div class="title">&nbsp;Patch.yml Creator</div>
-                                            <div class="subtitle">&nbsp;P5 RPCS3 Patches</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </ul>
-                        </div> <!--End Contents-->
-                    </div>  <!--End Component-->
-                </aside>  <!--End Sidebar Menu-->
-                <div class="article">
-                    <!--Header-->
-                    <div class="header">
-                        <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
-                        <center>
-                            <div class="header-inner" style="margin-top: 150px;">
-                                <!--Title-->
-                                <h1>
-                                    <span class="underline-on-hover">game</span>
-                                    <select class="select-css" onchange="navigate()" id="game" name="game">
-                                        <option value="" disabled=""></option>
-                                        <option value="All">All</option>
-                                        <option value="P5">Persona 5</option>
-                                        <option value="P5R">Persona 5 Royal</option>
-                                        <option value="P5S">Persona 5 Strikers</option>
-                                        <option value="P5D">Persona 5 Dancing in Starlight</option>
-                                        <option value="P4">Persona 4</option>
-                                        <option value="P4G">Persona 4 Golden</option>
-                                        <option value="P4AU">Persona 4 Arena Ultimax</option>
-                                        <option value="P4D">Persona 4 Dancing All Night</option>
-                                        <option value="P3FES">Persona 3 FES</option>
-                                        <option value="P3P">Persona 3 Portable</option>
-                                        <option value="P3D">Persona 3 Dancing in Moonlight</option>
-                                        <option value="PQ">Persona Q</option>
-                                        <option value="PQ2">Persona Q2</option>
-                                        <option value="CFB">Catherine Full Body</option>
-                                        <option value="SMT3">Shin Megami Tensei Nocturne</option>
-                                    </select>
-                                    <span class="underline-on-hover">mods &amp; resources</span>
-                                    <select class="select-css" onchange="navigate()" id="type" name="type">
-                                        <option value="" disabled=""></option>
-                                        <option value="All">All</option>
-                                        <option value="Mod">Mods</option>
-                                        <option value="Tool">Tools</option>
-                                        <option value="Cheat">Cheats</option>
-                                        <option value="Guide">Guides</option>
-                                    </select>
-                                </h1>
-                        </center>
-                        <!--Waves-->
-                        <div>
-                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                                <defs>
-                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-                                </defs>
-                                <g class="parallax">
-                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(17,17,17,0.33)"></use>
-                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(17,17,17,0.6)"></use>
-                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(17,17,17,0.6)"></use>
-                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(17,17,17,1)"></use>
-                                </g>
-                            </svg>
+                            </table>
                         </div>
-                        <!--Waves End-->
-                    </div>
-                    <!--Header End-->
-                </div>
-                <!--Article End-->
-            </div>
-<div class="content">
-    <table>
-        <tbody>
-            <tr>
-                <td style="vertical-align:top;width: 25%;padding-left: 10px;">
-                    <div class="bloglinks">
-                        <a href="https://amicitia-team.tumblr.com/">
-                            <h3>
-                                <i class="fas fa-newspaper" aria-hidden="true"></i> News
-                            </h3>
-                        </a>
-                        <div class="widget">
-                            <h5><a href="https://amicitia-team.tumblr.com/post/638012597777629184">Modding Support for P5R USA!</a></h5><br> 12/20/20
-                            <br>
-                        </div>
-                        <a href="https://shrinefox.com/guides/">
-                            <h3>
-                                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Guides
-                            </h3>
-                        </a>
-                        <div class="widget">
-                            <h5><a href="https://shrinefox.com/guides/2020/09/30/modding-persona-5-royal-jp-on-ps4-fw-6-72/">Modding P5R USA on PS4 FW 5.05 - 6.72</a></h5><br> 1/11/2021
-                        </div>
+                        <div class="blogdivider"></div>
+                        <h4 style="margin-left: 10px;">
+                            <a href="https://amicitia-team.tumblr.com/post/638012597777629184">Modding Support for P5R USA!</a>
+                        </h4>
                         <br>
+                        <div class="blogtype">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://shrinefox.com/guides/">
+                                            <h4>
+                                                <i class="fas fa-graduation-cap"></i> Guides
+                                            </h4>
+                                        </a>
+                                    </td>
+                                    <td class="blogdate">
+                                        Jan 21
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="blogdivider"></div>
+                        <h4 style="margin-left: 10px;">
+                            <a href="https://shrinefox.com/guides/2020/09/30/modding-persona-5-royal-jp-on-ps4-fw-6-72/">Modding P5R USA on PS4 FW 5.05 - 6.72</a>
+                        </h4>
                     </div>
                 </td>
-                <td width="75%" style="width: 75%;padding-right: 20px;">
-                    <div class="text"><!--Result Count and Submission Link-->
+                <td id="main"><!--Result Count and Submission Link-->
 <table style="padding: 0 20px 0 15px;">
     <tbody>
         <tr>
@@ -259,20 +262,17 @@
 </table>
 <br>
 <!--Post Grid-->
-<table>
-    <tbody>
-        <tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+<div class="cards">    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p4-256xexpparty"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp4-256xexpparty')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p4-256xexpparty"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp4-256xexpparty')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp4-256xexpparty" class="cheatcode">// EXP Multi x256 (Other Characters)patch=1,EE,200A0010,word,00108A00patch=1,EE,200A0014,word,00701821patch=1,EE,200A0018,word,0804326Fpatch=1,EE,200A001C,word,AE230008patch=1,EE,2010C9B8,word,08028004patch=1,EE,2010C9BC,word,00000000</div>
                 <div class="card__body">
-                    P4 cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Gain EXP x256 (Party)</a>
-                    </h4>
+                    </h3>
+                    P4 cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -287,19 +287,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p4-256xexpmc"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp4-256xexpmc')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p4-256xexpmc"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp4-256xexpmc')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp4-256xexpmc" class="cheatcode">// EXP Multi x256 (Main Character)patch=1,EE,200A0000,word,00118A00patch=1,EE,200A0004,word,08087895patch=1,EE,200A0008,word,02222021patch=1,EE,2021E250,word,08028000patch=1,EE,2021E254,word,00000000patch=1,EE,2021E258,word,0C041678patch=1,EE,2021E25C,word,00000000patch=1,EE,2021E260,word,304200FFpatch=1,EE,2021E264,word,12020003</div>
                 <div class="card__body">
-                    P4 cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Gain EXP x256 (MC)</a>
-                    </h4>
+                    </h3>
+                    P4 cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -314,19 +312,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p4-disablesavecheck"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp4-disablesavecheck')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p4-disablesavecheck"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp4-disablesavecheck')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp4-disablesavecheck" class="cheatcode">// Disable save file integrity check patch=1,EE,002A402C,word,00000000 // don't branch to crc check<br>patch=1,EE,002A3FE8,word,10000004 // always branch to 0x002A3FFC regardless if v0 is zero</div>
                 <div class="card__body">
-                    P4 cheat by <a href="https://amicitia.github.io/author/Fendroidus">Fendroidus</a>, <a href="https://amicitia.github.io/author/TGE">TGE</a>
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Disable Save File Integrity Check</a>
-                    </h4>
+                    </h3>
+                    P4 cheat by <a href="https://amicitia.github.io/author/Fendroidus">Fendroidus</a>, <a href="https://amicitia.github.io/author/TGE">TGE</a>
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -341,19 +337,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div><br>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-broken60fps"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-broken60fps')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-broken60fps"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-broken60fps')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-broken60fps" class="cheatcode">//Broken 60FPS<br>patch=1,EE,2019D330,extended,10000006 ////fps<br>patch=1,EE,207CADD4,extended,3C888889 ////speed<br>patch=1,EE,204C6A30,extended,3C023F00 ////traverse</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Broken 60FPS</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -368,19 +362,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-analogcamera"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-analogcamera')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-analogcamera"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-analogcamera')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-analogcamera" class="cheatcode">// ""processInput"" jump to patch code<br>patch=1,EE,001E05B0,word,08140d17 // j $50345C  Jump to custom code that restores turn rate<br><br>// ""processInput"" fix sticks being offset by 128 instead of 127<br>patch=1,EE,001E073C,word,3c0242fe // lui v0, $42FE<br>patch=1,EE,001E07C4,word,3c0342fe // lui v1, $42FE<br>patch=1,EE,001E0844,word,3c0342fe // lui v1, $42FE<br>patch=1,EE,001E0898,word,3c0342fe // lui v1, $42FE<br><br>// ""processInput"" right stick left turn check, jump to patch code<br>patch=1,EE,001E09DC,word,3c03c120 // lui v1, $C120 Change deadzone to -10.0<br>patch=1,EE,001E09EC,word,08140d10 // j $503440  Jump to custom code that adjusts turn rate<br><br>// ""processInput"" right stick right turn check, jump to patch code<br>patch=1,EE,001E08B8,word,3c034120 // lui v1, $4120 Change deadzone to 10.0<br>patch=1,EE,001E08C8,word,08140cfc // j $5033F0  Jump to custom code that adjusts turn rate<br><br>// Patch custom turn code over some unused syscall wrappers<br><br>// Left turn hook<br>// $v1, $a0, $f0 and $f20 are free to use<br>// $f1 contains the right stick X axis as [-127, 128]<br>// -0x4AC4($gp) aka $B53C(gp) is turn rate<br>// Check if out of deadzone<br>patch=1,EE,00503440,word,45000005 // bc1f $5<br>// $f0 = $f1 / 64.0<br>patch=1,EE,00503444,word,3c03c1c0 // lui v1, $C1C0  $v1 = -24.0<br>patch=1,EE,00503448,word,44830000 // mtc1 v1, $f0   $f0 = v1<br>patch=1,EE,0050344C,word,46000803 // div.s $f0, $f1, $f0$f0 = $f1 / $f0<br>// $B53C(gp) *= f0<br>patch=1,EE,00503450,word,0807827d // j $1E09F4  return<br>patch=1,EE,00503454,word,e780b53c // swc1 $f0, $B53C(gp)$B53C(gp) = $f0<br>// outside of deadzone<br>patch=1,EE,00503458,word,080782ba // j $1E0AE8  return<br>patch=1,EE,0050345C,word,00000000 // nop<br><br>// Restore turn rate at the beginning of processInput<br>// $B53C(gp) = 4.0<br>patch=1,EE,0050345C,word,3c034080 // lui v1, $4080  $v1 = 4.0<br>patch=1,EE,00503460,word,af83b53c // sw v1, $B53C(gp)   $B53C(gp) = v1<br>patch=1,EE,00503464,word,0807816d // j $1E05B4  return<br>patch=1,EE,00503468,word,27bdfed0 //Overwritten instruction<br><br>// Right turn hook<br>// $v1, $a0, $f0 and $f20 are free to use<br>// $f1 contains the right stick X axis as [-127, 128]<br>// -0x4AC4($gp) aka $B53C(gp) is turn rate<br>// Check if out of deadzone<br>patch=1,EE,005033F0,word,45010005 // bc1t $5<br>// $f0 = $f1 / 64.0<br>patch=1,EE,005033F4,word,3c0341c0 // lui v1, $41C0  $v1 = 24.0<br>patch=1,EE,005033F8,word,44830000 // mtc1 v1, $f0   $f0 = v1<br>patch=1,EE,005033FC,word,46000803 // div.s $f0, $f1, $f0$f0 = $f1 / $f0<br>// $B53C(gp) *= f0<br>patch=1,EE,00503400,word,08078234 // j $1E08D0  return<br>patch=1,EE,00503404,word,e780b53c // swc1 $f0, $B53C(gp)$B53C(gp) = $f0<br>// outside of deadzone<br>patch=1,EE,00503408,word,08078274 // j $1E09D0  return<br>patch=1,EE,0050340C,word,00000000 // nop</div>
                 <div class="card__body">
-                    P3FES cheat by <a href="https://amicitia.github.io/author/AltimorTASDK">AltimorTASDK</a>
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Analog Camera Control</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by <a href="https://amicitia.github.io/author/AltimorTASDK">AltimorTASDK</a>
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -395,19 +387,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-partymod"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-partymod')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-partymod"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-partymod')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-partymod" class="cheatcode">// Party Member 2 Mod<br>patch=1,EE,1083A6E0,extended,000000??<br><br>// Party Member 3 Mod<br>patch=1,EE,1083A6E2,extended,000000??<br><br>// Party Member 4 Mod<br>patch=1,EE,1083A6E4,extended,000000??</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Party Member Mod</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -422,19 +412,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div><br>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fres-freecompendium"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fres-freecompendium')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fres-freecompendium"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fres-freecompendium')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fres-freecompendium" class="cheatcode">// Compendium Persona costs no Money<br>patch=1,EE,2040bb58,extended,0000202D</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Compendium Personas Cost No Money</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -449,19 +437,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-nolevellimit"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-nolevellimit')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-nolevellimit"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-nolevellimit')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-nolevellimit" class="cheatcode">//No Level Limit when creating a Persona <br>patch=1,EE,203d6bdc,extended,00000000</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">No Level Limit When Fusing Persona</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -476,19 +462,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-fullcompendium"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-fullcompendium')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-fullcompendium"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-fullcompendium')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-fullcompendium" class="cheatcode">//All Persona AT Compendium (All lvl 0 )<br>patch=1,EE,10836E52,extended,00000001<br>patch=1,EE,10836E86,extended,00000002<br>patch=1,EE,10836EBA,extended,00000003<br>patch=1,EE,10836EEE,extended,00000004<br>patch=1,EE,10836F22,extended,00000005<br>patch=1,EE,10836F56,extended,00000006<br>patch=1,EE,10836F8A,extended,00000007<br>patch=1,EE,10836FBE,extended,00000008<br>patch=1,EE,10836FF2,extended,00000009<br>patch=1,EE,10837026,extended,0000000A<br>patch=1,EE,1083705A,extended,0000000B<br>patch=1,EE,1083708E,extended,0000000C<br>patch=1,EE,108370C2,extended,0000000D<br>patch=1,EE,108370F6,extended,0000000E<br>patch=1,EE,1083712A,extended,0000000F<br>patch=1,EE,1083715E,extended,00000010<br>patch=1,EE,10837192,extended,00000011<br>patch=1,EE,108371C6,extended,00000012<br>patch=1,EE,108371FA,extended,00000013<br>patch=1,EE,1083722E,extended,00000014<br>patch=1,EE,10837262,extended,00000015<br>patch=1,EE,10837296,extended,00000016<br>patch=1,EE,108372CA,extended,00000017<br>patch=1,EE,108372FE,extended,00000018<br>patch=1,EE,10837332,extended,00000019<br>patch=1,EE,10837366,extended,0000001A<br>patch=1,EE,1083739A,extended,0000001B<br>patch=1,EE,108373CE,extended,0000001C<br>patch=1,EE,10837402,extended,0000001D<br>patch=1,EE,10837436,extended,0000001E<br>patch=1,EE,1083746A,extended,0000001F<br>patch=1,EE,1083749E,extended,00000020<br>patch=1,EE,108374D2,extended,00000021<br>patch=1,EE,10837506,extended,00000022<br>patch=1,EE,1083753A,extended,00000023<br>patch=1,EE,1083756E,extended,00000024<br>patch=1,EE,108375A2,extended,00000025<br>patch=1,EE,108375D6,extended,00000026<br>patch=1,EE,1083760A,extended,00000027<br>patch=1,EE,1083763E,extended,00000028<br>patch=1,EE,10837672,extended,00000029<br>patch=1,EE,108376A6,extended,0000002A<br>patch=1,EE,108376DA,extended,0000002B<br>patch=1,EE,1083770E,extended,0000002C<br>patch=1,EE,10837742,extended,0000002D<br>patch=1,EE,10837776,extended,0000002E<br>patch=1,EE,108377AA,extended,0000002F<br>patch=1,EE,108377DE,extended,00000030<br>patch=1,EE,10837812,extended,00000031<br>patch=1,EE,10837846,extended,00000032<br>patch=1,EE,1083787A,extended,00000033<br>patch=1,EE,108378AE,extended,00000034<br>patch=1,EE,108378E2,extended,00000035<br>patch=1,EE,10837916,extended,00000036<br>patch=1,EE,1083794A,extended,00000037<br>patch=1,EE,1083797E,extended,00000038<br>patch=1,EE,108379B2,extended,00000039<br>patch=1,EE,108379E6,extended,0000003A<br>patch=1,EE,10837A1A,extended,0000003B<br>patch=1,EE,10837A4E,extended,0000003C<br>patch=1,EE,10837A82,extended,0000003D<br>patch=1,EE,10837AB6,extended,0000003E<br>patch=1,EE,10837AEA,extended,0000003F<br>patch=1,EE,10837B1E,extended,00000040<br>patch=1,EE,10837B52,extended,00000041<br>patch=1,EE,10837B86,extended,00000042<br>patch=1,EE,10837BBA,extended,00000043<br>patch=1,EE,10837BEE,extended,00000044<br>patch=1,EE,10837C22,extended,00000045<br>patch=1,EE,10837C56,extended,00000046<br>patch=1,EE,10837C8A,extended,00000047<br>patch=1,EE,10837CBE,extended,00000048<br>patch=1,EE,10837CF2,extended,00000049<br>patch=1,EE,10837D26,extended,0000004A<br>patch=1,EE,10837D5A,extended,0000004B<br>patch=1,EE,10837D8E,extended,0000004C<br>patch=1,EE,10837DC2,extended,0000004D<br>patch=1,EE,10837DF6,extended,0000004E<br>patch=1,EE,10837E2A,extended,0000004F<br>patch=1,EE,10837E5E,extended,00000050<br>patch=1,EE,10837E92,extended,00000051<br>patch=1,EE,10837EC6,extended,00000052<br>patch=1,EE,10837EFA,extended,00000053<br>patch=1,EE,10837F2E,extended,00000054<br>patch=1,EE,10837F62,extended,00000055<br>patch=1,EE,10837F96,extended,00000056<br>patch=1,EE,10837FCA,extended,00000057<br>patch=1,EE,10837FFE,extended,00000058<br>patch=1,EE,10838032,extended,00000059<br>patch=1,EE,10838066,extended,0000005A<br>patch=1,EE,1083809A,extended,0000005B<br>patch=1,EE,108380CE,extended,0000005C<br>patch=1,EE,10838102,extended,0000005D<br>patch=1,EE,10838136,extended,0000005E<br>patch=1,EE,1083816A,extended,0000005F<br>patch=1,EE,1083819E,extended,00000060<br>patch=1,EE,108381D2,extended,00000061<br>patch=1,EE,10838206,extended,00000062<br>patch=1,EE,1083823A,extended,00000063<br>patch=1,EE,1083826E,extended,00000064<br>patch=1,EE,108382A2,extended,00000065<br>patch=1,EE,108382D6,extended,00000066<br>patch=1,EE,1083830A,extended,00000067<br>patch=1,EE,1083833E,extended,00000068<br>patch=1,EE,10838372,extended,00000069<br>patch=1,EE,108383A6,extended,0000006A<br>patch=1,EE,108383DA,extended,0000006B<br>patch=1,EE,1083840E,extended,0000006C<br>patch=1,EE,10838442,extended,0000006D<br>patch=1,EE,10838476,extended,0000006E<br>patch=1,EE,108384AA,extended,0000006F<br>patch=1,EE,108384DE,extended,00000070<br>patch=1,EE,10838512,extended,00000071<br>patch=1,EE,10838546,extended,00000072<br>patch=1,EE,1083857A,extended,00000073<br>patch=1,EE,108385AE,extended,00000074<br>patch=1,EE,108385E2,extended,00000075<br>patch=1,EE,10838616,extended,00000076<br>patch=1,EE,1083864A,extended,00000077<br>patch=1,EE,1083867E,extended,00000078<br>patch=1,EE,108386B2,extended,00000079<br>patch=1,EE,108386E6,extended,0000007A<br>patch=1,EE,1083871A,extended,0000007B<br>patch=1,EE,1083874E,extended,0000007C<br>patch=1,EE,10838782,extended,0000007D<br>patch=1,EE,108387B6,extended,0000007E<br>patch=1,EE,108387EA,extended,0000007F<br>patch=1,EE,1083881E,extended,00000080<br>patch=1,EE,10838852,extended,00000081<br>patch=1,EE,10838886,extended,00000082<br>patch=1,EE,108388BA,extended,00000083<br>patch=1,EE,108388EE,extended,00000084<br>patch=1,EE,10838922,extended,00000085<br>patch=1,EE,10838956,extended,00000086<br>patch=1,EE,1083898A,extended,00000087<br>patch=1,EE,108389BE,extended,00000088<br>patch=1,EE,108389F2,extended,00000089<br>patch=1,EE,10838A26,extended,0000008A<br>patch=1,EE,10838A5A,extended,0000008B<br>patch=1,EE,10838A8E,extended,0000008C<br>patch=1,EE,10838AC2,extended,0000008D<br>patch=1,EE,10838AF6,extended,0000008E<br>patch=1,EE,10838B2A,extended,0000008F<br>patch=1,EE,10838B5E,extended,00000090<br>patch=1,EE,10838BC6,extended,00000092<br>patch=1,EE,10838BFA,extended,00000093<br>patch=1,EE,10838C2E,extended,00000094<br>patch=1,EE,10838C62,extended,00000095<br>patch=1,EE,10838C96,extended,00000096<br>patch=1,EE,10838CCA,extended,00000097<br>patch=1,EE,10838CFE,extended,00000098<br>patch=1,EE,10838D32,extended,00000099<br>patch=1,EE,10838D66,extended,0000009A<br>patch=1,EE,10838D9A,extended,0000009B<br>patch=1,EE,10838DCE,extended,0000009C<br>patch=1,EE,10838E02,extended,0000009D<br>patch=1,EE,10838E36,extended,0000009E<br>patch=1,EE,10838E6A,extended,0000009F<br>patch=1,EE,10838E9E,extended,000000A0<br>patch=1,EE,10838ED2,extended,000000A1<br>patch=1,EE,10838F06,extended,000000A2<br>patch=1,EE,10838F3A,extended,000000A3<br>patch=1,EE,10838F6E,extended,000000A4<br>patch=1,EE,10838FA2,extended,000000A5<br>patch=1,EE,10838FD6,extended,000000A6<br>patch=1,EE,1083900A,extended,000000A7<br>patch=1,EE,1083903E,extended,000000A8<br>patch=1,EE,10839072,extended,000000A9<br>patch=1,EE,10836E50,extended,00000001<br>patch=1,EE,10836E84,extended,00000001<br>patch=1,EE,10836EB8,extended,00000001<br>patch=1,EE,10836EEC,extended,00000001<br>patch=1,EE,10836F20,extended,00000001<br>patch=1,EE,10836F54,extended,00000001<br>patch=1,EE,10836F88,extended,00000001<br>patch=1,EE,10836FBC,extended,00000001<br>patch=1,EE,10836FF0,extended,00000001<br>patch=1,EE,10837024,extended,00000001<br>patch=1,EE,10837058,extended,00000001<br>patch=1,EE,1083708C,extended,00000001<br>patch=1,EE,108370C0,extended,00000001<br>patch=1,EE,108370F4,extended,00000001<br>patch=1,EE,10837128,extended,00000001<br>patch=1,EE,1083715C,extended,00000001<br>patch=1,EE,10837190,extended,00000001<br>patch=1,EE,108371C4,extended,00000001<br>patch=1,EE,108371F8,extended,00000001<br>patch=1,EE,1083722C,extended,00000001<br>patch=1,EE,10837260,extended,00000001<br>patch=1,EE,10837294,extended,00000001<br>patch=1,EE,108372C8,extended,00000001<br>patch=1,EE,108372FC,extended,00000001<br>patch=1,EE,10837330,extended,00000001<br>patch=1,EE,10837364,extended,00000001<br>patch=1,EE,10837398,extended,00000001<br>patch=1,EE,108373CC,extended,00000001<br>patch=1,EE,10837400,extended,00000001<br>patch=1,EE,10837434,extended,00000001<br>patch=1,EE,10837468,extended,00000001<br>patch=1,EE,1083749C,extended,00000001<br>patch=1,EE,108374D0,extended,00000001<br>patch=1,EE,10837504,extended,00000001<br>patch=1,EE,10837538,extended,00000001<br>patch=1,EE,1083756C,extended,00000001<br>patch=1,EE,108375A0,extended,00000001<br>patch=1,EE,108375D4,extended,00000001<br>patch=1,EE,10837608,extended,00000001<br>patch=1,EE,1083763C,extended,00000001<br>patch=1,EE,10837670,extended,00000001<br>patch=1,EE,108376A4,extended,00000001<br>patch=1,EE,108376D8,extended,00000001<br>patch=1,EE,1083770C,extended,00000001<br>patch=1,EE,10837740,extended,00000001<br>patch=1,EE,10837774,extended,00000001<br>patch=1,EE,108377A8,extended,00000001<br>patch=1,EE,108377DC,extended,00000001<br>patch=1,EE,10837810,extended,00000001<br>patch=1,EE,10837844,extended,00000001<br>patch=1,EE,10837878,extended,00000001<br>patch=1,EE,108378AC,extended,00000001<br>patch=1,EE,108378E0,extended,00000001<br>patch=1,EE,10837914,extended,00000001<br>patch=1,EE,10837948,extended,00000001<br>patch=1,EE,1083797C,extended,00000001<br>patch=1,EE,108379B0,extended,00000001<br>patch=1,EE,108379E4,extended,00000001<br>patch=1,EE,10837A18,extended,00000001<br>patch=1,EE,10837A4C,extended,00000001<br>patch=1,EE,10837A80,extended,00000001<br>patch=1,EE,10837AB4,extended,00000001<br>patch=1,EE,10837AE8,extended,00000001<br>patch=1,EE,10837B1C,extended,00000001<br>patch=1,EE,10837B50,extended,00000001<br>patch=1,EE,10837B84,extended,00000001<br>patch=1,EE,10837BB8,extended,00000001<br>patch=1,EE,10837BEC,extended,00000001<br>patch=1,EE,10837C20,extended,00000001<br>patch=1,EE,10837C54,extended,00000001<br>patch=1,EE,10837C88,extended,00000001<br>patch=1,EE,10837CBC,extended,00000001<br>patch=1,EE,10837CF0,extended,00000001<br>patch=1,EE,10837D24,extended,00000001<br>patch=1,EE,10837D58,extended,00000001<br>patch=1,EE,10837D8C,extended,00000001<br>patch=1,EE,10837DC0,extended,00000001<br>patch=1,EE,10837DF4,extended,00000001<br>patch=1,EE,10837E28,extended,00000001<br>patch=1,EE,10837E5C,extended,00000001<br>patch=1,EE,10837E90,extended,00000001<br>patch=1,EE,10837EC4,extended,00000001<br>patch=1,EE,10837EF8,extended,00000001<br>patch=1,EE,10837F2C,extended,00000001<br>patch=1,EE,10837F60,extended,00000001<br>patch=1,EE,10837F94,extended,00000001<br>patch=1,EE,10837FC8,extended,00000001<br>patch=1,EE,10837FFC,extended,00000001<br>patch=1,EE,10838030,extended,00000001<br>patch=1,EE,10838064,extended,00000001<br>patch=1,EE,10838098,extended,00000001<br>patch=1,EE,108380CC,extended,00000001<br>patch=1,EE,10838100,extended,00000001<br>patch=1,EE,10838134,extended,00000001<br>patch=1,EE,10838168,extended,00000001<br>patch=1,EE,1083819C,extended,00000001<br>patch=1,EE,108381D0,extended,00000001<br>patch=1,EE,10838204,extended,00000001<br>patch=1,EE,10838238,extended,00000001<br>patch=1,EE,1083826C,extended,00000001<br>patch=1,EE,108382A0,extended,00000001<br>patch=1,EE,108382D4,extended,00000001<br>patch=1,EE,10838308,extended,00000001<br>patch=1,EE,1083833C,extended,00000001<br>patch=1,EE,10838370,extended,00000001<br>patch=1,EE,108383A4,extended,00000001<br>patch=1,EE,108383D8,extended,00000001<br>patch=1,EE,1083840C,extended,00000001<br>patch=1,EE,10838440,extended,00000001<br>patch=1,EE,10838474,extended,00000001<br>patch=1,EE,108384A8,extended,00000001<br>patch=1,EE,108384DC,extended,00000001<br>patch=1,EE,10838510,extended,00000001<br>patch=1,EE,10838544,extended,00000001<br>patch=1,EE,10838578,extended,00000001<br>patch=1,EE,108385AC,extended,00000001<br>patch=1,EE,108385E0,extended,00000001<br>patch=1,EE,10838614,extended,00000001<br>patch=1,EE,10838648,extended,00000001<br>patch=1,EE,1083867C,extended,00000001<br>patch=1,EE,108386B0,extended,00000001<br>patch=1,EE,108386E4,extended,00000001<br>patch=1,EE,10838718,extended,00000001<br>patch=1,EE,1083874C,extended,00000001<br>patch=1,EE,10838780,extended,00000001<br>patch=1,EE,108387B4,extended,00000001<br>patch=1,EE,108387E8,extended,00000001<br>patch=1,EE,1083881C,extended,00000001<br>patch=1,EE,10838850,extended,00000001<br>patch=1,EE,10838884,extended,00000001<br>patch=1,EE,108388B8,extended,00000001<br>patch=1,EE,108388EC,extended,00000001<br>patch=1,EE,10838920,extended,00000001<br>patch=1,EE,10838954,extended,00000001<br>patch=1,EE,10838988,extended,00000001<br>patch=1,EE,108389BC,extended,00000001<br>patch=1,EE,108389F0,extended,00000001<br>patch=1,EE,10838A24,extended,00000001<br>patch=1,EE,10838A58,extended,00000001<br>patch=1,EE,10838A8C,extended,00000001<br>patch=1,EE,10838AC0,extended,00000001<br>patch=1,EE,10838AF4,extended,00000001<br>patch=1,EE,10838B28,extended,00000001<br>patch=1,EE,10838B5C,extended,00000001<br>patch=1,EE,10838B90,extended,00000001<br>patch=1,EE,10838BC4,extended,00000001<br>patch=1,EE,10838BF8,extended,00000001<br>patch=1,EE,10838C2C,extended,00000001<br>patch=1,EE,10838C60,extended,00000001<br>patch=1,EE,10838C94,extended,00000001<br>patch=1,EE,10838CC8,extended,00000001<br>patch=1,EE,10838CFC,extended,00000001<br>patch=1,EE,10838D30,extended,00000001<br>patch=1,EE,10838D64,extended,00000001<br>patch=1,EE,10838D98,extended,00000001<br>patch=1,EE,10838DCC,extended,00000001<br>patch=1,EE,10838E00,extended,00000001<br>patch=1,EE,10838E34,extended,00000001<br>patch=1,EE,10838E68,extended,00000001<br>patch=1,EE,10838E9C,extended,00000001<br>patch=1,EE,10838ED0,extended,00000001<br>patch=1,EE,10838F04,extended,00000001<br>patch=1,EE,10838F38,extended,00000001<br>patch=1,EE,10838F6C,extended,00000001<br>patch=1,EE,10838FA0,extended,00000001<br>patch=1,EE,10838FD4,extended,00000001<br>patch=1,EE,10839008,extended,00000001<br>patch=1,EE,1083903C,extended,00000001<br>patch=1,EE,10839070,extended,00000001</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">All Personas in Compendium (Level 0)</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -503,19 +487,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div><br>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-slinkmax"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-slinkmax')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-slinkmax"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-slinkmax')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-slinkmax" class="cheatcode">//All S.Link Max<br>patch=1,EE,10836276,extended,00000A0A<br>patch=1,EE,40836278,extended,00070001<br>patch=1,EE,0A0A0A0A,extended,00000000</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">All Social Links Maxed</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -530,19 +512,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-allitems"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-allitems')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-allitems"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-allitems')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-allitems" class="cheatcode">//Enable Code <br>patch=1,EE,F0511884,extended,00511887<br>patch=1,EE,2017F6B8,word,24420001<br><br>//All Items (Includes Dummy items Some Can be used)<br>patch=1,EE,410C2D90,extended,00700001<br>patch=1,EE,00630063,extended,00000000</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">All Items</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -557,19 +537,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-maxarmor"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-maxarmor')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-maxarmor"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-maxarmor')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-maxarmor" class="cheatcode">//Enable Code <br>patch=1,EE,F0511884,extended,00511887<br>patch=1,EE,2017F6B8,word,24420001<br><br>//All Weapon Max (When Equip By MC)<br>patch=1,EE,410C15F8,extended,00630005<br>patch=1,EE,03E74502,extended,00000000<br><br>//All Armor Max (When Equip By MC)<br>patch=1,EE,410C15FC,extended,00630005<br>patch=1,EE,03E703E7,extended,00000000<br><br>//All Footwear Max (When Equip By MC)<br>patch=1,EE,410C1600,extended,00630005<br>patch=1,EE,000003E7,extended,00000000</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Max Armor Stats</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -584,19 +562,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td></tr><tr style="width:100%;"><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div><br>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-maxpersona"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-maxpersona')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-maxpersona"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-maxpersona')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-maxpersona" class="cheatcode">//Enable Code <br>patch=1,EE,F0511884,extended,00511887<br>patch=1,EE,2017F6B8,word,24420001<br><br>//Hero Persona Max Stats<br>patch=1,EE,40836BC8,extended,000C000D<br>patch=1,EE,63636363,extended,00000000<br>patch=1,EE,40836BCC,extended,000C000D<br>patch=1,EE,00000063,extended,00000000</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Max Persona Stats</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -611,19 +587,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-maxsocial"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-maxsocial')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-maxsocial"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-maxsocial')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-maxsocial" class="cheatcode">//Enable Code <br>patch=1,EE,F0511884,extended,00511887<br>patch=1,EE,2017F6B8,word,24420001<br><br>//Academics Stats Max<br>patch=1,EE,10836260,extended,000003E7<br><br>//Charm Stats Max<br>patch=1,EE,10836262,extended,000003E7<br><br>//Courage Stats Max<br>patch=1,EE,10836264,extended,000003E7</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Max Social Stats</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -638,19 +612,17 @@
             </div>
         </div>
         <br>
-    </div>
-</td><td style="display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;">
-    <div class="card">
+    </div>    <div class="card">
         <div class="text">
             <div class="toggle-title">
-                <a href="https://amicitia.github.io/post/p3fes-maxmoney"><div class="getlink" style="z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
-                <a href="javascript:copyDivToClipboard('cheatp3fes-maxmoney')"><div class="getlink" style="right: auto; left: 0; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
+                <a href="https://amicitia.github.io/post/p3fes-maxmoney"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="javascript:copyDivToClipboard('cheatp3fes-maxmoney')"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-clipboard" aria-hidden="true"></i></div></a>
                 <div id="cheatp3fes-maxmoney" class="cheatcode">//Enable Code <br>patch=1,EE,F0511884,extended,00511887<br>patch=1,EE,2017F6B8,word,24420001<br><br>//Max Money<br>patch=1,EE,2083A6DC,extended,0098967F</div>
                 <div class="card__body">
-                    P3FES cheat by 
-                    <h4>
+                    <h3>
                         <a href="POSTURL">Max Money</a>
-                    </h4>
+                    </h3>
+                    P3FES cheat by 
                     <br>6/9/2018 (updated)<br>
                 </div>
             </div>
@@ -665,71 +637,76 @@
             </div>
         </div>
         <br>
-    </div>
-</td></tr><tr style="width:100%;">                                </tr>
-							</tbody>
-						</table>
-                        <center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\tag\\2">2</a><span aria-current="page" class="page-numbers current">3</span><a class="page-numbers" href="https:\\amicitia.github.io\tag\\4">4</a></div></nav></center>
-                        <br>
-                        <br>
-					</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-<br>
-<!--Footer-->
-<footer style="backdrop-filter: blur(6px);background-color: rgba(17,17,17,0.7);padding-left: 50px;padding-top: 25px;color: #ffffff7f;">
-    <table>
-        <tbody>
-            <tr>
-                <td style="vertical-align: top;width: 25%;">
-                    <h4>About</h4>
-                    <center>
-                        <img src="https://pbs.twimg.com/profile_images/1347312450895572993/ZfHnzfcq_400x400.jpg" style="clip-path: circle(39px at center);width: 75px;">
-                    </center>
+    </div><br>			</div>
+            </td></tr></tbody></table>
+            <!--Footer-->
+            <div class="row bottom">
+                <footer>
+                    <table style="padding-right: 2%;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;width: 25%;">
+                                    <center>
+                                        <img src="https://pbs.twimg.com/profile_images/1347312450895572993/ZfHnzfcq_400x400.jpg" style="clip-path: circle(39px at center);width: 75px;">
+                                    </center>
+                                    <br>
+                                    <a href="https://shrinefox.com/">ShrineFox</a> is passionate about customizing games, consoles and devices. This site is a resource for learning the latest available techniques.
+                                    <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart"></i> <b>Site Credits</b></a>
+                                </td>
+                                <td style="vertical-align: top;width: 20%;padding-left: 20px;">
+                                    <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
+                                    <br><br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>ShrineFox</b></a>
+                                    <br><br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>AmicitiaTeam</b></a>
+                                    <br><br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
+                                    <br><br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
+                                </td>
+                                <td width="5%"></td>
+                                <td>
+                                    We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                                    officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                                    The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                                    registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                                    either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                                    <!--Theme Select required for bubbles.js themeing-->
+                                    <br>Theme: <select id="theme" name="theme" onchange="ThemeToggle()">
+                                        <option value="" selected>Default</option>
+                                        <option value="p5">Red/Black</option>
+                                        <option value="p4">Yellow/Orange</option>
+                                        <option value="p3fes">Green/Blue</option>
+                                        <option value="pq">Pink/Purple</option>
+                                        <option value="custom">Custom</option>
+                                    </select>
+                                    <!--Bubble Popping SFX Toggle-->
+                                    <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
+                                    <!--Performance Mode Toggle-->
+                                    <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
+                                    <!--Score Display-->
+                                    <br><span id="score">0</span> bubbles popped
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <br>
-                    <a href="https://shrinefox.com/">ShrineFox</a> is passionate about customizing games, consoles and devices.
-                    <br>This site explores cutting-edge jailbreaking techniques for beginners and end-users.
-                </td>
-                <td style="vertical-align: top;width: 35%;padding-left: 20px;">
-                    <h4>Social Links</h4>
-                    <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube" aria-hidden="true"></i> <b>YouTube</b></a>
-                    <br><br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter" aria-hidden="true"></i> <b>ShrineFox</b></a>
-                    <br><br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter" aria-hidden="true"></i> <b>AmicitiaTeam</b></a>
-                    <br><br><a href="https://github.com/ShrineFox"><i class="fa fa-github" aria-hidden="true"></i> <b>GitHub</b></a>
-                    <br><br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord" aria-hidden="true"></i> <b>Discord</b></a>
-                </td>
-                <td style="width: 40%;vertical-align: top;padding-right: 20px;">
-                    <h4>Disclaimer</h4>
-                    <br><br>
-                    We are NOT affiliated, associated, authorized, endorsed by, or in any way
-                    officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-                    The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
-                    registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
-                    either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
-                    <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <center>
-        <!--AdSense-->
-        <br>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        <br>
-        <!--Credits-->
-        <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee" aria-hidden="true"></i> Support</a>
-        <br><br>
-    </center>
-</footer>
-			</div>
-<!--Wrapper End-->
-			</div>
+                    <center>
+                        <!--AdSense-->
+                        <br>
+                        <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                        <br>
+                        <!--Credits-->
+                        <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a>
+                        <br><br>
+                        <!--Placeholder-->
+                        <select id="game" name="game" style="display:none;">
+                            <option value="" selected>Default</option>
+                        </select>
+                    </center>
+                    <!--End Footer-->
+                </footer>
+            </div>
+            <!--End Bottom-->
+		     </div>
 		</form>
-		</main>
 	</body>
 </html>

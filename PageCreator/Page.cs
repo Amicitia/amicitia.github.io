@@ -52,13 +52,12 @@ namespace Amicitia.github.io.PageCreator
             {
                 if (gameList.Any(g => g.Item1.Equals(split)))
                 {
-                    html = html.Replace("class=\"underline-on-hover\">game", $"class=\"underline-on-hover\">{gameList.Single(x => x.Item1.Equals(split)).Item2}");
                     html = html.Replace($"value=\"{split.ToUpper()}\">", $"value=\"{split.ToUpper()}\" selected>");
                     pageName += gameList.Single(x => x.Item1.Equals(split)).Item2;
                 }
                 else if (split == "mods" || split == "tools" || split == "guides" || split == "cheats")
                 {
-                    html = html.Replace("class=\"underline-on-hover\">mods &amp; resources", $"class=\"underline-on-hover\">{split}");
+                    html = html.Replace($"value=\"{split}\">", $"value=\"{split}\" selected>");
                     pageName += $" {split} ";
                 }
             }
@@ -193,7 +192,7 @@ namespace Amicitia.github.io.PageCreator
 
                 // Add new row if divislbe by 3
                 if (pagePosts % 3 == 0)
-                    content += "</tr><tr style=\"width:100%;\">";
+                    content += "<br>";
 
                 // End of page, create new page
                 if (pagePosts == maxPosts || posts.Count - 1 == i)

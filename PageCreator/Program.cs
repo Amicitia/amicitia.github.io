@@ -26,7 +26,7 @@ namespace Amicitia.github.io
             new Tuple<string, string>("pq2", "Persona Q2"),
             new Tuple<string, string>("cfb", "Catherine Full Body"),
             new Tuple<string, string>("smt3", "SMT3: Nocturne")
-        }; 
+        };
         public static List<string> tagColors = new List<string>() { "F37E79", "F3BF79", "F3D979", "7AF379", "7998F3", "DE79F3" }; //Hex color values for tags
         public static List<Post> posts; //Posts
         public static int maxPosts = 15; //Number of posts per page
