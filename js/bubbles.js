@@ -120,7 +120,7 @@ window.onload = function() {
 		var sound = getCookie("sound");
 		if (sound == "1") {
 			const rndInt = Math.floor(Math.random() * 4) + 1;
-			var audio = new Audio('https://amicitia.github.io/wav/pop' + rndInt + '.wav');
+			var audio = new Audio('https://shrinefox.github.io/wav/pop' + rndInt + '.wav');
 			audio.play();
 		}
 		if (score == 420)
@@ -261,7 +261,7 @@ function SetPerformance() {
 		
 		/* Toggle Background */
 		c.setAttribute("style", "display: none;");
-		document.getElementsByTagName("body")[0].setAttribute("style", "background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;");
+		document.getElementsByClassName("flex")[0].setAttribute("style", "background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;");
 		
 		/* Toggle Wave Animation */
 		for(var i = 0; i < 4; i++) {
@@ -279,7 +279,7 @@ function SetPerformance() {
 		
 		/* Toggle Background */
 		c.setAttribute("style", "display: initial;");
-		document.getElementsByTagName("body")[0].setAttribute("style", "background: transparent;");
+		document.getElementsByClassName("flex")[0].setAttribute("style", "background: transparent;");
 		
 		/* Toggle Wave Animation */
 		for(var i = 0; i < 4; i++) {
