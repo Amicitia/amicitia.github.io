@@ -7,7 +7,7 @@ var text = '255,255,255';
 var post = '230,230,230';
 var textinner = '20,20,20';
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", () => {
 	/* Set Performance from Cookie */
 	SetPerformance();
 	
@@ -196,7 +196,7 @@ window.onload = function() {
 	}
 	});
 
-};
+});
 
 function SoundToggle() {
 	if ( document.getElementById("sound").classList.contains('fa-volume-mute') )
@@ -302,10 +302,10 @@ function SetTheme() {
 	var theme = getCookie("theme");
 	console.log("Theme: " + theme );
 	selectElement("theme", theme);
+	HideColorPicker();
 
 	/* Override amicitia.github.io game themeing with selection */
 	if (theme == "") { theme = game; }
-	
 	if (theme == "p5" || theme == "p5r" || theme == "p5d" || theme == "p5s" || theme == "smt3") 
 	{
 		link = '190,47,47';
@@ -344,6 +344,7 @@ function SetTheme() {
 	}
 	else if (theme == "custom") 
 	{
+		ShowColorPicker();
 		/* Load color values from cookie */
 		if (getCookie("color_link") == "") 
 		{
@@ -371,6 +372,13 @@ function SetTheme() {
 		post = '230,230,230';
 		textinner = '20,20,20';
 	}
+	
+	link = '190,47,47';
+	hover = '255,0,0';	
+	bg = '10,10,10';
+	text = '255,255,255';
+	post = '20,20,20';
+	textinner = '230,230,230';
 
 	/* Override CSS color values */
 	document.documentElement.style.setProperty('--link', link );
@@ -379,6 +387,48 @@ function SetTheme() {
 	document.documentElement.style.setProperty('--text',  text );
 	document.documentElement.style.setProperty('--textinner', textinner );
 	document.documentElement.style.setProperty('--post',  post );
+}
+
+function updateLink(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_link", rgb, 999);
+	SetTheme();
+}
+
+function updateHover(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_hover", rgb, 999);
+	SetTheme();
+}
+
+function updateBg(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_bg", rgb, 999);
+	SetTheme();
+}
+
+function updatePost(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_post", rgb, 999);
+	SetTheme();
+}
+
+function updateText(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_text", rgb, 999);
+	SetTheme();
+}
+
+function updateTextinner(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_textinner", rgb, 999);
+	SetTheme();
 }
 
 function getCookie(cname) {
@@ -408,4 +458,14 @@ function setCookie(cname, val, exdays)
 function selectElement(id, valueToSelect) {    
     let element = document.getElementById(id);
     element.value = valueToSelect;
+}
+
+function ShowColorPicker() {
+	var c = document.getElementById('colorpicker');
+	c.setAttribute("style", "display: block;");
+}
+
+function HideColorPicker() {
+	var c = document.getElementById('colorpicker');
+	c.setAttribute("style", "display: none;");
 }

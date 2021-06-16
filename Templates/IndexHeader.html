@@ -15,8 +15,10 @@
     <script src="https://amicitia.github.io/js/showhide.js"></script>
     <script src="https://amicitia.github.io/js/hidenav.js"></script>
     <script src="https://amicitia.github.io/js/navigation.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/FeedEk.min.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/jscolor.js"></script>
 </head>
-<body>
+<body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">>
     <!--Copied Message-->
     <div class="copied">Copied to Clipboard</div>
     <div class="flex">
@@ -132,37 +134,47 @@
                 <div class="header-inner" style="margin-top: 150px;">
                     <center>
                         <!--Title-->
-                        <div class="headerselect">
-                            <!--Game Select required for bubbles.js themeing-->
-                            <select id="game" name="game" onchange="navigate()">
-                                <option value="all">Game</option>
-                                <option value="P5">Persona 5</option>
-                                <option value="P5R">Persona 5 Royal</option>
-                                <option value="P5S">Persona 5 Strikers</option>
-                                <option value="P5D">Persona 5 Dancing in Starlight</option>
-                                <option value="P4">Persona 4</option>
-                                <option value="P4G">Persona 4 Golden</option>
-                                <option value="P4AU">Persona 4 Arena Ultimax</option>
-                                <option value="P4D">Persona 4 Dancing All Night</option>
-                                <option value="P3FES">Persona 3 FES</option>
-                                <option value="P3P">Persona 3 Portable</option>
-                                <option value="P3D">Persona 3 Dancing in Moonlight</option>
-                                <option value="PQ">Persona Q</option>
-                                <option value="PQ2">Persona Q2</option>
-                                <option value="CFB">Catherine Full Body</option>
-                                <option value="SMT3">Shin Megami Tensei Nocturne</option>
-                            </select>
-                        </div>
-                        <div class="subheaderselect">
-                            <!--Select serving as website navigation-->
-                            <select id="type" name="type" onchange="navigate()">
-                                <option value="all">Modding Resources</option>
-                                <option value="mods">Mods</option>
-                                <option value="tools">Tools</option>
-                                <option value="cheats">Cheats</option>
-                                <option value="guides">Guides</option>
-                            </select>
-                        </div>
+                        <table width="100%;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="headerselect">
+                                        <!--Game Select required for bubbles.js themeing-->
+                                        <select id="game" name="game" onchange="navigate()">
+                                            <option value="all">Game</option>
+                                            <option value="P5">Persona 5</option>
+                                            <option value="P5R">Persona 5 Royal</option>
+                                            <option value="P5S">Persona 5 Strikers</option>
+                                            <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                            <option value="P4">Persona 4</option>
+                                            <option value="P4G">Persona 4 Golden</option>
+                                            <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                            <option value="P4D">Persona 4 Dancing All Night</option>
+                                            <option value="P3FES">Persona 3 FES</option>
+                                            <option value="P3P">Persona 3 Portable</option>
+                                            <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                            <option value="PQ">Persona Q</option>
+                                            <option value="PQ2">Persona Q2</option>
+                                            <option value="CFB">Catherine Full Body</option>
+                                            <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="subheaderselect">
+                                        <!--Select serving as website navigation-->
+                                        <select id="type" name="type" onchange="navigate()">
+                                            <option value="all">Modding Resources</option>
+                                            <option value="mods">Mods</option>
+                                            <option value="tools">Tools</option>
+                                            <option value="cheats">Cheats</option>
+                                            <option value="guides">Guides</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </center>
                     <!--Waves-->
                     <div>

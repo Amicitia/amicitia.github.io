@@ -1,0 +1,6 @@
+.feedEkList{width:450px; list-style:none outside none; padding:4px 6px; }
+.feedEkList li{border-bottom:1px solid rgba(var(--text), var(--opaque)); padding:5px; }
+.feedEkList li:last-child{border-bottom:none; }
+.itemTitle a{font-weight:bold; }
+.itemTitle a:hover{ text-decoration:underline; }
+.itemDate{font-size:14pt;}

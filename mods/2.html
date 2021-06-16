@@ -15,8 +15,10 @@
     <script src="https://amicitia.github.io/js/showhide.js"></script>
     <script src="https://amicitia.github.io/js/hidenav.js"></script>
     <script src="https://amicitia.github.io/js/navigation.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/FeedEk.min.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/jscolor.js"></script>
 </head>
-<body>
+<body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">>
     <!--Copied Message-->
     <div class="copied">Copied to Clipboard</div>
     <div class="flex">
@@ -132,37 +134,47 @@
                 <div class="header-inner" style="margin-top: 150px;">
                     <center>
                         <!--Title-->
-                        <div class="headerselect">
-                            <!--Game Select required for bubbles.js themeing-->
-                            <select id="game" name="game" onchange="navigate()">
-                                <option value="all">Game</option>
-                                <option value="P5">Persona 5</option>
-                                <option value="P5R">Persona 5 Royal</option>
-                                <option value="P5S">Persona 5 Strikers</option>
-                                <option value="P5D">Persona 5 Dancing in Starlight</option>
-                                <option value="P4">Persona 4</option>
-                                <option value="P4G">Persona 4 Golden</option>
-                                <option value="P4AU">Persona 4 Arena Ultimax</option>
-                                <option value="P4D">Persona 4 Dancing All Night</option>
-                                <option value="P3FES">Persona 3 FES</option>
-                                <option value="P3P">Persona 3 Portable</option>
-                                <option value="P3D">Persona 3 Dancing in Moonlight</option>
-                                <option value="PQ">Persona Q</option>
-                                <option value="PQ2">Persona Q2</option>
-                                <option value="CFB">Catherine Full Body</option>
-                                <option value="SMT3">Shin Megami Tensei Nocturne</option>
-                            </select>
-                        </div>
-                        <div class="subheaderselect">
-                            <!--Select serving as website navigation-->
-                            <select id="type" name="type" onchange="navigate()">
-                                <option value="all">Modding Resources</option>
-                                <option value="mods" selected>Mods</option>
-                                <option value="tools">Tools</option>
-                                <option value="cheats">Cheats</option>
-                                <option value="guides">Guides</option>
-                            </select>
-                        </div>
+                        <table width="100%;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="headerselect">
+                                        <!--Game Select required for bubbles.js themeing-->
+                                        <select id="game" name="game" onchange="navigate()">
+                                            <option value="all">Game</option>
+                                            <option value="P5">Persona 5</option>
+                                            <option value="P5R">Persona 5 Royal</option>
+                                            <option value="P5S">Persona 5 Strikers</option>
+                                            <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                            <option value="P4">Persona 4</option>
+                                            <option value="P4G">Persona 4 Golden</option>
+                                            <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                            <option value="P4D">Persona 4 Dancing All Night</option>
+                                            <option value="P3FES">Persona 3 FES</option>
+                                            <option value="P3P">Persona 3 Portable</option>
+                                            <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                            <option value="PQ">Persona Q</option>
+                                            <option value="PQ2">Persona Q2</option>
+                                            <option value="CFB">Catherine Full Body</option>
+                                            <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="subheaderselect">
+                                        <!--Select serving as website navigation-->
+                                        <select id="type" name="type" onchange="navigate()">
+                                            <option value="all">Modding Resources</option>
+                                            <option value="mods" selected>Mods</option>
+                                            <option value="tools">Tools</option>
+                                            <option value="cheats">Cheats</option>
+                                            <option value="guides">Guides</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </center>
                     <!--Waves-->
                     <div>
@@ -194,69 +206,64 @@
             <tr>
                 <td style="vertical-align:top;">
                     <div class="bloglinks">
-                        <div class="blogtype">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a href="https://shrinefox.com/news/">
-                                            <h4>
-                                                <i class="fas fa-newspaper"></i> News
-                                            </h4>
-                                        </a>
-                                    </td>
-                                    <td class="blogdate">
-                                        Dec 20
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <a href="https://shrinefox.com/news/">
+                            <h4>
+                                <i class="fas fa-newspaper"></i> News
+                            </h4>
+                        </a>
                         <div class="blogdivider"></div>
-                        <h4 style="margin-left: 10px;">
-                            <a href="https://amicitia-team.tumblr.com/post/638012597777629184">Modding Support for P5R USA!</a>
-                        </h4>
+                        <div id="news-feed"></div>
                         <br>
-                        <div class="blogtype">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a href="https://shrinefox.com/guides/">
-                                            <h4>
-                                                <i class="fas fa-graduation-cap"></i> Guides
-                                            </h4>
-                                        </a>
-                                    </td>
-                                    <td class="blogdate">
-                                        Jan 21
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <a href="https://shrinefox.com/guides/">
+                            <h4>
+                                <i class="fas fa-graduation-cap"></i> Guides
+                            </h4>
+                        </a>
                         <div class="blogdivider"></div>
-                        <h4 style="margin-left: 10px;">
-                            <a href="https://shrinefox.com/guides/2020/09/30/modding-persona-5-royal-jp-on-ps4-fw-6-72/">Modding P5R USA on PS4 FW 5.05 - 6.72</a>
-                        </h4>
-                        <div class="blogtype">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a href="https://shrinefox.com/blog/">
-                                            <h4>
-                                                <i class="fab fa-wordpress"></i> Blog
-                                            </h4>
-                                        </a>
-                                    </td>
-                                    <td class="blogdate">
-                                        Feb 20
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="blogdivider"></div>
-                        <h4 style="margin-left: 10px;">
-                            <a href="https://shrinefox.com/blog/2020/02/23/concept-mipha-outfits-by-amberclover/">Concept Mipha Outfits by AmberClover</a>
-                        </h4>
+                        <div id="guides-feed"></div>
                         <br>
+                        <a href="https://shrinefox.com/blog/">
+                            <h4>
+                                <i class="fab fa-wordpress"></i> Blog
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="blog-feed"></div>
                     </div>
+                    <script>
+						$('#news-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/news/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#guides-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/guides/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#blog-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/blog/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+                    </script>
                 </td>
                 <td id="main">
 <!--Result Count and Submission Link-->
@@ -654,71 +661,94 @@
                 <center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods">1</a><span aria-current="page" class="page-numbers current">2</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\3">3</a></div></nav></center><br>
                 </td></tr></tbody></table>
                 <!--Footer-->
-                <div class="row bottom">
-                    <footer>
-                        <table style="padding-right: 2%;">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align: top;width: 25%;">
-                                        <center>
-                                            <img src="https://pbs.twimg.com/profile_images/1347312450895572993/ZfHnzfcq_400x400.jpg" style="clip-path: circle(39px at center);width: 75px;">
-                                        </center>
-                                        <br>
-                                        <a href="https://shrinefox.com/">ShrineFox</a> is passionate about customizing games, consoles and devices. This site is a resource for learning the latest available techniques.
-                                        <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart"></i> <b>Site Credits</b></a>
-                                    </td>
-                                    <td style="vertical-align: top;width: 20%;padding-left: 20px;">
-                                        <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
-                                        <br><br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>ShrineFox</b></a>
-                                        <br><br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>AmicitiaTeam</b></a>
-                                        <br><br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
-                                        <br><br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
-                                    </td>
-                                    <td width="5%"></td>
-                                    <td>
-                                        We are NOT affiliated, associated, authorized, endorsed by, or in any way
-                                        officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
-                                        The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
-                                        registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
-                                        either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
-                                        <!--Theme Select required for bubbles.js themeing-->
-                                        <br>Theme: <select id="theme" name="theme" onchange="ThemeToggle()">
-                                            <option value="" selected>Default</option>
-                                            <option value="p5">Red/Black</option>
-                                            <option value="p4">Yellow/Orange</option>
-                                            <option value="p3fes">Green/Blue</option>
-                                            <option value="pq">Pink/Purple</option>
-                                            <option value="custom">Custom</option>
-                                        </select>
-                                        <!--Bubble Popping SFX Toggle-->
-                                        <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
-                                        <!--Performance Mode Toggle-->
-                                        <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
-                                        <!--Score Display-->
-                                        <br><span id="score">0</span> bubbles popped
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <br>
-                        <center>
-                            <!--AdSense-->
-                            <br>
-                            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                            <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
-                            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                            <br>
-                            <!--Credits-->
-                            <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a>
-                            <br><br>
-                            <!--Placeholder-->
-                            <select id="game" name="game" style="display:none;">
-                                <option value="" selected>Default</option>
-                            </select>
-                        </center>
-                        <!--End Footer-->
-                    </footer>
-                </div>
+                                 <div class="row bottom">
+                                     <footer>
+                                         <table style="padding-right: 2%;">
+                                             <tbody>
+                                                 <tr>
+                                                     <td style="vertical-align: top;width: 25%;">
+                                                         <center>
+                                                             <div class="amicitia-logo" style="left: auto;position: relative;width: 75px;height: 75px;float: none;">
+                                                                 <div class="amicitia-svg" style="height: 75px; width: 75px;background: url(https://amicitia.github.io/images/logo.svg) center center/75px no-repeat;"></div>
+                                                             </div>
+                                                         </center>
+                                                         <br>
+                                                         <a href="https://shrinefox.com/amicitia">Amicitia</a> is a modding network dedicated to documenting & reverse engineering SMT/Persona games, named after <a href="https://github.com/TGEnigma">TGEnigma</a>'s all-in-one editor application <a href="https://amicitia.github.io/post/amicitia">of the same name</a>.
+                                                         <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
+                                                     </td>
+                                                     <td style="vertical-align: top;width: 20%;padding-left: 20px;">
+                                                         <u>Amicitia</u>
+                                                         <br><a href="https://shrinefox.com/news"><i class="fa fa-newspaper"></i> <b>News</b></a>
+                                                         <br><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap"></i> <b>Guides</b></a>
+                                                         <br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
+                                                         <br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
+                                                         <br><br><u>ShrineFox</u>
+                                                         <br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
+                                                     </td>
+                                                     <td width="5%"></td>
+                                                     <td>
+                                                         We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                                                         officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                                                         The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                                                         registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                                                         either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                                                         <!--Theme Select required for bubbles.js themeing-->
+                                                         <br><br>Theme: <select id="theme" name="theme" onchange="ThemeToggle()">
+                                                             <option value="" selected>Default</option>
+                                                             <option value="p5">Red/Black</option>
+                                                             <option value="p4">Yellow/Orange</option>
+                                                             <option value="p3fes">Green/Blue</option>
+                                                             <option value="pq">Pink/Purple</option>
+                                                             <option value="custom">Custom</option>
+                                                         </select>
+                                                         <!--Color Picker-->
+                                                         <script>
+                                                             jscolor.presets.default = {
+                                                                 format: 'rgb', previewSize: 20, paletteCols: 1,
+                                                                 backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
+                                                                 padding: 5, width: 100, height: 100, mode: 'HVS',
+                                                                 controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
+                                                             };
+                                                         </script>
+                                                         <div id="colorpicker" style="display:none;">
+                                                             <br><button data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
+                                                             <br><button data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
+                                                             <br><button data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
+                                                             <br><button data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
+                                                             <br><button data-jscolor="{onChange: 'updatePost(this)',value:'rgb(var(--post))', alpha:1}">Post</button>
+                                                             <br><button data-jscolor="{onChange: 'updateTextinner(this)',value:'rgb(var(--textinner))', alpha:1}">Inner Text</button>
+                                                         </div>
+                                                         <!--Bubble Popping SFX Toggle-->
+                                                         <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
+                                                         <!--Performance Mode Toggle-->
+                                                         <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
+                                                         <!--Score Display-->
+                                                         <br><span id="score">0</span> bubbles popped
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                         </table>
+                                         <br>
+                                         <center>
+                                             <!--AdSense-->
+                                             <br>
+                                             <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                             <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+                                             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                                             <br>
+                                             <!--Credits-->
+                                             <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a>
+                                             <br><br>
+                                             <!--Placeholder-->
+                                             <select id="game" name="game" style="display:none;">
+                                                 <option value="" selected>Default</option>
+                                             </select>
+                                         </center>
+                                         <!--End Footer-->
+                                     </footer>
+                                 </div>
                 <!--End Bottom-->
 		     </div>
 		</form>
