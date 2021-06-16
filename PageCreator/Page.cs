@@ -141,6 +141,7 @@ namespace Amicitia.github.io.PageCreator
                 content += File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Flowscript"), page + ".html"));
                 content += Properties.Resources.IndexFooter;
                 content = content.Replace("\"all\">Game", "\"all\">Flowscript").Replace("\"all\">Modding Resources", "\"all\">Docs");
+                content = content.Replace(">Amicitia Mods", $">Amicitia - {page}");
                 File.WriteAllText(Path.Combine(Path.Combine(indexPath, "docs"), page + ".html"), content);
             }
         }
@@ -158,6 +159,7 @@ namespace Amicitia.github.io.PageCreator
                     content = content.Replace("\"all\">Game", "\"all\">404").Replace("\"all\">Modding Resources", "\"all\">Not Found");
                 else if (page == "files")
                     content = content.Replace("\"all\">Game", "\"all\">Dumped").Replace("\"all\">Modding Resources", "\"all\">Files");
+                content = content.Replace(">Amicitia Mods", $">Amicitia - {page}");
                 File.WriteAllText(Path.Combine(indexPath, page + ".html"), content);
             }
         }
