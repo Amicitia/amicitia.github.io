@@ -372,13 +372,6 @@ function SetTheme() {
 		post = '230,230,230';
 		textinner = '20,20,20';
 	}
-	
-	link = '190,47,47';
-	hover = '255,0,0';	
-	bg = '10,10,10';
-	text = '255,255,255';
-	post = '20,20,20';
-	textinner = '230,230,230';
 
 	/* Override CSS color values */
 	document.documentElement.style.setProperty('--link', link );
