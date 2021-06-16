@@ -63,6 +63,8 @@ namespace Amicitia.github.io
 
             // Create flowscript docs
             Page.FlowscriptDocs(indexPath);
+            // Create 404/files pages
+            Page.Misc(indexPath);
 
             Console.WriteLine("Done!");
             Console.ReadKey();

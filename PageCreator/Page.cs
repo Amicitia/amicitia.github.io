@@ -140,9 +140,26 @@ namespace Amicitia.github.io.PageCreator
                 content += Properties.Resources.IndexSidebar;
                 content += File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Flowscript"), page + ".html"));
                 content += Properties.Resources.IndexFooter;
+                content = content.Replace("\"all\">Game", "\"all\">Flowscript").Replace("\"all\">Modding Resources", "\"all\">Docs");
                 File.WriteAllText(Path.Combine(Path.Combine(indexPath, "docs"), page + ".html"), content);
             }
-            
+        }
+
+        internal static void Misc(string indexPath)
+        {
+            foreach (string page in new string[] { "404", "files" })
+            {
+                string content = "";
+                content += Properties.Resources.IndexHeader;
+                content += Properties.Resources.IndexSidebar;
+                content += File.ReadAllText(Path.Combine(Path.Combine(Path.Combine(indexPath, "Templates"), "Misc"), page + ".html"));
+                content += Properties.Resources.IndexFooter;
+                if (page == "404")
+                    content = content.Replace("\"all\">Game", "\"all\">404").Replace("\"all\">Modding Resources", "\"all\">Not Found");
+                else if (page == "files")
+                    content = content.Replace("\"all\">Game", "\"all\">Dumped").Replace("\"all\">Modding Resources", "\"all\">Files");
+                File.WriteAllText(Path.Combine(indexPath, page + ".html"), content);
+            }
         }
 
         public static void CreateHtml(List<Post> posts, string url)
