@@ -405,7 +405,7 @@ If a script has failed to compile, an error message should be shown. It will usu
                                                              <option value="" selected>Default</option>
                                                              <option value="p5">Red/Black</option>
                                                              <option value="p4">Yellow/Orange</option>
-                                                             <option value="p3fes">Green/Blue</option>
+                                                             <option value="p3fes">Green/Black</option>
                                                              <option value="pq">Pink/Purple</option>
                                                              <option value="custom">Custom</option>
                                                          </select>
@@ -421,10 +421,10 @@ If a script has failed to compile, an error message should be shown. It will usu
                                                         </script>
                                                         <div id="colorpicker" style="display:none;">
                                                             <div class="text">
-                                                                <div class="toggle-title">
-                                                                    <a><i class="fas fa-gears"></i> Theme Settings</a>
+                                                                <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
+                                                                    <a><i class="fa fa-gears"></i> Theme Settings</a>
                                                                 </div>
-                                                                <div class="toggle-inner">
+                                                                <div class="toggle-inner" style="display:none;">
                                                                     <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
                                                                     <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
                                                                     <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>

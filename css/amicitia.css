@@ -4,14 +4,16 @@
     --text: 255, 255, 255; /* White, non-content text */
     --textinner: 20,20,20; /* Black-ish content text */
     --bg: 9,54,109; /* Dark blue, bg/waves */
+	--bg2: 0,159,255; /* Bright cyan/blue */
     --post: 230, 230, 230; /* Almost White */
     --link: 0,159,255; /* Bright cyan/blue */
     --hover: 251,158,59; /* Bright orange */
+	--footer: 9,54,109; /* Dark blue, footer */
     --radius: 15px; /* Rounded corners */
     --blur: 6px; /* Glassiness */
     --alpha: 0.7;
     --opaque: 1;
-    --gradient1: rgba(var(--link), var(--opaque));
+    --gradient1: rgba(var(--bg2), var(--opaque));
     --gradient2: rgba(var(--bg), var(--opaque));
     --highlight: rgba(var(--link), calc(var(--alpha) / 5));
     --highlight2: rgba(var(--hover), calc(var(--alpha) / 5));
@@ -195,8 +197,7 @@ h1, h2, h3, h4, h5 {
 .content {
     width: 100%;
     max-width: 100%;
-    color: rgba(var(--text), var(--alpha));
-    ;
+    color: rgba(var(--textinner), var(--alpha));
     display: inline-block;
 }
 
@@ -1018,4 +1019,4 @@ a.page-numbers {
 .feedEkList li:last-child{border-bottom:none; }
 .itemTitle a{font-weight:bold; }
 .itemTitle a:hover{ text-decoration:underline; }
-.itemDate{font-size:14pt;}
+.itemDate{font-size:14pt;font-color:rgba(var(--text), var(--opaque));}
