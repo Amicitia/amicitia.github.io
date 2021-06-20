@@ -292,7 +292,7 @@ footer {
 }
 
 .navbar-container a {
-    color: rgba(var(--text),var(--opaque));
+    color: rgba(var(--text),var(--opaque)) !important;
     vertical-align: baseline;
     position: relative;
     height: 100%;
