@@ -92,6 +92,7 @@ ul {
 .flex .row.bottom {
     flex: 0;
     background: var(--waves);
+	color: rgba(var(--text), var(--alpha));
     height: auto;
 }
 
