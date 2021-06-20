@@ -35,6 +35,10 @@
     display: none; /* Toggled in bubbles.js (performance) */
 }
 
+#site_links {
+	line-height: 1.5;
+}
+
 body, html {
     font-family: var(--font);
     font-size: var(--size);
@@ -285,15 +289,7 @@ footer {
     user-select: none;
 }
 
-.navbar ul {
-    padding: 0;
-}
-
-.navbar-container li {
-    display: inline;
-}
-
-.navbar-container li a {
+.navbar-container a {
     color: rgba(var(--text),var(--opaque));
     vertical-align: baseline;
     position: relative;
@@ -304,12 +300,16 @@ footer {
     border-bottom: 6px solid transparent;
 }
 
-.navbar-container li a:hover {
+.navbar-container td {
+    width: 5%;
+}
+
+.navbar-container a:hover {
     color: rgba(var(--text),var(--opaque));
     border-bottom: 4px solid rgba(var(--text),var(--opaque));
 }
 
-.navbar-container li a:hover .amicitia-logo .amicitia-svg {
+.navbar-container a:hover .amicitia-logo .amicitia-svg {
     position: relative;
 }
 
@@ -324,7 +324,7 @@ a {
 /* Sidebar Menu */
 
 #sidebartoggle {
-    width: 1px;
+    width: 30%;
     right: 0;
 }
 
@@ -932,10 +932,6 @@ a.page-numbers {
         padding-left: 10px;
     }
 
-    .amicitia-logo {
-        left: 0px;
-    }
-
     .sidebarIconToggle {
         width: 10%;
     }
@@ -947,6 +943,42 @@ a.page-numbers {
     .card img {
         max-height: 100px;
     }
+	
+	#about_site {
+		display: none !important;
+	}
+
+	#site_links {
+		width: 50% !important;
+		padding-left: 10% !important;
+	}
+	
+	#site_disclaimer {
+		font-size: 8pt !important;
+	}
+	
+	.navbar-container td {
+		width: 5%;
+	}
+
+	#sidebartoggle {
+		width: 20%;
+	}
+}
+@media (max-width: 1000px) {
+	#sidebartoggle {
+		width: 10%;
+	}
+}
+@media (max-width: 800px) {
+	#sidebartoggle {
+		width: 5%;
+	}
+}
+@media (max-width: 800px) {
+	#sidebartoggle {
+		width: 1%;
+	}
 }
 
 /* Scrollbars */
@@ -982,7 +1014,7 @@ a.page-numbers {
 
 /* FeedEk */
 .feedEkList{width:450px; list-style:none outside none; padding:4px 6px; }
-.feedEkList li{border-bottom:1px solid rgba(var(--text), var(--opaque)); padding:5px; }
+.feedEkList li{padding:5px; }
 .feedEkList li:last-child{border-bottom:none; }
 .itemTitle a{font-weight:bold; }
 .itemTitle a:hover{ text-decoration:underline; }

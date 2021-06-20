@@ -30,25 +30,21 @@
                     <table>
                         <tr>
                             <td>
-                                <ul>
-                                    <li>
-                                        <a href="https://amicitia.github.io" style="border-bottom: 4px solid rgba(var(--text),var(--opaque));">
-                                            <div class="amicitia-logo">
-                                                <div class="amicitia-svg"></div>
-                                            </div>Mods
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://shrinefox.com/forum">
-                                            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Forum
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://shrinefox.com/wiki">
-                                            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Wiki
-                                        </a>
-                                    </li>
-                                </ul>
+                                <a href="https://amicitia.github.io" style="border-bottom: 4px solid rgba(var(--text),var(--opaque));">
+                                    <div class="amicitia-logo">
+                                        <div class="amicitia-svg"></div>
+                                    </div>Mods
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/forum">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Forum
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/wiki">
+                                    <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Wiki
+                                </a>
                             </td>
                             <td id="sidebartoggle">
                                 <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -641,7 +637,7 @@
                                          <table style="padding-right: 2%;">
                                              <tbody>
                                                  <tr>
-                                                     <td style="vertical-align: top;width: 25%;">
+                                                     <td id="about_site" style="vertical-align: top;width: 25%;">
                                                          <center>
                                                              <div class="amicitia-logo" style="left: auto;position: relative;width: 75px;height: 75px;float: none;">
                                                                  <div class="amicitia-svg" style="height: 75px; width: 75px;background: url(https://amicitia.github.io/images/logo.svg) center center/75px no-repeat;"></div>
@@ -651,18 +647,19 @@
                                                          <a href="https://shrinefox.com/amicitia">Amicitia</a> is a modding network dedicated to documenting & reverse engineering SMT/Persona games, named after <a href="https://github.com/TGEnigma">TGEnigma</a>'s all-in-one editor application <a href="https://amicitia.github.io/post/amicitia">of the same name</a>.
                                                          <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
                                                      </td>
-                                                     <td style="vertical-align: top;width: 20%;padding-left: 20px;">
-                                                         <u>Amicitia</u>
-                                                         <br><a href="https://shrinefox.com/news"><i class="fa fa-newspaper"></i> <b>News</b></a>
+                                                     <td id="site_links" style="vertical-align: top;width: 20%;padding-left: 5%;vertical-align:top;">
+                                                         <h5>AMICITIA</h5>
+                                                         <a href="https://shrinefox.com/news"><i class="fa fa-newspaper"></i> <b>News</b></a>
                                                          <br><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap"></i> <b>Guides</b></a>
                                                          <br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
                                                          <br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
                                                          <br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
-                                                         <br><br><u>ShrineFox</u>
-                                                         <br><a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><br><h5>SHRINEFOX</h5>
+                                                         <a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
                                                          <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
+                                                         <br><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress"></i> <b>Blog</b></a>
                                                      </td>
-                                                     <td width="5%"></td>
+                                                     <td id="site_disclaimer" width="5%" style="vertical-align:top;"></td>
                                                      <td>
                                                          We are NOT affiliated, associated, authorized, endorsed by, or in any way
                                                          officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
@@ -678,29 +675,39 @@
                                                              <option value="pq">Pink/Purple</option>
                                                              <option value="custom">Custom</option>
                                                          </select>
-                                                         <!--Color Picker-->
-                                                         <script>
-                                                             jscolor.presets.default = {
-                                                                 format: 'rgb', previewSize: 20, paletteCols: 1,
-                                                                 backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
-                                                                 padding: 5, width: 100, height: 100, mode: 'HVS',
-                                                                 controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
-                                                             };
-                                                         </script>
-                                                         <div id="colorpicker" style="display:none;">
-                                                             <br><button data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
-                                                             <br><button data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
-                                                             <br><button data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
-                                                             <br><button data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
-                                                             <br><button data-jscolor="{onChange: 'updatePost(this)',value:'rgb(var(--post))', alpha:1}">Post</button>
-                                                             <br><button data-jscolor="{onChange: 'updateTextinner(this)',value:'rgb(var(--textinner))', alpha:1}">Inner Text</button>
-                                                         </div>
-                                                         <!--Bubble Popping SFX Toggle-->
-                                                         <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
-                                                         <!--Performance Mode Toggle-->
-                                                         <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
-                                                         <!--Score Display-->
-                                                         <br><span id="score">0</span> bubbles popped
+                                                         
+                                                        <!--Color Picker-->
+                                                        <script>
+                                                            jscolor.presets.default = {
+                                                                format: 'rgb', previewSize: 20, paletteCols: 1,
+                                                                backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
+                                                                padding: 5, width: 100, height: 100, mode: 'HVS',
+                                                                controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
+                                                            };
+                                                        </script>
+                                                        <div id="colorpicker" style="display:none;">
+                                                            <div class="text">
+                                                                <div class="toggle-title">
+                                                                    <a><i class="fas fa-gears"></i> Theme Settings</a>
+                                                                </div>
+                                                                <div class="toggle-inner">
+                                                                    <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
+                                                                    <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
+                                                                    <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
+                                                                    <br><button id="custombg2" data-jscolor="{onChange: 'updateBg2(this)',value:'rgb(var(--bg2))', alpha:1}">Background 2</button>
+                                                                    <br><button id="customtext" data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
+                                                                    <br><button id="custompost" data-jscolor="{onChange: 'updatePost(this)',value:'rgb(var(--post))', alpha:1}">Post</button>
+                                                                    <br><button id="customtextinner" data-jscolor="{onChange: 'updateTextinner(this)',value:'rgb(var(--textinner))', alpha:1}">Inner Text</button>
+                                                                    <br><button id="customfooter" data-jscolor="{onChange: 'updateFooter(this)',value:'rgb(var(--footer))', alpha:1}">Footer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Bubble Popping SFX Toggle-->
+                                                        <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
+                                                        <!--Performance Mode Toggle-->
+                                                        <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
+                                                        <!--Score Display-->
+                                                        <br><span id="score">0</span> bubbles popped
                                                      </td>
                                                  </tr>
                                              </tbody>

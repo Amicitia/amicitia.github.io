@@ -3,9 +3,11 @@ var score = 0;
 var link = '0,159,255';
 var hover = '251,158,59';
 var bg = '9,46,109';
+var bg2 = '0,159,255';
 var text = '255,255,255';
 var post = '230,230,230';
 var textinner = '20,20,20';
+var footer = '9,46,109';
 
 document.addEventListener("DOMContentLoaded", () => {
 	/* Set Performance from Cookie */
@@ -311,36 +313,44 @@ function SetTheme() {
 		link = '190,47,47';
 		hover = '255,0,0';	
 		bg = '10,10,10';
+		bg2 = '190,47,47';
 		text = '255,255,255';
 		post = '20,20,20';
 		textinner = '230,230,230';
+		footer = '10,10,10';
 	}
 	else if (theme == "p4" || theme == "p4g" || theme == "p4d" || theme == "p4au")
 	{
 		link = '255,175,57';
 		hover = '255,216,0';
 		bg = '89,57,0';
+		bg2 = '255,175,57';
 		text = '255,255,255';
 		post = '230,230,230';
 		textinner = '20,20,20';
+		footer = '89,57,0';
 	}
 	else if (theme == "p3fes" || theme == "p3p" || theme == "p3d")
 	{
 		link = '0,150,200';
 		hover = '0,211,200';
 		bg = '10,91,0';
+		bg2 = '0,150,200';
 		text = '255,255,255';
 		post = '230,230,230';
 		textinner = '20,20,20';
+		footer = '10,91,0';
 	}
 	else if (theme == "cfb" || theme == "pq" || theme == "pq2")
 	{
 		link = '255,135,185';
 		hover = '255,55,155';
 		bg = '83,9,88';
+		bg2 = '255,135,185';
 		text = '255,255,255';
 		post = '230,230,230';
 		textinner = '20,20,20';
+		footer = '83,9,88';
 	}
 	else if (theme == "custom") 
 	{
@@ -351,16 +361,29 @@ function SetTheme() {
 			setCookie("color_link", "255,255,255", 999); 
 			setCookie("color_hover", "251,158,59", 999);
 			setCookie("color_bg", "0,0,0", 999); 
+			setCookie("color_bg2", "255,255,255", 999); 
 			setCookie("color_text", '255,255,255', 999); 
 			setCookie("color_post", '230,230,230', 999); 
 			setCookie("color_textinner", '20,20,20', 999);
+			setCookie("color_footer", "0,0,0", 999); 
 		}
 		link = getCookie("color_link");
 		hover = getCookie("color_hover");
 		bg = getCookie("color_bg"); 
+		bg2 = getCookie("color_bg2"); 
 		text = getCookie("color_text");
 		post = getCookie('color_post');
 		textinner = getCookie("color_textinner");
+		footer = getCookie("color_footer");
+		
+		document.querySelector('#customlink').jscolor.fromRGBA(link,1);
+		document.querySelector('#customhover').jscolor.fromRGBA(hover,1);
+		document.querySelector('#custombg').jscolor.fromRGBA(bg,1);
+		document.querySelector('#custombg2').jscolor.fromRGBA(bg2,1);
+		document.querySelector('#customtext').jscolor.fromRGBA(text,1);
+		document.querySelector('#custompost').jscolor.fromRGBA(post,1);
+		document.querySelector('#customtextinner').jscolor.fromRGBA(textinner,1);
+		document.querySelector('#customfooter').jscolor.fromRGBA(footer,1);
 	}
 	else 
 	{
@@ -368,18 +391,22 @@ function SetTheme() {
 		link = '0,159,255';
 		hover = '251,158,59';
 		bg = '9,46,109';
+		bg2 = '0,159,255';
 		text = '255,255,255';
 		post = '230,230,230';
 		textinner = '20,20,20';
+		footer = '9,46,109';
 	}
 
 	/* Override CSS color values */
 	document.documentElement.style.setProperty('--link', link );
 	document.documentElement.style.setProperty('--bg', bg );
+	document.documentElement.style.setProperty('--bg2', bg2 );
 	document.documentElement.style.setProperty('--hover',  hover );
 	document.documentElement.style.setProperty('--text',  text );
 	document.documentElement.style.setProperty('--textinner', textinner );
 	document.documentElement.style.setProperty('--post',  post );
+	document.documentElement.style.setProperty('--footer',  footer );
 }
 
 function updateLink(picker)
@@ -400,6 +427,13 @@ function updateBg(picker)
 {
 	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
 	setCookie("color_bg", rgb, 999);
+	SetTheme();
+}
+
+function updateBg2(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_bg2", rgb, 999);
 	SetTheme();
 }
 
@@ -424,6 +458,13 @@ function updateTextinner(picker)
 	SetTheme();
 }
 
+function updateFooter(picker)
+{
+	var rgb = picker.toRGBString().replace("rgb(","").replace(")","");
+	setCookie("color_footer", rgb, 999);
+	SetTheme();
+}
+
 function getCookie(cname) {
 	var name = cname + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
@@ -445,7 +486,7 @@ function setCookie(cname, val, exdays)
 	var exdate = new Date();
 	exdate.setDate(exdate.getDate() + exdays);
 	var c_value = escape(val) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
-	document.cookie= cname + "=" + c_value;
+	document.cookie= cname + "=" + c_value + ";path=/";
 }
 
 function selectElement(id, valueToSelect) {    
