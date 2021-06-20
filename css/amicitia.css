@@ -305,6 +305,7 @@ footer {
 
 .navbar-container td {
     width: 5%;
+	vertical-align: top;
 }
 
 .navbar-container a:hover {
@@ -981,6 +982,15 @@ a.page-numbers {
 @media (max-width: 800px) {
 	#sidebartoggle {
 		width: 1%;
+	}
+	.navbar-container a {
+		font-size: 8pt;
+		padding: 0;
+	}
+
+	.navbar-container td {
+		width: 2%;
+		vertical-align: top;
 	}
 }
 
