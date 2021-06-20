@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5 {
 .content {
     width: 100%;
     max-width: 100%;
-    color: rgba(var(--textinner), var(--alpha));
+    color: rgba(var(--textinner), var(--alpha)) !important;
     display: inline-block;
 }
 
@@ -1020,4 +1020,4 @@ a.page-numbers {
 .feedEkList li:last-child{border-bottom:none; }
 .itemTitle a{font-weight:bold; }
 .itemTitle a:hover{ text-decoration:underline; }
-.itemDate{font-size:14pt;font-color:rgba(var(--text), var(--opaque));}
+.itemDate{font-size:14pt;color:rgba(var(--text), var(--opaque));}
