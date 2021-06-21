@@ -1,0 +1,763 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='shortcut icon' href='https://amicitia.github.io/images/favicon.png' type='image/x-icon' />
+    <meta charset="utf-8">
+    <title>Amicitia -  mods </title>
+    <script src="https://amicitia.github.io/js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://amicitia.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://amicitia.github.io/css/amicitia.css" rel="stylesheet" type="text/css">
+    <script src="https://amicitia.github.io/js/bubbles.js"></script>
+    <script src="https://amicitia.github.io/js/clipboard.js"></script>
+    <script src="https://amicitia.github.io/js/showhide.js"></script>
+    <script src="https://amicitia.github.io/js/hidenav.js"></script>
+    <script src="https://amicitia.github.io/js/navigation.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/FeedEk.min.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/jscolor.js"></script>
+</head>
+<body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">>
+    <!--Copied Message-->
+    <div class="copied">Copied to Clipboard</div>
+    <div class="flex">
+        <!--TopRow-->
+        <div class="row top">
+            <!--Navbar-->
+            <div class="navbar">
+                <div class="navbar-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://amicitia.github.io" style="border-bottom: 4px solid rgba(var(--text),var(--opaque));">
+                                    <div class="amicitia-logo">
+                                        <div class="amicitia-svg"></div>
+                                    </div>Mods
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/forum">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Forum
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/wiki">
+                                    <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Wiki
+                                </a>
+                            </td>
+                            <td id="sidebartoggle">
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--Sidebar Toggle-->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
+            <aside class="sidebar">
+                <div class="component">
+                    <div class="contents">
+                        <ul class="items list">
+                            <!--Sidebar Items-->
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-users"></i> &nbsp;&nbsp;Community</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/ucp.php">
+                                <div class="item">
+                                    <i class="fa fa-address-card"></i> &nbsp;Account Settings
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/ucp.php?i=pm&folder=inbox">
+                                <div class="item">
+                                    <i class="fa fa-envelope"></i> &nbsp;Inbox
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php">
+                                <div class="item">
+                                    <i class="fa fa-search"></i> &nbsp;Search
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=egosearch">
+                                <div class="item">
+                                    <i class="fa fa-sticky-note"></i> &nbsp;Your Posts
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=active_topics">
+                                <div class="item">
+                                    <i class="fa fa-star"></i> &nbsp;Active Threads
+                                </div>
+                            </a>
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-cube"></i> &nbsp;&nbsp;Resources</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/app.php/faqpage">
+                                <div class="item">
+                                    <i class="fa fa-question-circle"></i> &nbsp;FAQs
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/PatchCreator">
+                                <div class="item">
+                                    <i class="fa fa-check-square"></i> &nbsp;P5 RPCS3 Patch.yml Creator
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/textsearch">
+                                <div class="item">
+                                    <i class="fab fa-searchengin"></i> &nbsp;Dialog Search
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/files">
+                                <div class="item">
+                                    <i class="fa fa-folder-open"></i> &nbsp;Dumps
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/docs/flowscript">
+                                <div class="item">
+                                    <i class="fa fa-file-code"></i> &nbsp;Flowscript Docs
+                                </div>
+                            </a>
+                        </ul>
+                    </div> <!--End Contents-->
+                </div>  <!--End Component-->
+            </aside>  <!--End Sidebar Menu-->
+            <!--Header-->
+            <div class="header">
+                <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
+                <div class="header-inner" style="margin-top: 150px;">
+                    <center>
+                        <!--Title-->
+                        <table width="100%;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="headerselect">
+                                        <!--Game Select required for bubbles.js themeing-->
+                                        <select id="game" name="game" onchange="navigate()">
+                                            <option value="all">Game</option>
+                                            <option value="P5">Persona 5</option>
+                                            <option value="P5R">Persona 5 Royal</option>
+                                            <option value="P5S">Persona 5 Strikers</option>
+                                            <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                            <option value="P4">Persona 4</option>
+                                            <option value="P4G">Persona 4 Golden</option>
+                                            <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                            <option value="P4D">Persona 4 Dancing All Night</option>
+                                            <option value="P3FES">Persona 3 FES</option>
+                                            <option value="P3P">Persona 3 Portable</option>
+                                            <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                            <option value="PQ">Persona Q</option>
+                                            <option value="PQ2">Persona Q2</option>
+                                            <option value="CFB">Catherine Full Body</option>
+                                            <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="subheaderselect">
+                                        <!--Select serving as website navigation-->
+                                        <select id="type" name="type" onchange="navigate()">
+                                            <option value="all">Modding Resources</option>
+                                            <option value="mods" selected>Mods</option>
+                                            <option value="tools">Tools</option>
+                                            <option value="cheats">Cheats</option>
+                                            <option value="guides">Guides</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    <!--Waves-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="3"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="5"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="7"></use>
+                            </g>
+                        </svg>
+                    </div>
+                    <!--Waves End-->
+                </div>
+                <!--Header End-->
+            </div>
+            <!--Navbar End-->
+        </div>
+        <!--Top End-->
+<!--Middle-->
+<div class="row middle">
+    <!--Page Body-->
+    <div class="content">
+        <table>
+            <!--Sidebar-->
+            <tr>
+                <td style="vertical-align:top;">
+                    <div class="bloglinks">
+                        <a href="https://shrinefox.com/news/">
+                            <h4>
+                                <i class="fas fa-newspaper"></i> News
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="news-feed"></div>
+                        <br>
+                        <a href="https://shrinefox.com/guides/">
+                            <h4>
+                                <i class="fas fa-graduation-cap"></i> Guides
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="guides-feed"></div>
+                        <br>
+                        <a href="https://shrinefox.com/blog/">
+                            <h4>
+                                <i class="fab fa-wordpress"></i> Blog
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="blog-feed"></div>
+                    </div>
+                    <script>
+						$('#news-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/news/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#guides-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/guides/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#blog-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/blog/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+                    </script>
+                </td>
+                <td id="main" style="vertical-align:top;">
+<!--Result Count and Submission Link-->
+<table style="padding: 0 20px 0 15px;">
+    <tbody>
+        <tr>
+            <td width="25%">Page 19/22 (316 results)</td>
+            <td width="50%"><center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods\18">18</a><span aria-current="page" class="page-numbers current">19</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\20">20</a></div></nav></center></td>
+            <td width="25%" style="text-align: right;">
+                <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
+                    <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!--Post Grid-->
+<div class="cards"><br><center>To learn how to use these mods, see <a href="https://shrinefox.com/guides/2019/04/19/persona-5-rpcs3-modding-guide-1-downloads-and-setup">this guide.</a> Although it's focused on Persona 5, the latter half applies to other games as well.</center>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/akechidate"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=NHy3TTAj-Fw"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/NHy3TTAj-Fw/default.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/410951708274065409/545867401909108748/Akechi_Valentines_Day_Date.zip">Akechi Valentine's Day Date</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/rover">rover</a>, <a href="https://amicitia.github.io/author/yangster">yangster</a>
+                    <br>2/15/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>This is a demo for a gay romance mod that is still in progress.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Events" rel="tag">Events</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/fieldhoodie"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/ZkBGS9W.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/ZkBGS9W.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1EIs0oSGqs-FhrxERSFsqV54nmV_PIL89/view">MC Hoodie for Field Outfitss</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/TerraWing">TerraWing</a>
+                    <br>1/11/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>This mod replaces the MC's casual outfits and school uniforms with the hoodie from later in the game. The outfit is retextured for the school uniforms to match up with the default look.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Player" rel="tag">Player</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/evttesting"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images-ext-2.discordapp.net/external/oLhF5D_o1ydrjRQPP41VewyB0I7mHcQRm5SUs3kGiZM/https/puu.sh/ADTz6.png?width=994&height=559"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images-ext-2.discordapp.net/external/oLhF5D_o1ydrjRQPP41VewyB0I7mHcQRm5SUs3kGiZM/https/puu.sh/ADTz6.png?width=994&height=559">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/450598503530627094/451232704999063553/EVT_testing.7z">EVT Testing Mod</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <br>1/1/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Edit prebuild.bat with the proper paths to EVTTool and PAKPack in order to automatically compile edited event JSONs and test the results before the title screen even loads.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Event" rel="tag">Event</a><a href="https://amicitia.github.io/tag/GUI" rel="tag">  GUI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3dusa"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://cdn.discordapp.com/attachments/476948840063434752/519565462699507713/unknown.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://cdn.discordapp.com/attachments/476948840063434752/519565462699507713/unknown.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1XiyrpV4twR60VetYbPbm79Lhk8kbrC5h/view">P3D USA Asset Patch</a>
+                    </h3>
+                    P3D mod by <a href="https://amicitia.github.io/author/DeathChaos">DeathChaos</a>
+                    <br>1/1/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Patch for the Japanese version of P3D with the English assets from the Western Version. You need rePatch and the latest game update (1.03) to run them. Readme included!
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Voice" rel="tag">Voice</a><a href="https://amicitia.github.io/tag/UI" rel="tag">  UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5dusa"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://cdn.discordapp.com/attachments/476948840063434752/519565462699507713/unknown.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://cdn.discordapp.com/attachments/476948840063434752/519565462699507713/unknown.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1BWyejI9nHdmyERWJWdVUBv73UKCLZYQg/view">P5D USA Asset Patch</a>
+                    </h3>
+                    P5D mod by <a href="https://amicitia.github.io/author/DeathChaos">DeathChaos</a>
+                    <br>1/1/2019<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Patch for the Japanese version of P5D with the English assets from the Western Version. You need rePatch and the latest game update (1.03) to run them. Readme included!
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Voice" rel="tag">Voice</a><a href="https://amicitia.github.io/tag/UI" rel="tag">  UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/rebirthcutscenes"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=HZ9Pmt50wGs"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/HZ9Pmt50wGs/default.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="http://www.mediafire.com/file/h42f6vahi5ecfgh/Persona+3+Rebirth+Cutscenes+%5B1.1%5D.zip">Rebirth Cutscenes</a>
+                    </h3>
+                    P3FES mod by <a href="https://amicitia.github.io/author/Robot_Gerbil">Robot_Gerbil</a>
+                    <br>10/7/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>This mod replaces almost all cutscenes in P3 FES The Journey with entirely new ones. Edited together using clips from the Persona 3 Movie series and audio from the original English dub of the game.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Cutscenes" rel="tag">Cutscenes</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/fullmoonlight"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=NN_-0Pbp6ss"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/NN_-0Pbp6ss/default.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="http://www.mediafire.com/file/sbveyyb28odwbs7/Full+Moonlight+1.1.zip">P3 Full Moonlight</a>
+                    </h3>
+                    P3FES mod by <a href="https://amicitia.github.io/author/Robot_Gerbil">Robot_Gerbil</a>
+                    <br>10/7/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>A combination of the Rebirth Cutscenes (P3 movie scenes adapted to original game cutscene dub) and Reincarnation BGM mods (alternate OST).
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a><a href="https://amicitia.github.io/tag/Cutscenes" rel="tag">  Cutscenes</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4reincarnation"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    <h3>
+                        <a href="http://www.mediafire.com/file/0881p0hu7ja5cq5/P4+Reincarnation+Mod.zip">P4 Reincarnation (Alt BGM Mod)</a>
+                    </h3>
+                    P4 mod by <a href="https://amicitia.github.io/author/Robot_Gerbil">Robot_Gerbil</a>
+                    <br>10/7/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>A mod that replaces most of the OST tracks with new official arrangements released after the game.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3psapphofemc"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/orbLqAM.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/orbLqAM.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1O-ldW0G5rtCmwT0s7Aj1fdqLkoSTwHvQ/view">Sappho Mod (gay FeMC)</a>
+                    </h3>
+                    P3P mod by <a href="https://amicitia.github.io/author/WhiteLightning">WhiteLightning</a>
+                    <br>9/23/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>This mod replaces the last few ranks of the Priestess, Empress, and Lovers social links for the FeMC with the corresponding ones from the MMC.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Text" rel="tag">Text</a><a href="https://amicitia.github.io/tag/Scripts" rel="tag">  Scripts</a><a href="https://amicitia.github.io/tag/Events" rel="tag">  Events</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5custombgm"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://preview.ibb.co/mUyxc9/persona_5_logo_by_franz888_d8gtp7s.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://preview.ibb.co/mUyxc9/persona_5_logo_by_franz888_d8gtp7s.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/111rr-d95VSRfkcMUeYFyZ56z7o6iCw8U/view">P5 Custom Music Edition</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/HiroSaijo">HiroSaijo</a>
+                    <br>9/10/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>A mod that changes many of the tracks in not only the main OST, but also changes all the costume DLC battle themes. <a href=""https://amicitiamods.jcink.net/index.php?showtopic=4"">Track List</a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4freecam"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=rH9_0vCV2Ys"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/rH9_0vCV2Ys/default.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1vGd-VA-AxG_-bxN7TVgdDAUHII7iPP1d/view?usp=sharing">P4 Free Camera</a>
+                    </h3>
+                    P4 mod by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <br>8/27/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Unlimited camera control on every map.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/QoL" rel="tag">QoL</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/rngaffinities"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=RHt0V9uGCa4"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/RHt0V9uGCa4/default.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/410951708274065409/480581290790486016/Randomized_Affinites.zip">Randomized Affinities</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/yangster">yangster</a>
+                    <br>8/18/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Randomized affinities for Personas and enemies
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Enemies" rel="tag">Enemies</a><a href="https://amicitia.github.io/tag/Persona" rel="tag">  Persona</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3freecam"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://www.youtube.com/watch?v=JZwGpgCAvso"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://img.youtube.com/vi/JZwGpgCAvso/default.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1bbBJXFkPZjOlKUzL-HtIwdCBd428K6JW/view?usp=sharing">P3 Free Camera</a>
+                    </h3>
+                    P3FES mod by <a href="https://amicitia.github.io/author/ShrineFox">ShrineFox</a>
+                    <br>8/17/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Unlimited camera control on every map.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/QoL" rel="tag">QoL</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/aoabase"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://66.media.tumblr.com/c3f99e21c7edb1df53e7f2fa02117621/tumblr_inline_pl680q6yWy1rp7sxh_500.gif"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://66.media.tumblr.com/c3f99e21c7edb1df53e7f2fa02117621/tumblr_inline_pl680q6yWy1rp7sxh_500.gif">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/410951708274065409/479834026597679105/All-Out-Attack_Mod.rar">Custom All Out Attack Base + Tutorial</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/Alan3D">Alan3D</a>
+                    <br>8/16/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>P3MC replacement for Joker in his All-Out-Attack + Tutorial on how to do one yourself!
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/UI" rel="tag">UI</a><a href="https://amicitia.github.io/tag/Templates" rel="tag">  Templates</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p3font"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://cdn.discordapp.com/attachments/476948670957355020/478710544413622292/unknown.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://cdn.discordapp.com/attachments/476948670957355020/478710544413622292/unknown.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/476948670957355020/478832074615291925/Persona_3_Font_1.1.zip">Persona 3 Font For P5</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/Alan3D">Alan3D</a>
+                    <br>8/14/2018<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>A port of the font from P3FES to P5. Looks best at increased resolution scales.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Font" rel="tag">Font</a><a href="https://amicitia.github.io/tag/UI" rel="tag">  UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>                    </div>
+                <center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods\18">18</a><span aria-current="page" class="page-numbers current">19</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\20">20</a></div></nav></center><br>
+                </td></tr></tbody></table>
+                <!--Footer-->
+                                 <div class="row bottom">
+                                     <footer>
+                                         <table style="padding-right: 2%;">
+                                             <tbody>
+                                                 <tr>
+                                                     <td id="about_site" style="vertical-align: top;width: 25%;">
+                                                         <center>
+                                                             <div class="amicitia-logo" style="left: auto;position: relative;width: 75px;height: 75px;float: none;">
+                                                                 <div class="amicitia-svg" style="height: 75px; width: 75px;background: url(https://amicitia.github.io/images/logo.svg) center center/75px no-repeat;"></div>
+                                                             </div>
+                                                         </center>
+                                                         <br>
+                                                         <a href="https://shrinefox.com/amicitia">Amicitia</a> is a modding network dedicated to documenting & reverse engineering SMT/Persona games, named after <a href="https://github.com/TGEnigma">TGEnigma</a>'s all-in-one editor application <a href="https://amicitia.github.io/post/amicitia">of the same name</a>.
+                                                         <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
+                                                     </td>
+                                                     <td id="site_links" style="vertical-align: top;width: 20%;padding-left: 5%;vertical-align:top;">
+                                                         <h5>AMICITIA</h5>
+                                                         <a href="https://shrinefox.com/news"><i class="fa fa-newspaper"></i> <b>News</b></a>
+                                                         <br><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap"></i> <b>Guides</b></a>
+                                                         <br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
+                                                         <br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
+                                                         <br><br><h5>SHRINEFOX</h5>
+                                                         <a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
+                                                         <br><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress"></i> <b>Blog</b></a>
+                                                     </td>
+                                                     <td id="site_disclaimer" width="5%" style="vertical-align:top;"></td>
+                                                     <td>
+                                                         We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                                                         officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                                                         The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                                                         registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                                                         either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                                                         <!--Theme Select required for bubbles.js themeing-->
+                                                         <br><br>Theme: <select id="theme" name="theme" onchange="ThemeToggle()">
+                                                             <option value="" selected>Default</option>
+                                                             <option value="p5">Red/Black</option>
+                                                             <option value="p4">Yellow/Orange</option>
+                                                             <option value="p3fes">Green/Black</option>
+                                                             <option value="pq">Pink/Purple</option>
+                                                             <option value="custom">Custom</option>
+                                                         </select>
+                                                         
+                                                        <!--Color Picker-->
+                                                        <script>
+                                                            jscolor.presets.default = {
+                                                                format: 'rgb', previewSize: 20, paletteCols: 1,
+                                                                backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
+                                                                padding: 5, width: 100, height: 100, mode: 'HVS',
+                                                                controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
+                                                            };
+                                                        </script>
+                                                        <div id="colorpicker" style="display:none;">
+                                                            <div class="text">
+                                                                <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
+                                                                    <a><i class="fa fa-gears"></i> Theme Settings</a>
+                                                                </div>
+                                                                <div class="toggle-inner" style="display:none;">
+                                                                    <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
+                                                                    <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
+                                                                    <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
+                                                                    <br><button id="custombg2" data-jscolor="{onChange: 'updateBg2(this)',value:'rgb(var(--bg2))', alpha:1}">Background 2</button>
+                                                                    <br><button id="customtext" data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
+                                                                    <br><button id="custompost" data-jscolor="{onChange: 'updatePost(this)',value:'rgb(var(--post))', alpha:1}">Post</button>
+                                                                    <br><button id="customtextinner" data-jscolor="{onChange: 'updateTextinner(this)',value:'rgb(var(--textinner))', alpha:1}">Inner Text</button>
+                                                                    <br><button id="customfooter" data-jscolor="{onChange: 'updateFooter(this)',value:'rgb(var(--footer))', alpha:1}">Footer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Bubble Popping SFX Toggle-->
+                                                        <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
+                                                        <!--Performance Mode Toggle-->
+                                                        <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
+                                                        <!--Score Display-->
+                                                        <br><span id="score">0</span> bubbles popped
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                         </table>
+                                         <br>
+                                         <center>
+                                             <!--AdSense-->
+                                             <br>
+                                             <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                             <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+                                             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                                             <br>
+                                             <!--Credits-->
+                                             <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a>
+                                             <br><br>
+                                             <!--Placeholder-->
+                                             <select id="game" name="game" style="display:none;">
+                                                 <option value="" selected>Default</option>
+                                             </select>
+                                         </center>
+                                         <!--End Footer-->
+                                     </footer>
+                                 </div>
+                <!--End Bottom-->
+		     </div>
+		</form>
+	</body>
+</html>

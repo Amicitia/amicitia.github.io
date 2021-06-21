@@ -11,18 +11,23 @@ Now the community can work together to host material without relying on a single
 # How to Contribute to the Database?
 ## Google Sheets
 - Clone the repository using Git or Github Desktop.
-- Upload the .tsv files in the "db" folder to your Google Drive account.
-- Open them in Google Sheets, add/edit rows as needed.
-- Download as .tsv when finished and replace the files in the "db" folder.
+- Upload the .tsv file in the "db" folder to your Google Drive account.
+- Open it in Google Sheets, add/edit rows as needed.
+- Download as .tsv when finished and replace the file in the "db" folder.
 ## Microsoft Excel
 - Clone the repository using Git or Github Desktop.
 - Open the .xlsx file in the "db" folder.
-- In each tab, add/edit rows as needed.
+- Add/edit rows as needed.
 - Enable the Developer Tab, go to it and choose Visual Basic.
-- Use the included ExportTsvExcel.cls script to export each tab as .tsv.
-- This should replace the files in the "db" folder.
+- Use the included ExportTsvExcel.cls script to export as .tsv.
+- Replace the file in the "db" folder.
 
 # How to Generate New Pages?
 - Open the solution (.sln) in Visual Studio (or your preferred IDE).
 - Run the program to generate new pages.
 - Commit changes to your own fork and open a pull request.
+
+# Credits
+## Gamebanana Webscraper
+Code from [TekkaGB's AemulusModManager](https://github.com/TekkaGB/AemulusModManager) was used to achieve webscraping using [GBAPIv4](https://gamebanana.com/apiv4/).  
+As such, this project is licensed under GPL-3.0.

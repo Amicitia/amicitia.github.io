@@ -1,0 +1,763 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='shortcut icon' href='https://amicitia.github.io/images/favicon.png' type='image/x-icon' />
+    <meta charset="utf-8">
+    <title>Amicitia - Persona 4 Golden guides </title>
+    <script src="https://amicitia.github.io/js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://amicitia.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://amicitia.github.io/css/amicitia.css" rel="stylesheet" type="text/css">
+    <script src="https://amicitia.github.io/js/bubbles.js"></script>
+    <script src="https://amicitia.github.io/js/clipboard.js"></script>
+    <script src="https://amicitia.github.io/js/showhide.js"></script>
+    <script src="https://amicitia.github.io/js/hidenav.js"></script>
+    <script src="https://amicitia.github.io/js/navigation.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/FeedEk.min.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/jscolor.js"></script>
+</head>
+<body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">>
+    <!--Copied Message-->
+    <div class="copied">Copied to Clipboard</div>
+    <div class="flex">
+        <!--TopRow-->
+        <div class="row top">
+            <!--Navbar-->
+            <div class="navbar">
+                <div class="navbar-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://amicitia.github.io" style="border-bottom: 4px solid rgba(var(--text),var(--opaque));">
+                                    <div class="amicitia-logo">
+                                        <div class="amicitia-svg"></div>
+                                    </div>Mods
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/forum">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Forum
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/wiki">
+                                    <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Wiki
+                                </a>
+                            </td>
+                            <td id="sidebartoggle">
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--Sidebar Toggle-->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
+            <aside class="sidebar">
+                <div class="component">
+                    <div class="contents">
+                        <ul class="items list">
+                            <!--Sidebar Items-->
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-users"></i> &nbsp;&nbsp;Community</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/ucp.php">
+                                <div class="item">
+                                    <i class="fa fa-address-card"></i> &nbsp;Account Settings
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/ucp.php?i=pm&folder=inbox">
+                                <div class="item">
+                                    <i class="fa fa-envelope"></i> &nbsp;Inbox
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php">
+                                <div class="item">
+                                    <i class="fa fa-search"></i> &nbsp;Search
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=egosearch">
+                                <div class="item">
+                                    <i class="fa fa-sticky-note"></i> &nbsp;Your Posts
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=active_topics">
+                                <div class="item">
+                                    <i class="fa fa-star"></i> &nbsp;Active Threads
+                                </div>
+                            </a>
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-cube"></i> &nbsp;&nbsp;Resources</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/app.php/faqpage">
+                                <div class="item">
+                                    <i class="fa fa-question-circle"></i> &nbsp;FAQs
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/PatchCreator">
+                                <div class="item">
+                                    <i class="fa fa-check-square"></i> &nbsp;P5 RPCS3 Patch.yml Creator
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/textsearch">
+                                <div class="item">
+                                    <i class="fab fa-searchengin"></i> &nbsp;Dialog Search
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/files">
+                                <div class="item">
+                                    <i class="fa fa-folder-open"></i> &nbsp;Dumps
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/docs/flowscript">
+                                <div class="item">
+                                    <i class="fa fa-file-code"></i> &nbsp;Flowscript Docs
+                                </div>
+                            </a>
+                        </ul>
+                    </div> <!--End Contents-->
+                </div>  <!--End Component-->
+            </aside>  <!--End Sidebar Menu-->
+            <!--Header-->
+            <div class="header">
+                <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
+                <div class="header-inner" style="margin-top: 150px;">
+                    <center>
+                        <!--Title-->
+                        <table width="100%;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="headerselect">
+                                        <!--Game Select required for bubbles.js themeing-->
+                                        <select id="game" name="game" onchange="navigate()">
+                                            <option value="all">Game</option>
+                                            <option value="P5">Persona 5</option>
+                                            <option value="P5R">Persona 5 Royal</option>
+                                            <option value="P5S">Persona 5 Strikers</option>
+                                            <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                            <option value="P4">Persona 4</option>
+                                            <option value="P4G" selected>Persona 4 Golden</option>
+                                            <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                            <option value="P4D">Persona 4 Dancing All Night</option>
+                                            <option value="P3FES">Persona 3 FES</option>
+                                            <option value="P3P">Persona 3 Portable</option>
+                                            <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                            <option value="PQ">Persona Q</option>
+                                            <option value="PQ2">Persona Q2</option>
+                                            <option value="CFB">Catherine Full Body</option>
+                                            <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="subheaderselect">
+                                        <!--Select serving as website navigation-->
+                                        <select id="type" name="type" onchange="navigate()">
+                                            <option value="all">Modding Resources</option>
+                                            <option value="mods">Mods</option>
+                                            <option value="tools">Tools</option>
+                                            <option value="cheats">Cheats</option>
+                                            <option value="guides" selected>Guides</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    <!--Waves-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="3"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="5"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="7"></use>
+                            </g>
+                        </svg>
+                    </div>
+                    <!--Waves End-->
+                </div>
+                <!--Header End-->
+            </div>
+            <!--Navbar End-->
+        </div>
+        <!--Top End-->
+<!--Middle-->
+<div class="row middle">
+    <!--Page Body-->
+    <div class="content">
+        <table>
+            <!--Sidebar-->
+            <tr>
+                <td style="vertical-align:top;">
+                    <div class="bloglinks">
+                        <a href="https://shrinefox.com/news/">
+                            <h4>
+                                <i class="fas fa-newspaper"></i> News
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="news-feed"></div>
+                        <br>
+                        <a href="https://shrinefox.com/guides/">
+                            <h4>
+                                <i class="fas fa-graduation-cap"></i> Guides
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="guides-feed"></div>
+                        <br>
+                        <a href="https://shrinefox.com/blog/">
+                            <h4>
+                                <i class="fab fa-wordpress"></i> Blog
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="blog-feed"></div>
+                    </div>
+                    <script>
+						$('#news-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/news/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#guides-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/guides/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#blog-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/blog/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+                    </script>
+                </td>
+                <td id="main" style="vertical-align:top;">
+<!--Result Count and Submission Link-->
+<table style="padding: 0 20px 0 15px;">
+    <tbody>
+        <tr>
+            <td width="25%">Page 10/19 (284 results)</td>
+            <td width="50%"><center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\guides\p4g\9">9</a><span aria-current="page" class="page-numbers current">10</span><a class="page-numbers" href="https:\\amicitia.github.io\guides\p4g\11">11</a></div></nav></center></td>
+            <td width="25%" style="text-align: right;">
+                <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
+                    <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!--Post Grid-->
+<div class="cards">    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-sociallinkcheatsheet"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f85066ae5c2e.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f85066ae5c2e.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50885">Social Link Cheat Sheet</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/07/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Are you one of those people who look up guides to determine the best choices for your social links?  This mod aims to let you see those best choices without having to look away from the game.<br><br>This mod displays the results of the choices that matter for each social link.  It provides it in +x/y format where x is the points you get without a persona of a matching arcana and y is the points you get with a persona of a matching arcana.  If there's no "+x/y" next to the choice it means it gives you 0 points no matter what.  I also included "(Love)." "(Broken)," and "(Reverse)" on the choices that bring you to those specific routes.<br><br>All of these point results were based from https://sites.google.com/site/persona4goldenguide/social-links.  (Edit: This site ended up being pretty unreliable after testing lol). However, the social link guide was not fully complete as some results without matching arcana were left as "?".  For those missing results, I took an educated guess but I haven't gone a ... 
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc" rel="tag">Misc </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-genshinimpactfont"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5fa60d15253fd.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5fa60d15253fd.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50912">Genshin Impact Font</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/07/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Changes the main in game font to a font similar to the one found in Genshin Impact.  To be used with Aemulus Package Manager.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc" rel="tag">Misc </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-transnaotop4gpc"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5fa5be2d22bd2.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5fa5be2d22bd2.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50911">Trans Naoto P4G PC</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/CandidateOfLoyalty">CandidateOfLoyalty</a>
+                    <br>11/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This mod has been up on tumblr for awhile, but I'm reposting it here in case you want to use it with other mods.<br><br>By now I suspect we all know the drill: this mod changes dialogue, <br>system messages, etc. to refer to Naoto with either he/him or they/them <br>pronouns, as well as rewriting their social link and some miscellaneous <br>scenes to better reflect that they aren’t a girl. It also removes both <br>pageants from the game entirely - the cross-dressing outfits are instead<br> awarded the first time the player visits the costume shop after <br>November 9th.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc" rel="tag">Misc </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-pq2criticalcutins"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5fa5db9f9ffd6.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5fa5db9f9ffd6.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/33986">PQ2 Critical Cutins</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Replaces critical attack cutins as well as union cutins with PQ2's critical attack cutins.  Upscaled 4x using waifu2x since 3ds sprites are small.  Works well with mods such as kioskx's PQ2 Panels mod or Ainri's Q2 All Out Attack Panels mod.  My Persona 5 Font and UI Overhaul mod also works well in conjunction since PQ2's UI is styled like P5 (Note that you'd have to manually merge the btlpanel.bin from the panel mods with this mod if used together).  I don't have screenshots of all cutins because it takes forever for these cutins to trigger in game lol.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc UI" rel="tag">Misc UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-risetimeskiphairbustups"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8525722a9d6.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8525722a9d6.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/9657">Rise Timeskip Hair Bustups</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This mod replaces all of Rise's bustups with modified versions of her hair after her timeskip.  This mod doesn't replace any of her models to match the bustups though.  I haven't fully tested if all the replacement textures work so let me know if I'm missing any or if any are broken.  I hope you all enjoy my first mod and sorry if any of the bustups didn't turn out great since I'm not that experienced in photoshop.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc Texture" rel="tag">Misc Texture</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-lotuspain"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5fa5de70c8aaf.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5fa5de70c8aaf.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/9647">Lotus Pain</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Replaces Rise's all out attack cutin with :lotuspain: emote found in the discord server.  Rudiger is the one who came up with the mod I just finished it for him.  That's right, Rudiger the ultimate QOL P4G PC modder came up with this meme.  The last QOL modder has fallen.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc Texture" rel="tag">Misc Texture</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-blackhairedprotagonist"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f86925ceae02.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f86925ceae02.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/9651">Black Haired Protagonist</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Have you ever wondered why the protagonist's hair was silver?  This mod replaces all locations of the protagonist's silver hair with black hair to look like that generic black haired anime character.  This includes all everyday models, battle models, stat portraits, battle panels, and battle cutins.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc Texture" rel="tag">Misc Texture</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-mangafont"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8513d26abc0.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8513d26abc0.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50895">Manga Font</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Tekka">Tekka</a>
+                    <br>11/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Replaces the main in game font with font found in most mangas.  Included in the download is the individual 'manga.fnt' file to be used if you want to manually merge with other init.bin's.  Just use it to replace system/font/font0.fnt.<br><br>Been feeling like making fonts lately.  Let me know if you have any other ideas for fonts and I'll try to mod them in the game.  (Btw tried ps2 P4 font ripped straight from the game but it turned out looking too small so I gave up on it.)
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc" rel="tag">Misc </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-100unlockedtvlistings"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f82e2225cc09.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f82e2225cc09.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50904">100% Unlocked TV Listings</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Pixelguin">Pixelguin</a>
+                    <br>10/29/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Are you a Persona 4 superfan who wants to get the Miracle Quiz achievement early? <br>Did the Steam cloud mess up your unlock data, leaving you in need of a quick fix? <br>Do you just want to peek ahead at all the cutscenes? <br>You can do all that with this mod!<br><br>This mod contains replacement system.bin + system.binslot files, which control which parts of the TV Guide are unlocked. As I've taken these from a completed save file, they should unlock everything in the TV Listings without touching your save data. In fact, when testing, I was able to use this mod without any save data at all!<br><br>Obviously, this mod will give you access to spoilers for the entire game. Some of the TV Guide programs (cutscenes, music) open to random media, so seeing spoilers is pretty much unavoidable if you install this mod.<br><br>Please note that this mod will not allow you to start a New Game+ file or anything like that. It only affects the TV Guide unlocks.<br><br>Instructions<br>• Find your Steam user ID. The easiest way is to  ... 
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc" rel="tag">Misc </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-hdizanagi-no-okamiyoshitsuneandmagatsuizanagi"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8f3e007b998.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8f3e007b998.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/250326">HD Izanagi-no-Okami, Yoshitsune and MagatsuIzanagi</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/Saitsu">Saitsu</a>
+                    <br>10/20/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This was part of the P5R Persona backport, but since the project is pretty much abandoned, I decided to release some of the work I did for it.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Persona Skin" rel="tag">Persona Skin</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-p4thegoldenanimationopening"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8e03f4eb72d.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8e03f4eb72d.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50951">P4 the golden animation opening</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/xtremegat">xtremegat</a>
+                    <br>10/19/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This mod replaces the P4G opening for the Golden Animation Opening "Next Chance to Move On
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Cutscenes/FMV" rel="tag">Cutscenes/FMV </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-outdatedoriginalpersona4intro"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8bfa1def9db.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8bfa1def9db.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/50940">(OUTDATED) Original Persona 4 Intro</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/harper6202">harper6202</a>
+                    <br>10/18/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This mod has become outdated. A version of this mod that simply tells the game to play this video exists now, significantly reducing the file size. <br>You can download it here: https://gamebanana.com/gamefiles/14676<br><br>This is a mod for Persona 4 Golden that replaces Golden's current intro with the intro from the PS2 game.<br><br>How to Install:<br>IF YOU HAVE AEMULUS:<br>This mod is compatible with Aemulus.<br>Put the "PS2 Intro" folder in \Packages. Open Aemulus and enable the mod, refresh if it isn't showing up. After that build the mod, open the game through Reloaded, and now it should work.<br><br>If you don't use Aemulus:<br>Inside the "PS2 Intro" folder are folders called "movie00000" and "movie00002".<br>Place these two folders in \mods<br>Open the game through Reloaded and now it should work.<br><br>Common Issues/Troubleshooting:<br>If the game crashes upon starting up, you aren't running on version 1.1.<br>If the video plays but the audio is muted, you're running the wrong version of the game.<br>If the video is stuttering  ... 
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Cutscenes/FMV" rel="tag">Cutscenes/FMV </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-teddiebuthisportraitsarecursed"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8c0609b0106.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8c0609b0106.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/33988">Teddie but His Portraits are Cursed</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/harper6202">harper6202</a>
+                    <br>10/18/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    All of Teddie's portraits and flattened Teddie's portraits have been replaced with their respective 3D models. I did not replace human Teddie's portraits or Shadow Teddie's and do not plan on doing it.<br><br>How to Install:<br>Aemulus:<br>Put the "Teddie 'On The Mark' Teddison AKA 'The Beast in Heat' AKA Ted" folder in &lt;Aemulus-dir>\Packages<br>Enable the mod in Aemulus, refresh if it isn't showing up.<br>Build the mod, open the game through Reloader, and now it should work.<br><br>Manual:<br>Inside the "Teddie 'On The Mark' Teddison AKA 'The Beast in Heat' AKA Ted" folder is a folder called "data00001".<br>Place the folder in &lt;P4G-dir>\mods<br>Open the game through Reloader and now it should work.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc UI" rel="tag">Misc UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-pc-beginners-guide"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://screenshots.gamebanana.com/img/ss/tuts/530-90_5ee84dc1540b7.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://screenshots.gamebanana.com/img/ss/tuts/530-90_5ee84dc1540b7.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/tuts/13379">Beginner's Guide to Modding Persona 4 Golden</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/MadMax1960">MadMax1960</a>
+                    <br>10/18/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Getting into Persona 4 Golden modding can be daunting at first, but this guide is here for you. We've got a step-by-step guide for setting up and installing P4G mods, as well as some resources in case you'd like to make your own!
+                    <br><br>
+                    <span class="tags-links">
+                        
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-risedelphinebellekujikawa"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f8938c6a815f.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f8938c6a815f.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/250312">Rise Delphine/Belle Kujikawa</a>
+                    </h3>
+                    P4G guide by <a href="https://amicitia.github.io/author/sarahmew">sarahmew</a>
+                    <br>10/16/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Have you ever played Persona 4 and wished the best girl was Belle Delphine, neither have I but I saw an image of Belle Delphine in a Yasogami Uniform and I was like "ugh I gotta do it" <br>This is my first Persona 4 Golden mod and I wanna make more so shoot me a message if theres anything wrong with this one and I'll do my best to fix it :)
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Misc Skin" rel="tag">Misc Skin</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>                    </div>
+                <center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\guides\p4g\9">9</a><span aria-current="page" class="page-numbers current">10</span><a class="page-numbers" href="https:\\amicitia.github.io\guides\p4g\11">11</a></div></nav></center><br>
+                </td></tr></tbody></table>
+                <!--Footer-->
+                                 <div class="row bottom">
+                                     <footer>
+                                         <table style="padding-right: 2%;">
+                                             <tbody>
+                                                 <tr>
+                                                     <td id="about_site" style="vertical-align: top;width: 25%;">
+                                                         <center>
+                                                             <div class="amicitia-logo" style="left: auto;position: relative;width: 75px;height: 75px;float: none;">
+                                                                 <div class="amicitia-svg" style="height: 75px; width: 75px;background: url(https://amicitia.github.io/images/logo.svg) center center/75px no-repeat;"></div>
+                                                             </div>
+                                                         </center>
+                                                         <br>
+                                                         <a href="https://shrinefox.com/amicitia">Amicitia</a> is a modding network dedicated to documenting & reverse engineering SMT/Persona games, named after <a href="https://github.com/TGEnigma">TGEnigma</a>'s all-in-one editor application <a href="https://amicitia.github.io/post/amicitia">of the same name</a>.
+                                                         <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
+                                                     </td>
+                                                     <td id="site_links" style="vertical-align: top;width: 20%;padding-left: 5%;vertical-align:top;">
+                                                         <h5>AMICITIA</h5>
+                                                         <a href="https://shrinefox.com/news"><i class="fa fa-newspaper"></i> <b>News</b></a>
+                                                         <br><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap"></i> <b>Guides</b></a>
+                                                         <br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
+                                                         <br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
+                                                         <br><br><h5>SHRINEFOX</h5>
+                                                         <a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
+                                                         <br><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress"></i> <b>Blog</b></a>
+                                                     </td>
+                                                     <td id="site_disclaimer" width="5%" style="vertical-align:top;"></td>
+                                                     <td>
+                                                         We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                                                         officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                                                         The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                                                         registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                                                         either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                                                         <!--Theme Select required for bubbles.js themeing-->
+                                                         <br><br>Theme: <select id="theme" name="theme" onchange="ThemeToggle()">
+                                                             <option value="" selected>Default</option>
+                                                             <option value="p5">Red/Black</option>
+                                                             <option value="p4">Yellow/Orange</option>
+                                                             <option value="p3fes">Green/Black</option>
+                                                             <option value="pq">Pink/Purple</option>
+                                                             <option value="custom">Custom</option>
+                                                         </select>
+                                                         
+                                                        <!--Color Picker-->
+                                                        <script>
+                                                            jscolor.presets.default = {
+                                                                format: 'rgb', previewSize: 20, paletteCols: 1,
+                                                                backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
+                                                                padding: 5, width: 100, height: 100, mode: 'HVS',
+                                                                controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
+                                                            };
+                                                        </script>
+                                                        <div id="colorpicker" style="display:none;">
+                                                            <div class="text">
+                                                                <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
+                                                                    <a><i class="fa fa-gears"></i> Theme Settings</a>
+                                                                </div>
+                                                                <div class="toggle-inner" style="display:none;">
+                                                                    <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
+                                                                    <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
+                                                                    <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
+                                                                    <br><button id="custombg2" data-jscolor="{onChange: 'updateBg2(this)',value:'rgb(var(--bg2))', alpha:1}">Background 2</button>
+                                                                    <br><button id="customtext" data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
+                                                                    <br><button id="custompost" data-jscolor="{onChange: 'updatePost(this)',value:'rgb(var(--post))', alpha:1}">Post</button>
+                                                                    <br><button id="customtextinner" data-jscolor="{onChange: 'updateTextinner(this)',value:'rgb(var(--textinner))', alpha:1}">Inner Text</button>
+                                                                    <br><button id="customfooter" data-jscolor="{onChange: 'updateFooter(this)',value:'rgb(var(--footer))', alpha:1}">Footer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Bubble Popping SFX Toggle-->
+                                                        <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
+                                                        <!--Performance Mode Toggle-->
+                                                        <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
+                                                        <!--Score Display-->
+                                                        <br><span id="score">0</span> bubbles popped
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                         </table>
+                                         <br>
+                                         <center>
+                                             <!--AdSense-->
+                                             <br>
+                                             <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                             <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+                                             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                                             <br>
+                                             <!--Credits-->
+                                             <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a>
+                                             <br><br>
+                                             <!--Placeholder-->
+                                             <select id="game" name="game" style="display:none;">
+                                                 <option value="" selected>Default</option>
+                                             </select>
+                                         </center>
+                                         <!--End Footer-->
+                                     </footer>
+                                 </div>
+                <!--End Bottom-->
+		     </div>
+		</form>
+	</body>
+</html>

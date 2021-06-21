@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using Amicitia.github.io.PageCreator;
+using System.Threading.Tasks;
 
 namespace Amicitia.github.io
 {
@@ -31,13 +32,15 @@ namespace Amicitia.github.io
         public static List<Post> posts; //Posts
         public static int maxPosts = 15; //Number of posts per page
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Exe Directory
             indexPath = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()));
-            // Update posts from Gamebanana
-            //Webscraper.GBUpdateTSVs(indexPath);
-
+            // Update .tsv with data from gamebanana
+            Task.Run(async () =>
+            {
+                await Webscraper.UpdateTSVs(indexPath);
+            }).GetAwaiter().GetResult();
             // Order post post from .tsv files by most recent)
             posts = Post.Get(indexPath).OrderBy(p => DateTime.Parse(p.Date, CultureInfo.CreateSpecificCulture("en-US"))).ToArray().Reverse().ToList();
             // Delete files if they exist already
