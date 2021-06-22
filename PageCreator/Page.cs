@@ -209,10 +209,6 @@ namespace Amicitia.github.io.PageCreator
                 else
                     content += Post.Write(posts[i], false);
 
-                // Add new row if divislbe by 3
-                if (pagePosts % 3 == 0)
-                    content += "<br>";
-
                 // End of page, create new page
                 if (pagePosts == maxPosts || posts.Count - 1 == i)
                 {

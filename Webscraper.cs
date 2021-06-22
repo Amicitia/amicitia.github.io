@@ -118,8 +118,6 @@ namespace Amicitia.github.io
             }
 
             Console.WriteLine("Done fetching Gamebanana data.");
-
-            return;
             // Save new TSVs
             Console.WriteLine("Updating TSV file...");
             List<string> lines = new List<string>();
