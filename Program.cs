@@ -41,6 +41,7 @@ namespace Amicitia.github.io
             {
                 await Webscraper.UpdateTSVs(indexPath);
             }).GetAwaiter().GetResult();
+            return;
             // Order post post from .tsv files by most recent)
             posts = Post.Get(indexPath).OrderBy(p => DateTime.Parse(p.Date, CultureInfo.CreateSpecificCulture("en-US"))).ToArray().Reverse().ToList();
             // Delete files if they exist already

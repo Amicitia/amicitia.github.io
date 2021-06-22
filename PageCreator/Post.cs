@@ -57,14 +57,14 @@ namespace Amicitia.github.io.PageCreator
                         post.Title = split[2].Trim('"');
                         post.Games = split[3].Split(',').ToList();
                         for (int x = 0; x < post.Games.Count; x++)
-                            post.Games[x] = post.Games[x].Trim('"');
+                            post.Games[x] = post.Games[x].Trim('"').Trim(' ');
                         post.Authors = split[4].Split(',').ToList();
                         for (int x = 0; x < post.Authors.Count; x++)
-                            post.Authors[x] = post.Authors[x].Trim('"');
+                            post.Authors[x] = post.Authors[x].Trim('"').Trim(' ');
                         post.Date = split[5].Trim('"');
                         post.Tags = split[6].Split(',').ToList();
                         for (int x = 0; x < post.Tags.Count; x++)
-                            post.Tags[x] = post.Tags[x].Trim('"');
+                            post.Tags[x] = post.Tags[x].Trim('"').Trim(' ');
                         post.Description = split[7].Trim('"');
                         post.UpdateText = split[8].Trim('"');
                         post.EmbedURL = split[9].Trim('"');

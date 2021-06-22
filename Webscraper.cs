@@ -25,7 +25,7 @@ namespace Amicitia.github.io
         {
             Console.WriteLine("Loading Existing TSVs...");
             // Load Existing TSVs
-            Posts = PageCreator.Post.Get(indexPath);
+            Posts = PageCreator.Post.Get(indexPath).Where(x => !x.URL.Contains("gamebanana")).ToList();
 
             Console.WriteLine("Loading Gamebanana data...");
             // For each game on Gamebanana...
@@ -41,11 +41,10 @@ namespace Amicitia.github.io
                         if (!noneFound)
                         {
                             // Load feed
-                            ObservableCollection<GameBananaRecord> feed = FeedGenerator.CurrentFeed.Records;
                             Console.WriteLine($"  Loading {game} {type} from Gamebanana (page {i}/10)...");
                             await FeedGenerator.GetFeed(i, (GameFilter)Enum.Parse(typeof(GameFilter), game),
-                                (TypeFilter)Enum.Parse(typeof(TypeFilter), "Mods"),
-                                (FeedFilter)Enum.Parse(typeof(FeedFilter), "Recent"));
+                                (TypeFilter)Enum.Parse(typeof(TypeFilter), type));
+                            ObservableCollection<GameBananaRecord> feed = FeedGenerator.CurrentFeed.Records;
                             // Print errors
                             if (FeedGenerator.error)
                             {
@@ -73,7 +72,7 @@ namespace Amicitia.github.io
                                 foreach (var item in feed)
                                 {
                                     Post post = new Post();
-                                    post.Authors = new List<string>() { item.Owner.Name };
+                                    post.Authors = new List<string>() { item.Owner.Name.Trim(' ') };
                                     if (item.HasUpdates)
                                     {
                                         post.Date = item.DateUpdated.ToString("MM/dd/yyyy", new CultureInfo("en-US"));
@@ -86,32 +85,26 @@ namespace Amicitia.github.io
                                     else
                                         post.Description = TruncateLongString(item.ConvertedText.Replace("\t", "").Replace("\r<br>", "").Replace("\r", ""), 1000).TrimEnd('\n').TrimEnd('\\').Replace("\n", "<br>");
                                     post.EmbedURL = item.Image.ToString();
-                                    if (type == "Sounds")
-                                        post.Type = "Mod";
-                                    else if (type == "Tutorials")
-                                        post.Type = "Guide";
-                                    else
-                                        post.Type = type.TrimEnd('s');
-                                    post.Games = new List<string>() { game };
-                                    post.UpdateText = "";
                                     post.URL = item.Link.ToString();
+                                    if (post.URL.Contains("/tuts/"))
+                                        post.Type = "guide";
+                                    else if (post.URL.Contains("/mods/") || post.URL.Contains("/wips/") || post.URL.Contains("/sounds/"))
+                                        post.Type = "mod";
+                                    else if (post.URL.Contains("/tools/"))
+                                        post.Type = "tool";
+                                    else
+                                        post.Type = "mod";
+                                    post.Games = new List<string>() { game };
                                     post.Tags = new List<string>() { item.CategoryName.Replace("Other/", "").Replace("Game file", "") };
+                                    post.Games = new List<string>() { game.Trim(' ') };
+                                    post.Tags = new List<string>() { item.CategoryName.Replace("Other/", "").Replace("Game file", "").Trim(' ') };
                                     post.Title = item.Title;
                                     Regex rgx = new Regex("[^a-zA-Z0-9 -]");
                                     post.Id = game.ToLower() + "-" + rgx.Replace(item.Title.ToLower().Replace(" ", ""), "");
-
-                                    // If post is already accounted for in tsv...
-                                    if (Posts.Any(x => x.URL.Equals(post.URL)))
-                                    {
-                                        // Remove existing post from list
-                                        Post tempPost = Posts.First(x => x.URL.Equals(post.URL));
-                                        int index = Posts.IndexOf(tempPost);
-                                        Posts.Remove(tempPost);
-                                        // ... Update post and add back to list
-                                        Posts.Insert(index, post);
-                                    }
-                                    else
-                                        Posts.Add(post); // Add new post
+                                    if (type.ToLower() == "wips" && !post.Title.ToLower().Contains("wip"))
+                                        post.Title = "(WIP) " + post.Title;
+                                    
+                                    Posts.Add(post);
                                 }
                             }
                             else
@@ -126,13 +119,14 @@ namespace Amicitia.github.io
 
             Console.WriteLine("Done fetching Gamebanana data.");
 
+            return;
             // Save new TSVs
             Console.WriteLine("Updating TSV file...");
             List<string> lines = new List<string>();
             lines.Add($"ID\tType\tTitle\tGames\tAuthors\tDate\tTags\tDescription\tUpdate\tEmbed\tURL");
             foreach (var post in Posts)
             {
-                lines.Add($"{post.Id}\t{post.Type}\t{post.Title}\t{String.Join(", ", post.Games)}\t{String.Join(", ", post.Authors)}\t{post.Date}\t{String.Join(", ", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.URL}");
+                lines.Add($"{post.Id}\t{post.Type}\t{post.Title}\t{String.Join(",", post.Games)}\t{String.Join(",", post.Authors)}\t{post.Date}\t{String.Join(",", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.URL}");
             }
             File.WriteAllLines($"{indexPath}//db//amicitia.tsv", lines.ToArray());
             Console.WriteLine("Done Updating TSV file.");
@@ -172,6 +166,7 @@ namespace Amicitia.github.io
     public enum TypeFilter
     {
         Mods,
+        WiPs,
         Sounds,
         Tools,
         Tutorials
@@ -189,14 +184,14 @@ namespace Amicitia.github.io
                 return -1;
             return Double.Parse(keys.First());
         }
-        public static async Task GetFeed(int page, GameFilter game, TypeFilter type, FeedFilter filter)
+        public static async Task GetFeed(int page, GameFilter game, TypeFilter type)
         {
             error = false;
             if (feed == null)
                 feed = new Dictionary<string, GameBananaModList>();
             using (var httpClient = new HttpClient())
             {
-                var requestUrl = GenerateUrl(page, game, type, filter);
+                var requestUrl = GenerateUrl(page, game, type);
                 if (feed.ContainsKey(requestUrl) && feed[requestUrl].IsValid)
                 {
                     CurrentFeed = feed[requestUrl];
@@ -225,7 +220,7 @@ namespace Amicitia.github.io
                     feed[requestUrl] = CurrentFeed;
             }
         }
-        private static string GenerateUrl(int page, GameFilter game, TypeFilter type, FeedFilter filter)
+        private static string GenerateUrl(int page, GameFilter game, TypeFilter type)
         {
             // Base
             var url = "https://gamebanana.com/apiv4/";
@@ -236,6 +231,9 @@ namespace Amicitia.github.io
                     break;
                 case TypeFilter.Sounds:
                     url += "Sound/";
+                    break;
+                case TypeFilter.WiPs:
+                    url += "Wip/";
                     break;
                 case TypeFilter.Tools:
                     url += "Tool/";
@@ -258,7 +256,7 @@ namespace Amicitia.github.io
                     url += "8747&";
                     break;
                 case GameFilter.P4:
-                    url += "8263&";
+                    url += "8761&";
                     break;
                 case GameFilter.P4D:
                     url += "8769&";
@@ -290,22 +288,6 @@ namespace Amicitia.github.io
             }
             // Consistent args
             url += $"&_aArgs[]=_sbIsNsfw = false&_sRecordSchema=FileDaddy&_nPerpage=50";
-            // Sorting filter
-            switch (filter)
-            {
-                case FeedFilter.Recent:
-                    url += "&_sOrderBy=_tsDateUpdated,DESC";
-                    break;
-                case FeedFilter.Featured:
-                    url += "&_aArgs[]=_sbWasFeatured = true&_sOrderBy=_tsDateAdded,DESC";
-                    break;
-                case FeedFilter.Popular:
-                    if (type != TypeFilter.Tutorials)
-                        url += "&_sOrderBy=_nDownloadCount,DESC";
-                    else
-                        url += "&_sOrderBy=_nViewCount,DESC";
-                    break;
-            }
             // Get page number
             url += $"&_nPage={page}";
             return url;

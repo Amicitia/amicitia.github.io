@@ -1,0 +1,763 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='shortcut icon' href='https://amicitia.github.io/images/favicon.png' type='image/x-icon' />
+    <meta charset="utf-8">
+    <title>Amicitia -  mods </title>
+    <script src="https://amicitia.github.io/js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c3075832a.js" crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-9519592525056753" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://amicitia.github.io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://amicitia.github.io/css/amicitia.css" rel="stylesheet" type="text/css">
+    <script src="https://amicitia.github.io/js/bubbles.js"></script>
+    <script src="https://amicitia.github.io/js/clipboard.js"></script>
+    <script src="https://amicitia.github.io/js/showhide.js"></script>
+    <script src="https://amicitia.github.io/js/hidenav.js"></script>
+    <script src="https://amicitia.github.io/js/navigation.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/FeedEk.min.js"></script>
+    <script type="text/javascript" src="https://amicitia.github.io/js/jscolor.js"></script>
+</head>
+<body style="background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;">>
+    <!--Copied Message-->
+    <div class="copied">Copied to Clipboard</div>
+    <div class="flex">
+        <!--TopRow-->
+        <div class="row top">
+            <!--Navbar-->
+            <div class="navbar">
+                <div class="navbar-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://amicitia.github.io" style="border-bottom: 4px solid rgba(var(--text),var(--opaque));">
+                                    <div class="amicitia-logo">
+                                        <div class="amicitia-svg"></div>
+                                    </div>Mods
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/forum">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Forum
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://shrinefox.com/wiki">
+                                    <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Wiki
+                                </a>
+                            </td>
+                            <td id="sidebartoggle">
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--Sidebar Toggle-->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" style="position: fixed;display:none;">
+            <aside class="sidebar">
+                <div class="component">
+                    <div class="contents">
+                        <ul class="items list">
+                            <!--Sidebar Items-->
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-users"></i> &nbsp;&nbsp;Community</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/ucp.php">
+                                <div class="item">
+                                    <i class="fa fa-address-card"></i> &nbsp;Account Settings
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/ucp.php?i=pm&folder=inbox">
+                                <div class="item">
+                                    <i class="fa fa-envelope"></i> &nbsp;Inbox
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php">
+                                <div class="item">
+                                    <i class="fa fa-search"></i> &nbsp;Search
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=egosearch">
+                                <div class="item">
+                                    <i class="fa fa-sticky-note"></i> &nbsp;Your Posts
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/forum/search.php?search_id=active_topics">
+                                <div class="item">
+                                    <i class="fa fa-star"></i> &nbsp;Active Threads
+                                </div>
+                            </a>
+                            <div class="sidebarheader">
+                                <h4><i class="fa fa-cube"></i> &nbsp;&nbsp;Resources</h4>
+                            </div>
+                            <a href="https://shrinefox.com/forum/app.php/faqpage">
+                                <div class="item">
+                                    <i class="fa fa-question-circle"></i> &nbsp;FAQs
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/PatchCreator">
+                                <div class="item">
+                                    <i class="fa fa-check-square"></i> &nbsp;P5 RPCS3 Patch.yml Creator
+                                </div>
+                            </a>
+                            <a href="https://shrinefox.com/textsearch">
+                                <div class="item">
+                                    <i class="fab fa-searchengin"></i> &nbsp;Dialog Search
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/files">
+                                <div class="item">
+                                    <i class="fa fa-folder-open"></i> &nbsp;Dumps
+                                </div>
+                            </a>
+                            <a href="https://amicitia.github.io/docs/flowscript">
+                                <div class="item">
+                                    <i class="fa fa-file-code"></i> &nbsp;Flowscript Docs
+                                </div>
+                            </a>
+                        </ul>
+                    </div> <!--End Contents-->
+                </div>  <!--End Component-->
+            </aside>  <!--End Sidebar Menu-->
+            <!--Header-->
+            <div class="header">
+                <canvas id="bgCanvas" width="715" height="722" style=""></canvas>
+                <div class="header-inner" style="margin-top: 150px;">
+                    <center>
+                        <!--Title-->
+                        <table width="100%;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="headerselect">
+                                        <!--Game Select required for bubbles.js themeing-->
+                                        <select id="game" name="game" onchange="navigate()">
+                                            <option value="all">Game</option>
+                                            <option value="P5">Persona 5</option>
+                                            <option value="P5R">Persona 5 Royal</option>
+                                            <option value="P5S">Persona 5 Strikers</option>
+                                            <option value="P5D">Persona 5 Dancing in Starlight</option>
+                                            <option value="P4">Persona 4</option>
+                                            <option value="P4G">Persona 4 Golden</option>
+                                            <option value="P4AU">Persona 4 Arena Ultimax</option>
+                                            <option value="P4D">Persona 4 Dancing All Night</option>
+                                            <option value="P3FES">Persona 3 FES</option>
+                                            <option value="P3P">Persona 3 Portable</option>
+                                            <option value="P3D">Persona 3 Dancing in Moonlight</option>
+                                            <option value="PQ">Persona Q</option>
+                                            <option value="PQ2">Persona Q2</option>
+                                            <option value="CFB">Catherine Full Body</option>
+                                            <option value="SMT3">Shin Megami Tensei Nocturne</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <div class="subheaderselect">
+                                        <!--Select serving as website navigation-->
+                                        <select id="type" name="type" onchange="navigate()">
+                                            <option value="all">Modding Resources</option>
+                                            <option value="mods" selected>Mods</option>
+                                            <option value="tools">Tools</option>
+                                            <option value="cheats">Cheats</option>
+                                            <option value="guides">Guides</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    <!--Waves-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="3"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="5"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="7"></use>
+                            </g>
+                        </svg>
+                    </div>
+                    <!--Waves End-->
+                </div>
+                <!--Header End-->
+            </div>
+            <!--Navbar End-->
+        </div>
+        <!--Top End-->
+<!--Middle-->
+<div class="row middle">
+    <!--Page Body-->
+    <div class="content">
+        <table>
+            <!--Sidebar-->
+            <tr>
+                <td style="vertical-align:top;">
+                    <div class="bloglinks">
+                        <a href="https://shrinefox.com/news/">
+                            <h4>
+                                <i class="fas fa-newspaper"></i> News
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="news-feed"></div>
+                        <br>
+                        <a href="https://shrinefox.com/guides/">
+                            <h4>
+                                <i class="fas fa-graduation-cap"></i> Guides
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="guides-feed"></div>
+                        <br>
+                        <a href="https://shrinefox.com/blog/">
+                            <h4>
+                                <i class="fab fa-wordpress"></i> Blog
+                            </h4>
+                        </a>
+                        <div class="blogdivider"></div>
+                        <div id="blog-feed"></div>
+                    </div>
+                    <script>
+						$('#news-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/news/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#guides-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/guides/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+
+						$('#blog-feed').FeedEk({
+							FeedUrl:'https://shrinefox.com/blog/feed',
+							MaxCount : 3,
+							ShowDesc : false,
+							ShowPubDate:true,
+							DescCharacterLimit:0,
+							TitleLinkTarget:'_blank',
+							DateFormat: 'MMM d',
+							DateFormatLang:'en'
+						});
+                    </script>
+                </td>
+                <td id="main" style="vertical-align:top;">
+<!--Result Count and Submission Link-->
+<table style="padding: 0 20px 0 15px;">
+    <tbody>
+        <tr>
+            <td width="25%">Page 25/38 (564 results)</td>
+            <td width="50%"><center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods\24">24</a><span aria-current="page" class="page-numbers current">25</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\26">26</a></div></nav></center></td>
+            <td width="25%" style="text-align: right;">
+                <a href="https://shrinefox.com/forum/viewtopic.php?f=4&amp;t=682&amp;p=2649#p2649">
+                    <i class="fa fa-upload" aria-hidden="true"></i> How to Submit
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!--Post Grid-->
+<div class="cards"><br><center>To learn how to use these mods, see <a href="https://shrinefox.com/guides/2019/04/19/persona-5-rpcs3-modding-guide-1-downloads-and-setup">this guide.</a> Although it's focused on Persona 5, the latter half applies to other games as well.</center>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-p4djunesthemefilteredversion"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/48549">P4D Junes Theme (filtered version)</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/LinKKaDinKK">LinKKaDinKK</a>
+                    <br>09/14/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <b>Updated 09/14/2020</b><br>A music mod that changes the original Junes theme into the Persona 4 Dancing All Night version edited to sound like it's coming from the speakers of Junes themselves.<br><br>In the new Version 1.2 - there are now commercials that "enhance your experience"<br><br>Everyday Thug Life, JU-NES-U <br><br>All songs included belong to ATLUS Inc / Shoji Meguro
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music" rel="tag">Music</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-intromashup"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://drive.google.com/file/d/1s2k3t5-KjeIR4iFXuOJmvEVF8-T6z4_c/view">Persona 5 Intro Mashup</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/HulaHoopla">HulaHoopla</a>
+                    <br>9/14/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>This replaces the intro with an edit I made of Persona 5, Royal's, Scramble's and Dancing intro in one.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/FMV" rel="tag">FMV</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-chiesatonakaisasukalangleyschooloutfit"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f5d62eae4afd.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f5d62eae4afd.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/250376">(WIP) Chie Satonaka is Asuka Langley (school outfit)</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/tepiku.o">tepiku.o</a>
+                    <br>09/13/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    My first model mod, hope you like it.<br>Works with "Winter Yaso Outfit".
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Chie Skin" rel="tag">Chie Skin</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-modloader"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/153593230024245248/353253118659657728/unknown.png?width=989&height=560"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/153593230024245248/353253118659657728/unknown.png?width=989&height=560">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://shrinefox.com/PatchCreator">Persona 5 Mod Support (patch.yml)</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/TGE">TGE</a>
+                    <br>9/13/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <b>Update 9/13/2020</b>: Include new format for RPCS3's new patch manager (use old version with <a href=""https://github.com/TGEnigma/RPCS3PatchEboot"">RPCS3PatchEboot</a>)<br>An EBOOT modification for loading modded files from a custom mod.cpk file in the USRDIR folder. <br>Also includes the following optional mods: 60 FPS, logging of accessed files to debug console, HUD/blur/distortion toggle, randomized battle music, skipping DLC unlock messages, skipping opening logos
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/RPCS3" rel="tag">RPCS3</a><a href="https://amicitia.github.io/tag/Debug" rel="tag">Debug</a><a href="https://amicitia.github.io/tag/Executable" rel="tag">Executable</a><a href="https://amicitia.github.io/tag/FPS" rel="tag">FPS</a><a href="https://amicitia.github.io/tag/TTY" rel="tag">TTY</a><a href="https://amicitia.github.io/tag/Patch" rel="tag">Patch</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-devilmaycrybattlemusicpack"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/48376">Devil May Cry Battle Music Pack</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/alenisdone">alenisdone</a>
+                    <br>09/11/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <b>Updated 09/11/2020</b><br>Replaces the battle tracks and victory music with songs from the Devil May Cry series.<br><br>DMC1<br>Reach Out To The Truth - Lock & Load<br>Time to Make History - Public Enemy<br>Period - Mission Clear<br><br>DMC2<br>Reach Out To The Truth - Shoot the Works, Demon's Paradise<br>Time to Make History - Fire Away, Wings of the Guardian<br>Period - DMC2 Mission Clear<br><br>DMC3<br>Reach Out To The Truth - Divine Hate<br>Time to Make History - Taste the Blood<br>Period  - DMC3 Mission Clear<br><br>DMC4<br>Reach Out To The Truth - The Time Has Come<br>Time To Make History - Lock & Load -Blackened Angel Mix-<br>Period - DMC4 Mission Clear
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music Pack" rel="tag">Music Pack</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-reachouttothetruth-omarupolkavocals"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/49173">Reach out to the Truth - Omaru Polka Vocals</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/MUTANTWIZARD">MUTANTWIZARD</a>
+                    <br>09/10/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Hololive VTuber Omaru Polka uploaded a video of herself singing Reach out to the Truth, I knew what I had to do after that. And now we're here, I overlayed Omaru Polka's video over the instrumental for Reach out to the Truth, with some slight tweaks to make it work.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music" rel="tag">Music</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-labrys-over-haru"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/645431333434294332/753589829865832528/screenshot-2020_09_10_09_14_30.png?width=1204&height=677"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/645431333434294332/753589829865832528/screenshot-2020_09_10_09_14_30.png?width=1204&height=677">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/645431333434294332/753590916064870440/Labrys.rar">Labrys over Haru</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/_Saitsu_">_Saitsu_</a>
+                    <br>9/10/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Labrys over Shadow Ops Haru
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Party" rel="tag">Party</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-p3mc-costume"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://cdn.discordapp.com/attachments/432243967917293580/752089441799110696/unknown.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://cdn.discordapp.com/attachments/432243967917293580/752089441799110696/unknown.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://cdn.discordapp.com/attachments/383343424625180675/752770116281827358/P5R_P3MC_Costume_port.7z">P5R P3MC Ported as Costume</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/DniweTamp">DniweTamp</a>
+                    <br>9/8/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>P5R's ""SEES Boy"" ported to P5, with custom animations, replaces Gekkoukan High outfit. Also replaces all Joker's weapons with his sword. Replaces some UI elements to be blue, and also changes the critical cut-in.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Player" rel="tag">Player</a><a href="https://amicitia.github.io/tag/UI" rel="tag">UI</a><a href="https://amicitia.github.io/tag/Port" rel="tag">Port</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-anotheredenchronocrossp4pack"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/49127">Another eden + Chrono Cross + P4 Pack</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/SCArkadia">SCArkadia</a>
+                    <br>09/06/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This is a complete collection of Another Eden music game and has been matched and replaced with Persona 4 theme. Over 70 songs are replaced with Another Eden. Some boss songs are replaced with Chrono Cross as well.<br><br>As for mini-boss songs, they are replaced with Persona 4 the faithful music pack, and remained the same.<br><br>List of Changes<br><br>Vanilla Pack<br><br>0 The Genesis => 闇に仇なす傍に立つ者<br>1 Memory => Purgatory<br>2 Reach out to the truth => Future Garuela Battle<br>3 Ill face myself battle => 祈りの結晶<br>4 A new world fool => Paradoxical dreamer<br>5 The Almighty => 朱雀〜鬼哭舞闘〜<br>6 The Fog => 滴る甘き闇に<br>7 The genesis => 闇に仇なす傍に立つ者<br>8 Period => Victory<br>9 New Days => Baruoki<br>10 Ill face myself => なつかしい笑みに包まれて<br>11 Boarder of Insanity => 星を継ぐもの<br>12 Who's there? => 輪廻する祈り<br>13 Smile => はじまりの朝<br>14 Deduction =>  たおやかなる虚無<br>15 Strength of heart => ゼノドメイン<br>16 The path is open => 突入のとき<br>18 Youthful lunch => 奇怪な踊り子<br>20 A corner of memories =>  Elzion Airport<br>21 Poem of everyone's soul => Another Dungeon<br>22 How much? => Palsifal Underground<br>2 ... 
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music Pack" rel="tag">Music Pack</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-colorful-ui"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://i.imgur.com/VvDyZIq.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://i.imgur.com/VvDyZIq.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://mega.nz/file/DQQB3SRK#0OkNay_AtxRb_rnHNbN-3buU-O2hpDDaCDYn_I0u9ac">Colorful Battle UI</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/HaythamQuake">HaythamQuake</a>
+                    <br>9/6/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>Introducing the battle portraits in <span style=""color:#FF0000"">C</span><span style=""color:#FF8000"">O</span><span style=""color:#FFFF00"">L</span><span style=""color:#00FF00"">O</span><span style=""color:#0000FF"">U</span><span style=""color:#BF00FF"">R</span>!<br><br>This is inspired by the battle portraits in Persona 5: Scramble when you are in combat. Please make sure to place this higher than any other mod in the Mod Compendium that alters the battle portraits such as the Kasumi over Haru mod and the Darkechi mod.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/UI" rel="tag">UI</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-yakuzabattlemusicpack"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/48589">Yakuza Battle Music Pack</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/alenisdone">alenisdone</a>
+                    <br>09/05/2020 (updated)<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    <b>Updated 09/05/2020</b><br>Back at it again with another music pack as this is the extent of my abilities as a modder.<br><br>Includes music from Yakuza, Yakuza Kiwami, and Yakuza 0.<br><br>Yakuza<br>Reach Out To The Truth - Funk Goes On<br>Time to Make History - Son of a Gun<br>Miniboss Theme - Receive You The Prototype<br>I'll Face Myself -Battle- - Receive You<br>Period - Roar of the Dragon<br><br>Yakuza Kiwami<br>Reach Out To The Truth - Funk Goes On 極<br>Time to Make History - Flirt With Bomb<br>Miniboss Theme - Receive You The Madtype<br>I'll Face Myself -Battle- - Receive You [Reborn]<br>Period - In a Dead Heat<br><br>Yakuza 0<br>Reach Out To The Truth - Force Addiction, One-Eyed Assassin<br>Time to Make History - Crash Addiction, One-Eyed Slugger<br>Miniboss Theme - Parry Addiction, One-Eyed Dancer<br>I'll Face Myself -Battle- - Receive You ~Tech Trance Arrange~, Receive You The Subtype<br>Period - Beyond the Speed<br><br>If it's too loud or a track's loop sounds stupid leave a comment.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music Pack" rel="tag">Music Pack</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-shujinhighwinteruniformforyu"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://images.gamebanana.com/img/ss/mods/5f52b4e16ee49.jpg"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://images.gamebanana.com/img/ss/mods/5f52b4e16ee49.jpg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/mods/250356">(WIP) Shujin High Winter uniform for Yu</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/Preez">Preez</a>
+                    <br>09/04/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    Just a simple Reskin for Yu's Gekkoukan costume (sadly), comes with four options (Dark Haired, Dark Hair with Joker ''Mask", default Yu head, and Yu with Joker Mask). I made this mod before the update so idk if it's gonna be affected but let me know if it doesn't work on your end, I'll try to fix it. <br><br>Texture goes here : data00003/tex2/model/player/bc001_c4<br><br>How the mod looks in action: https://youtu.be/aiPPzSkkizQ
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Yu Skin" rel="tag">Yu Skin</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-persona3battlemix"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/49022">Persona 3 Battle Mix</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/Prince_Kijigo">Prince_Kijigo</a>
+                    <br>09/02/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This small music pack replaces Reach Out To The Truth, Time To Make History, and Period with Mass Destruction, Wait And See, and After The Battle respectively.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music Pack" rel="tag">Music Pack</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p4g-rickastley-nevergonnagiveyouup"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png"><div class="getlink" style="float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://media.discordapp.net/attachments/792245872259235850/842426608882679818/P4GSound.png">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://gamebanana.com/sounds/49023">Rick Astley - Never Gonna Give You Up</a>
+                    </h3>
+                    P4G mod by <a href="https://amicitia.github.io/author/Prince_Kijigo">Prince_Kijigo</a>
+                    <br>09/02/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                    This song replaces almost every song with Never Gonna Give You Up.<br><br>quite fun when I tell you.<br><br>load this into your friends game while he isn't looking. That would be funny I think.
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/Music" rel="tag">Music</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>    <div class="card">
+        <div class="text">
+            <div class="toggle-title">
+                <a href="https://amicitia.github.io/post/p5-faithful-bgm"><div class="getlink" style="float: left; z-index: 999;"><i class="fas fa-link" aria-hidden="true"></i></div></a>
+                <a href="POSTMEDIAURL"><div class="getlink" style="display: none;float:right; z-index: 999;"><i class="fas fa-eye" aria-hidden="true"></i></div></a>
+                <img src="https://amicitia.github.io/images/logo.svg">
+                <div class="card__body">
+                    <h3>
+                        <a href="https://mega.nz/file/Rr5CDIjS#GaexQYngqb7MNP_v8x3cOdzVDpBB3Zx208LpzHmK5OI">P5 The Faithful Music Pack</a>
+                    </h3>
+                    P5 mod by <a href="https://amicitia.github.io/author/shibe">shibe</a>
+                    <br>9/2/2020<br>
+                </div>
+            </div>
+            <div class="toggle-inner" style="display: none;padding: 0 10px 0 10px;">
+                <p style="padding: 0 20px 0px 20px;">
+                     <br>This mod aims to create an enhanced, yet faithful listening experience for Persona 5. It has a heavy focus on songs from Persona 5 Royal and Persona 5 the Animation, but contains songs from other media such as Persona 5 Scramble, Persona Q2, Persona 3 and Persona 4 the Animation. I have tried to maintain the same tone of the game's original audio, but this has not been thoroughly tested, so let me know if you think any of the songs don't fit the scenario where they play.<br><br><a href=""https://shrinefox.com/forum/viewtopic.php?f=15&t=596"">Song List</a>
+                    <br><br>
+                    <span class="tags-links">
+                        <a href="https://amicitia.github.io/tag/BGM" rel="tag">BGM</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div><br>                    </div>
+                <center><nav class="pagination" role="navigation"><div class="nav-links"><a class="page-numbers" href="https:\\amicitia.github.io\mods\24">24</a><span aria-current="page" class="page-numbers current">25</span><a class="page-numbers" href="https:\\amicitia.github.io\mods\26">26</a></div></nav></center><br>
+                </td></tr></tbody></table>
+                <!--Footer-->
+                                 <div class="row bottom">
+                                     <footer>
+                                         <table style="padding-right: 2%;">
+                                             <tbody>
+                                                 <tr>
+                                                     <td id="about_site" style="vertical-align: top;width: 25%;">
+                                                         <center>
+                                                             <div class="amicitia-logo" style="left: auto;position: relative;width: 75px;height: 75px;float: none;">
+                                                                 <div class="amicitia-svg" style="height: 75px; width: 75px;background: url(https://amicitia.github.io/images/logo.svg) center center/75px no-repeat;"></div>
+                                                             </div>
+                                                         </center>
+                                                         <br>
+                                                         <a href="https://shrinefox.com/amicitia">Amicitia</a> is a modding network dedicated to documenting & reverse engineering SMT/Persona games, named after <a href="https://github.com/TGEnigma">TGEnigma</a>'s all-in-one editor application <a href="https://amicitia.github.io/post/amicitia">of the same name</a>.
+                                                         <br><br><a href="https://shrinefox.com/credits"><i class="fa fa-heart" aria-hidden="true"></i> <b>Site Credits</b></a>
+                                                     </td>
+                                                     <td id="site_links" style="vertical-align: top;width: 20%;padding-left: 5%;vertical-align:top;">
+                                                         <h5>AMICITIA</h5>
+                                                         <a href="https://shrinefox.com/news"><i class="fa fa-newspaper"></i> <b>News</b></a>
+                                                         <br><a href="https://shrinefox.com/guides"><i class="fa fa-graduation-cap"></i> <b>Guides</b></a>
+                                                         <br><a href="https://twitter.com/AmicitiaTeam"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://reddit.com/r/Amicitia"><i class="fa fa-reddit"></i> <b>Reddit</b></a>
+                                                         <br><a href="https://discord.gg/9USHGmB"><i class="fab fa-discord"></i> <b>Discord</b></a>
+                                                         <br><br><h5>SHRINEFOX</h5>
+                                                         <a href="https://twitter.com/ShrineFoxMods"><i class="fa fa-twitter"></i> <b>Twitter</b></a>
+                                                         <br><a href="https://www.youtube.com/c/ShrineFox"><i class="fa fa-youtube"></i> <b>YouTube</b></a>
+                                                         <br><a href="https://shrinefox.com/blog"><i class="fab fa-wordpress"></i> <b>Blog</b></a>
+                                                     </td>
+                                                     <td id="site_disclaimer" width="5%" style="vertical-align:top;"></td>
+                                                     <td>
+                                                         We are NOT affiliated, associated, authorized, endorsed by, or in any way
+                                                         officially connected with ATLUS, SEGA, or any of its subsidiaries or its affiliates.
+                                                         The official ATLUS website can be found at <a href="https://atlus.com/">https://atlus.com</a>. ATLUS and SEGA are
+                                                         registered in the U.S. Patent and Trademark Office. ATLUS and PERSONA are
+                                                         either registered trademarks or trademarks of ATLUS Co., Ltd. or its affiliates.
+                                                         <!--Theme Select required for bubbles.js themeing-->
+                                                         <br><br>Theme: <select id="theme" name="theme" onchange="ThemeToggle()">
+                                                             <option value="" selected>Default</option>
+                                                             <option value="p5">Red/Black</option>
+                                                             <option value="p4">Yellow/Orange</option>
+                                                             <option value="p3fes">Green/Black</option>
+                                                             <option value="pq">Pink/Purple</option>
+                                                             <option value="custom">Custom</option>
+                                                         </select>
+                                                         
+                                                        <!--Color Picker-->
+                                                        <script>
+                                                            jscolor.presets.default = {
+                                                                format: 'rgb', previewSize: 20, paletteCols: 1,
+                                                                backgroundColor: 'rgb(var(--post))', borderColor: 'rgb(var(--post))',
+                                                                padding: 5, width: 100, height: 100, mode: 'HVS',
+                                                                controlBorderColor: 'rgb(var(--post))', sliderSize: 8, shadow: false
+                                                            };
+                                                        </script>
+                                                        <div id="colorpicker" style="display:none;">
+                                                            <div class="text">
+                                                                <div class="toggle-title" style="cursor: pointer;" onclick="updateColorPicker()">
+                                                                    <a><i class="fa fa-gears"></i> Theme Settings</a>
+                                                                </div>
+                                                                <div class="toggle-inner" style="display:none;">
+                                                                    <br><button id="customlink" data-jscolor="{onChange: 'updateLink(this)',value:'rgb(var(--link))', alpha:1}">Link</button>
+                                                                    <br><button id="customhover" data-jscolor="{onChange: 'updateHover(this)',value:'rgb(var(--hover))', alpha:1}">Hover</button>
+                                                                    <br><button id="custombg" data-jscolor="{onChange: 'updateBg(this)',value:'rgb(var(--bg))', alpha:1}">Background</button>
+                                                                    <br><button id="custombg2" data-jscolor="{onChange: 'updateBg2(this)',value:'rgb(var(--bg2))', alpha:1}">Background 2</button>
+                                                                    <br><button id="customtext" data-jscolor="{onChange: 'updateText(this)',value:'rgb(var(--text))', alpha:1}">Text</button>
+                                                                    <br><button id="custompost" data-jscolor="{onChange: 'updatePost(this)',value:'rgb(var(--post))', alpha:1}">Post</button>
+                                                                    <br><button id="customtextinner" data-jscolor="{onChange: 'updateTextinner(this)',value:'rgb(var(--textinner))', alpha:1}">Inner Text</button>
+                                                                    <br><button id="customfooter" data-jscolor="{onChange: 'updateFooter(this)',value:'rgb(var(--footer))', alpha:1}">Footer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Bubble Popping SFX Toggle-->
+                                                        <br>Sound: <i id="sound" class="fas fa-volume-mute" onclick="SoundToggle()"></i>
+                                                        <!--Performance Mode Toggle-->
+                                                        <br>Performance Mode: <i id="performance" class="fas fa-toggle-off" onclick="PerformanceToggle()"></i>
+                                                        <!--Score Display-->
+                                                        <br><span id="score">0</span> bubbles popped
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                         </table>
+                                         <br>
+                                         <center>
+                                             <!--AdSense-->
+                                             <br>
+                                             <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                             <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hx+4+s-4m+70" data-ad-client="ca-pub-9519592525056753" data-ad-slot="8263745709"></ins>
+                                             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                                             <br>
+                                             <!--Credits-->
+                                             <br>© ShrineFox 2020 - 2021. <a href="https://ko-fi.com/shrinefox"><i class="fa fa-coffee"></i> Support</a>
+                                             <br><br>
+                                             <!--Placeholder-->
+                                             <select id="game" name="game" style="display:none;">
+                                                 <option value="" selected>Default</option>
+                                             </select>
+                                         </center>
+                                         <!--End Footer-->
+                                     </footer>
+                                 </div>
+                <!--End Bottom-->
+		     </div>
+		</form>
+	</body>
+</html>
