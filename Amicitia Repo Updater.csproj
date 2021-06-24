@@ -7,7 +7,7 @@
     <ProjectGuid>{65086109-537B-436B-A33E-D03EF721B264}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Amicitia.github.io</RootNamespace>
-    <AssemblyName>Amicitia.github.io</AssemblyName>
+    <AssemblyName>Amicitia Repo Updater</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>amicitia.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack, Version=1.11.32.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
@@ -111,6 +114,7 @@
     <None Include="PageCreator\packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="amicitia.ico" />
     <Content Include="Templates\Flowscript\compiling.html" />
     <Content Include="Templates\Flowscript\decompiling.html" />
     <Content Include="Templates\Flowscript\flowscript.html" />
