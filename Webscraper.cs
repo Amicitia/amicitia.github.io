@@ -122,7 +122,7 @@ namespace Amicitia.github.io
             Console.WriteLine("Updating TSV file...");
             List<string> lines = new List<string>();
             lines.Add($"ID\tType\tTitle\tGames\tAuthors\tDate\tTags\tDescription\tUpdate\tEmbed\tURL");
-            foreach (var post in Posts)
+            foreach (var post in Posts.Where(x => !x.Title.Equals("AtlusFilesTool")))
             {
                 lines.Add($"{post.Id}\t{post.Type}\t{post.Title}\t{String.Join(",", post.Games)}\t{String.Join(",", post.Authors)}\t{post.Date}\t{String.Join(",", post.Tags)}\t{post.Description}\t{post.UpdateText}\t{post.EmbedURL}\t{post.URL}");
             }
