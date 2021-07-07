@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using static Amicitia.github.io.Program;
 
 namespace Amicitia.github.io.PageCreator
 {
@@ -55,7 +56,7 @@ namespace Amicitia.github.io.PageCreator
                         post.Id = split[0].Trim('"');
                         post.Type = split[1].ToLower().Trim('"');
                         post.Title = split[2].Trim('"');
-                        post.Games = split[3].Split(',').ToList();
+                        post.Games = split[3].ToLower().Split(',').ToList();
                         for (int x = 0; x < post.Games.Count; x++)
                             post.Games[x] = post.Games[x].Trim('"').Trim(' ');
                         post.Authors = split[4].Split(',').ToList();
@@ -113,7 +114,7 @@ namespace Amicitia.github.io.PageCreator
             result = result.Replace("POSTID", "https://amicitia.github.io/post/" + post.Id);
 
             //Visible Post Details
-            result = result.Replace("POSTTYPE", $"{post.Games.First()} {post.Type}").Replace("POSTTITLE", post.Title);
+            result = result.Replace("POSTTYPE", $"{post.Games.First().ToUpper()} {FirstCharToUpper(post.Type)}").Replace("POSTTITLE", post.Title);
             //Author
             string authors = "";
             foreach (string author in post.Authors.Where(x => !x.Equals("Unknown Author") && !String.IsNullOrWhiteSpace(x)))

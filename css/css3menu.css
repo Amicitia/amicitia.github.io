@@ -21,7 +21,8 @@ ul#css3menu0 ul {
     position: absolute;
     left: 0;
     top: 115%;
-    background: linear-gradient( 120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;
+    background: linear-gradient(90deg, var(--gradient1) 0%, transparent 100%) fixed;
+    backdrop-filter: blur(var(--blur));
     border-radius: 0 0 0px 0px;
     -moz-border-radius: 0 0 0px 0px;
     -webkit-border-radius: 0;
@@ -221,7 +222,7 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
     }
 
     ul#css3menu0 ul .submenu, ul#css3menu0 li > ul {
-        left: 0;
+        left: 25%;
         right: auto;
         top: 100%;
         max-width: 300px;
@@ -241,7 +242,11 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
         width: 100%;
     }
 
-    ul#css3menu0 > li {
+    ul#css3menu0 ul {
+        backdrop-filter: none !important;
+    }
+
+    ul #css3menu0 > li {
         display: none;
         position: relative;
         width: 100% !important;
@@ -268,5 +273,9 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
         left: 0;
         right: 0;
         bottom: 0;
+    }
+
+    ul#css3menu0 li:hover {
+        border-bottom: 5px solid transparent !important;
     }
 }

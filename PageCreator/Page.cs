@@ -50,29 +50,31 @@ namespace Amicitia.github.io.PageCreator
             string gameFull = "";
             string type = "";
             string pageName = "";
-            foreach (var split in url.Replace(".html", "").Split('\\').Reverse())
-                if (gameList.Any(g => g.Item1.Equals(split)))
+
+            foreach (var split in url.ToLower().Replace(".html", "").Split('\\').Reverse())
+                if (gameList.Any(g => g.Item1.ToLower().Equals(split)))
                     game = split;
-                else if (split == "Mods" || split == "Tools" || split == "Guides" || split == "Cheats")
+                else if (split == "mods" || split == "tools" || split == "guides" || split == "cheats")
                     type = split;
+
             if (!String.IsNullOrEmpty(game))
             {
-                gameFull = gameList.Single(x => x.Item1.Equals(game)).Item2;
-                pageName = game;
+                gameFull = gameList.Single(x => x.Item1.ToLower().Equals(game.ToLower())).Item2;
+                pageName = gameFull;
             }
             if (!String.IsNullOrEmpty(type))
-                pageName += $" {type}";
-            if (!String.IsNullOrEmpty(pageName))
-                html += $"<title>Amicitia {pageName}</title>";
-            else
-                html += "<title>Amicitia Mods</title>";
+                pageName += $" {FirstCharToUpper(type)}";
+            if (String.IsNullOrEmpty(pageName))
+                pageName = "Mods & Resources";
+
+            html += $"<title>{pageName}</title>";
             html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader 
                 + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
-                $"style=\"width:150px;height:150px;\"><h1>{gameFull} {type}</h1></a></center>"
+                $"style=\"width:150px;height:150px;\"><h1>{pageName}</h1></a></center>"
                 + Properties.Resources.IndexBeforeContent;
             // Update selected navigation value
             html = html.Replace("<div class=\"content\">", $"{Properties.Resources.Navigation}<div class=\"content\">");
-            html = html.Replace($"value=\"{game}\">", $"value=\"{game}\" selected>").Replace($"value=\"{type}\">", $"value=\"{type}\" selected>");
+            html = html.Replace($"value=\"{game.ToLower()}\">", $"value=\"{game.ToLower()}\" selected>").Replace($"value=\"{type}\">", $"value=\"{type}\" selected>");
 
             // Set up for pagination and ref link depth
             int depth = url.Count(c => c == '\\');
@@ -102,6 +104,8 @@ namespace Amicitia.github.io.PageCreator
             // End pagination table
             pagination += "</div></nav></center>";
 
+            // Hacky workaround for navbar ul class being renamed
+            html = html.Replace("css3menu0", "TEMPcss3menu0");
             // Append content, navigation and footer to content
             html += content; // Body Content
             html += Properties.Resources.IndexFooter; // Footer
@@ -128,9 +132,9 @@ namespace Amicitia.github.io.PageCreator
                 html = html.Replace("\"js", "\"../../../js");
                 html = html.Replace("\"images", "\"../../../images");
             }
-
             // Hacky workaround for navbar ul class being renamed
-            html = html.Replace("../css3menu0", "css3menu0");
+            html = html.Replace("TEMPcss3menu0", "css3menu0");
+            //html = html.Replace("https://amicitia.github.io","."); // Use local files
 
             // Create page
             string htmlPath = Path.Combine(indexPath, url);
@@ -179,6 +183,7 @@ namespace Amicitia.github.io.PageCreator
             int pagePosts = 0; // Posts on this page so far
             int totalPages = Convert.ToInt32(RoundUp(Convert.ToDecimal(posts.Count) / Convert.ToDecimal(maxPosts), 0)); // Total number of pages
             //For each post...
+            bool matchFound = false; //Show more resources if post is a mod or tool
             for (int i = 0; i < posts.Count; i++)
             {
                 //Start of page
@@ -193,7 +198,6 @@ namespace Amicitia.github.io.PageCreator
                     else if (url.Contains("p5r")) //Show Pan thank you message
                         content += "<center>Special thanks to <a href=\"https://twitter.com/regularpanties\">@regularpanties</a> for the generous donation of a 6.72 PS4<br>and a plethora of documentation that made this section possible.</center><br>";
 
-                    bool matchFound = false; //Show more resources if post is a mod or tool
                     if (!matchFound && (url.Contains("mods") || url.Contains("game")))
                     {
                         if (url.Contains("\\p5") && !url.Contains("\\p5r") && !url.Contains("\\p5s"))
@@ -241,11 +245,11 @@ namespace Amicitia.github.io.PageCreator
                 List<Post> postsByGame = new List<Post>();
                 foreach (var post in posts)
                 {
-                    if (post.Games.Any(x => x.ToUpper().Equals(game.Item1.ToUpper())))
+                    if (post.Games.Any(x => x.ToLower().Equals(game.Item1.ToLower())))
                         postsByGame.Add(post);
                 }
                 //Create 
-                CreateHtml(postsByGame, $"game\\{game.Item1}");
+                CreateHtml(postsByGame, $"game\\{game.Item1.ToLower()}");
             }
         }
 
@@ -299,10 +303,10 @@ namespace Amicitia.github.io.PageCreator
                 List<Post> typepostByGame = new List<Post>();
                 foreach (var post in typepost)
                 {
-                    if (post.Games.Any(x => x.Trim().ToUpper().Equals(game.Item1.ToUpper())))
+                    if (post.Games.Any(x => x.Trim().ToLower().Equals(game.Item1.ToLower())))
                         typepostByGame.Add(post);
                 }
-                CreateHtml(typepostByGame, $"{type.ToLower()}s\\{game.Item1}");
+                CreateHtml(typepostByGame, $"{type.ToLower()}s\\{game.Item1.ToLower()}");
             }
         }
 

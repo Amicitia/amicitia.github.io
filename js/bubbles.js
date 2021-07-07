@@ -320,13 +320,13 @@ function SetTheme() {
 		footer = '89,57,0';
 	}
 	else if (theme == "p3fes" || theme == "p3p" || theme == "p3d") {
-		link = '9,255,0';
-		hover = '4,112,0';
+		link = '4,112,0';
+		hover = '9,255,0';
 		bg = '0,0,0';
 		bg2 = '2,43,0';
 		text = '255,255,255';
 		post = '0,0,0';
-		textinner = '255,255,255';
+		textinner = '200,200,200';
 		footer = '0,0,0';
 	}
 	else if (theme == "cfb" || theme == "pq" || theme == "pq2") {

@@ -69,6 +69,11 @@ body {
     -webkit-box-shadow: 0 -2px 7px #000;
     -moz-box-shadow: 0 -2px 7px #000;
     box-shadow: 0 -2px 7px #000;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    backdrop-filter: blur(var(--blur))
 }
 
 ul {
@@ -149,10 +154,10 @@ h1, h2, h3, h4, h5 {
     overflow-y: hidden;
     overflow-x: hidden;
     width: 100%;
+    padding-top: 80px;
 }
 
 .header-inner {
-    margin-top: 0;
 	color: rgba(var(--text),var(--opaque))
 }
 
@@ -539,13 +544,14 @@ input[type=checkbox] {
 
 /* Dropdown */
 select {
-    background: rgba(var(--post), var(--alpha));
+    background: rgba(var(--post), var(--opaque));
     color: rgba(var(--link), var(--opaque));
     border-radius: var(--radius);
     text-align-last: center;
     min-height: 26px;
     border: 1px solid rgba(var(--link), var(--opaque));
     margin-left: 2%;
+    font-weight: bold;
 }
 
 select:hover {
@@ -558,8 +564,12 @@ select:active {
 }
 
 select option {
-    color: rgba(var(--post), var(--opaque));
-    background: rgba(var(--textinner), var(--opaque));
+    color: rgba(var(--textinner), var(--opaque));
+    background: rgba(var(--link), var(--opaque));
+}
+
+option:not(:checked) {
+    background: rgba(var(--post), var(--opaque));
 }
 
 .headerselect select {
@@ -639,10 +649,8 @@ select:-moz-focusring {
 
 /* Pagination */
 .pagination {
-    padding: 3rem 3rem 0;
+    padding: var(--padding);
     text-align: center;
-    font-size: 12px;
-    font-size: 0.75rem;
     line-height: 1;
     font-weight: bold;
 }
@@ -797,6 +805,7 @@ input[type="button"]::-moz-focus-inner {
 
 .toggle-title .post:hover {
     background: var(--highlight2);
+    transition: all .2s;
 }
 
 .toggle-inner .post {
