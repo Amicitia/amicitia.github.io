@@ -73,6 +73,7 @@ body {
     position: fixed;
     top: 0px;
     width: 100%;
+    background: linear-gradient(90deg, var(--gradient1) 0%, transparent 100%) fixed;
     backdrop-filter: blur(var(--blur))
 }
 
@@ -322,7 +323,6 @@ main > * {
     overflow-y: auto;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
-    background: rgba(var(--bg), var(--alpha));
     overflow-x: hidden;
 }
 
@@ -377,7 +377,7 @@ main > * {
 
 .component .contents {
     max-height: 200px;
-    background: linear-gradient( 120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;
+    background: linear-gradient(90deg, var(--gradient1) 0%, transparent 100%) fixed;
     -webkit-box-shadow: rgb(0 0 0 / 30%) 0px 2px 9px 3px -moz-box-shadow: 0 -2px 7px #000;
     box-shadow: rgb(0 0 0 / 30%) 0px 2px 9px 3px;
 }

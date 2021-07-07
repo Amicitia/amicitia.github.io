@@ -122,7 +122,6 @@
     <Content Include="js\clipboard.js" />
     <Content Include="js\clipboard.min.js" />
     <Content Include="js\FeedEk.min.js" />
-    <Content Include="js\hidenav.js" />
     <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="js\jscolor.js" />
     <Content Include="js\navigation.js" />
