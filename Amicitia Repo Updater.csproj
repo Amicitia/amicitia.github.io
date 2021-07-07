@@ -115,11 +115,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="amicitia.ico" />
+    <Content Include="css\amicitia.css" />
+    <Content Include="css\css3menu.css" />
+    <Content Include="js\bubbles.js" />
+    <Content Include="js\bubbleslite.js" />
+    <Content Include="js\clipboard.js" />
+    <Content Include="js\clipboard.min.js" />
+    <Content Include="js\FeedEk.min.js" />
+    <Content Include="js\hidenav.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\jscolor.js" />
+    <Content Include="js\navigation.js" />
+    <Content Include="js\showhide.js" />
     <Content Include="Templates\Flowscript\compiling.html" />
     <Content Include="Templates\Flowscript\decompiling.html" />
     <Content Include="Templates\Flowscript\flowscript.html" />
     <Content Include="Templates\Flowscript\hookingfunctions.html" />
     <Content Include="Templates\Flowscript\importing.html" />
+    <Content Include="Templates\IndexAfterHeader.html" />
+    <Content Include="Templates\IndexBeforeContent.html" />
+    <Content Include="Templates\IndexBeforeHeader.html" />
+    <Content Include="Templates\Navigation.html" />
     <Content Include="Templates\Post.html" />
     <Content Include="Templates\PostTableHeader.html" />
     <Content Include="Templates\IndexSidebar.html" />
@@ -148,6 +164,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="docs\" />
+    <Folder Include="Templates\Blogs\" />
+    <Folder Include="Templates\Forum\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

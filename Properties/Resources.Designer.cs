@@ -156,26 +156,65 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to                                 &lt;/tr&gt;
-        ///							&lt;/tbody&gt;
+        ///   Looks up a localized string similar to &lt;body style=&quot;background: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;&quot;&gt;
+        ///    &lt;!--Copied Message--&gt;
+        ///    &lt;div class=&quot;copied&quot;&gt;Copied to Clipboard&lt;/div&gt;
+        ///    &lt;div class=&quot;flex&quot;&gt;
+        ///        &lt;!--TopRow--&gt;
+        ///        &lt;div class=&quot;row top&quot;&gt;
+        ///            &lt;!--Navbar--&gt;
+        ///            &lt;div class=&quot;navbar&quot;&gt;
+        ///                &lt;input type=&quot;checkbox&quot; id=&quot;css3menu-switcher&quot; class=&quot;c3m-switch-input&quot;&gt;
+        ///                &lt;ul id=&quot;css3menu0&quot; class=&quot;topmenu&quot;&gt;
+        ///                    &lt;li class=&quot;switch&quot;&gt;&lt;label oncl [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string IndexAfterHeader {
+            get {
+                return ResourceManager.GetString("IndexAfterHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to             &lt;!--Waves--&gt;
+        ///            &lt;div&gt;
+        ///                &lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
+        ///                    &lt;defs&gt;
+        ///                        &lt;path id=&quot;gentle-wave&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot;&gt;&lt;/path&gt;
+        ///                    &lt;/defs&gt;
+        ///                    &lt;g class=&quot;parallax&quot;&gt;
+        ///                        &lt;use xlink:href=&quot;#gentle [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string IndexBeforeContent {
+            get {
+                return ResourceManager.GetString("IndexBeforeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     &lt;link rel=&apos;shortcut icon&apos; href=&apos;https://amicitia.github.io/images/favicon.png&apos; type=&apos;image/x-icon&apos; /&gt;
+        ///    &lt;meta charset=&quot;utf-8&quot;&gt;.
+        /// </summary>
+        public static string IndexBeforeHeader {
+            get {
+                return ResourceManager.GetString("IndexBeforeHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 								&lt;/td&gt;
+        ///							&lt;/tr&gt;
         ///						&lt;/table&gt;
-        ///                        &lt;!--Pagination--&gt;
-        ///                        &lt;br&gt;
-        ///                        &lt;br&gt;
         ///					&lt;/div&gt;
-        ///				&lt;/td&gt;
-        ///			&lt;/tr&gt;
-        ///		&lt;/tbody&gt;
-        ///	&lt;/table&gt;
-        ///&lt;br&gt;
-        ///&lt;!--Footer--&gt;
-        ///&lt;footer style=&quot;backdrop-filter: blur(6px);background-color: rgba(17,17,17,0.5);padding-left: 50px;padding-top: 25px;&quot;&gt;
-        ///    &lt;table&gt;
-        ///        &lt;tbody&gt;
-        ///            &lt;tr&gt;
-        ///                &lt;td style=&quot;vertical-align: top;width: 25%;&quot;&gt;
-        ///                    &lt;h4&gt;About&lt;/h4&gt;
-        ///             [rest of string was truncated]&quot;;.
+        ///                &lt;!--Pagination--&gt;
+        ///                &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+        ///                &lt;!--Footer--&gt;
+        ///                &lt;div class=&quot;row bottom&quot;&gt;
+        ///                    &lt;footer&gt;
+        ///                        &lt;table style=&quot;padding-right: 2%;&quot;&gt;
+        ///                            &lt;tbody&gt;
+        ///                                &lt;tr&gt;
+        ///                                    &lt;td id=&quot;about_site&quot; style=&quot;vertical-align: top;width: 25%;&quot;&gt;
+        ///                                        [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexFooter {
             get {
@@ -184,16 +223,12 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;!doctype html&gt;
-        ///&lt;html&gt;
-        ///&lt;head&gt;
-        ///    &lt;link rel=&apos;shortcut icon&apos; href=&apos;images/favicon.png&apos; type=&apos;image/x-icon&apos; /&gt;
-        ///    &lt;meta charset=&quot;utf-8&quot;&gt;
-        ///    &lt;title&gt;Amicitia Mods&lt;/title&gt;
-        ///    &lt;link href=&quot;https://shrinefox.com/css/index.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;https://shrinefox.com/css/waves.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;https://shrinefox.com/css/sidebar.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-        ///    &lt;link href=&quot;https://shrinefox.com/css/navbar.css&quot; rel=&quot;stylesheet&quot;  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;script src=&quot;https://amicitia.github.io/js/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+        ///&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Lato:wght@300;400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+        ///&lt;script src=&quot;https://kit.fontawesome.com/4c3075832a.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+        ///&lt;script data-ad-client=&quot;ca-pub-9519592525056753&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+        ///&lt;link href=&quot;https://amicitia.github.io/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+        ///&lt;link href= [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexHeader {
             get {
@@ -202,19 +237,20 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;div class=&quot;content&quot;&gt;
-        ///    &lt;table&gt;
-        ///        &lt;tbody&gt;
-        ///            &lt;tr&gt;
-        ///                &lt;td style=&quot;vertical-align:top;width: 25%;padding-left: 10px;&quot;&gt;
-        ///                    &lt;div class=&quot;bloglinks&quot;&gt;
-        ///                        &lt;a href=&quot;https://amicitia-team.tumblr.com/&quot;&gt;
-        ///                            &lt;h3&gt;
-        ///                                &lt;i class=&quot;fas fa-newspaper&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; News
-        ///                            &lt;/h3&gt;
-        ///                        &lt;/a&gt;
-        ///                        &lt;div class=&quot;widget&quot;&gt;
-        ///            [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to 				&lt;/td&gt;
+        ///				&lt;!--Sidebar--&gt;
+        ///                &lt;td style=&quot;vertical-align:top;width:20%;text-align:right;font-size:10pt;&quot; class=&quot;bloglinks&quot;&gt;
+        ///					&lt;b&gt;LATEST UPDATES&lt;/b&gt;
+        ///                    &lt;div id=&quot;news-feed&quot;&gt;&lt;/div&gt;
+        ///                    &lt;div id=&quot;guides-feed&quot;&gt;&lt;/div&gt;
+        ///                    &lt;div id=&quot;blog-feed&quot;&gt;&lt;/div&gt;
+        ///                    &lt;script&gt;
+        ///						$(&apos;#news-feed&apos;).FeedEk({
+        ///							FeedUrl:&apos;https://shrinefox.com/news/feed&apos;,
+        ///							MaxCount : 3,
+        ///							ShowDesc : false,
+        ///							ShowPubDate:true,
+        ///							Des [rest of string was truncated]&quot;;.
         /// </summary>
         public static string IndexSidebar {
             get {
@@ -242,19 +278,34 @@ namespace Amicitia.github.io.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;td style=&quot;display: inline-block;padding: 10px;max-width: 32%;min-width: 32%;vertical-align: top;&quot;&gt;
-        ///    &lt;div class=&quot;card&quot;&gt;
-        ///        &lt;div class=&quot;toggle&quot;&gt;
+        ///   Looks up a localized string similar to &lt;div class=&quot;wrap&quot;&gt;
+        ///    &lt;table id=&quot;wrap&quot;&gt;
+        ///        &lt;tbody&gt;
+        ///            &lt;tr&gt;
+        ///                &lt;td style=&quot;width: 100%; display: inline-flex;&quot;&gt;
+        ///                    Game: 
+        ///                    &lt;select id=&quot;game&quot; name=&quot;game&quot; onchange=&quot;navigate()&quot; style=&quot;width: 50%;flex-grow: 100;&quot;&gt;
+        ///                        &lt;option value=&quot;All&quot;&gt;Game&lt;/option&gt;
+        ///                        &lt;option value=&quot;P5&quot;&gt;Persona 5&lt;/option&gt;
+        ///                        &lt;option value=&quot;P5R&quot;&gt;Persona 5 Royal&lt;/option&gt;
+        ///                        &lt;option value=&quot;P [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Navigation {
+            get {
+                return ResourceManager.GetString("Navigation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     &lt;div class=&quot;card&quot;&gt;
+        ///        &lt;div class=&quot;text&quot;&gt;
         ///            &lt;div class=&quot;toggle-title&quot;&gt;
-        ///                &lt;a href=&quot;EMBEDURL&quot;&gt;&lt;img src=&quot;POSTEMBED&quot;&gt;&lt;/a&gt;
+        ///                &lt;a href=&quot;POSTID&quot;&gt;&lt;div class=&quot;getlink&quot; style=&quot;float: left; z-index: 999;&quot;&gt;&lt;i class=&quot;fas fa-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/a&gt;
+        ///                &lt;a href=&quot;POSTMEDIAURL&quot;&gt;&lt;div class=&quot;getlink&quot; style=&quot;float:right; z-index: 999;&quot;&gt;&lt;i class=&quot;fas fa-eye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;/a&gt;
+        ///                POSTEMBED
         ///                &lt;div class=&quot;card__body&quot;&gt;
-        ///                    POSTTYPE by POSTAUTHORS
-        ///                    &lt;h4&gt;
-        ///                        &lt;a href=&quot;POSTURL&quot;&gt;POSTTITLE&lt;/a&gt;
-        ///                    &lt;/h4&gt;
-        ///                    &lt;br&gt;POSTDATE&lt;br&gt;
-        ///                &lt;/div&gt;
-        ///         [rest of string was truncated]&quot;;.
+        ///                    &lt;h3&gt;
+        ///                        &lt;a [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Post {
             get {
@@ -267,20 +318,14 @@ namespace Amicitia.github.io.Properties {
         ///&lt;table style=&quot;padding: 0 20px 0 15px;&quot;&gt;
         ///    &lt;tbody&gt;
         ///        &lt;tr&gt;
-        ///            &lt;td width=&quot;50%&quot;&gt;Page 0/0 (0 results)&lt;/td&gt;
-        ///            &lt;td style=&quot;text-align: right;&quot;&gt;
+        ///            &lt;td width=&quot;25%&quot;&gt;Page 0/0 (0 results)&lt;/td&gt;
+        ///            &lt;td width=&quot;50%&quot;&gt;&lt;!--Pagination--&gt;&lt;/td&gt;
+        ///            &lt;td width=&quot;25%&quot; style=&quot;text-align: right;&quot;&gt;
         ///                &lt;a href=&quot;https://shrinefox.com/forum/viewtopic.php?f=4&amp;amp;t=682&amp;amp;p=2649#p2649&quot;&gt;
-        ///                    &lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;How to Submit
+        ///                    &lt;i class=&quot;fa fa-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; How to Submit
         ///                &lt;/a&gt;
         ///            &lt;/td&gt;
-        ///        &lt;/tr&gt;
-        ///    &lt;/tbody&gt;
-        ///&lt;/table&gt;
-        ///&lt;br&gt;
-        ///&lt;!--Post Grid--&gt;
-        ///&lt;table&gt;
-        ///    &lt;tbody&gt;
-        ///        &lt;tr [rest of string was truncated]&quot;;.
+        ///        &lt;/tr&gt;        /// [rest of string was truncated]&quot;;.
         /// </summary>
         public static string PostTableHeader {
             get {

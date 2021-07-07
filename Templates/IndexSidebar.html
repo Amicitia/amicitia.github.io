@@ -1,36 +1,10 @@
-﻿<!--Middle-->
-<div class="row middle">
-    <!--Page Body-->
-    <div class="content">
-        <table>
-            <!--Sidebar-->
-            <tr>
-                <td style="vertical-align:top;">
-                    <div class="bloglinks">
-                        <a href="https://shrinefox.com/news/">
-                            <h4>
-                                <i class="fas fa-newspaper"></i> News
-                            </h4>
-                        </a>
-                        <div class="blogdivider"></div>
-                        <div id="news-feed"></div>
-                        <br>
-                        <a href="https://shrinefox.com/guides/">
-                            <h4>
-                                <i class="fas fa-graduation-cap"></i> Guides
-                            </h4>
-                        </a>
-                        <div class="blogdivider"></div>
-                        <div id="guides-feed"></div>
-                        <br>
-                        <a href="https://shrinefox.com/blog/">
-                            <h4>
-                                <i class="fab fa-wordpress"></i> Blog
-                            </h4>
-                        </a>
-                        <div class="blogdivider"></div>
-                        <div id="blog-feed"></div>
-                    </div>
+﻿				</td>
+				<!--Sidebar-->
+                <td style="vertical-align:top;width:20%;text-align:right;font-size:10pt;" class="bloglinks">
+					<b>LATEST UPDATES</b>
+                    <div id="news-feed"></div>
+                    <div id="guides-feed"></div>
+                    <div id="blog-feed"></div>
                     <script>
 						$('#news-feed').FeedEk({
 							FeedUrl:'https://shrinefox.com/news/feed',
@@ -65,5 +39,3 @@
 							DateFormatLang:'en'
 						});
                     </script>
-                </td>
-                <td id="main" style="vertical-align:top;">

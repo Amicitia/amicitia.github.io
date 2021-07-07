@@ -1,7 +1,7 @@
 var canvas = document.getElementById('bgCanvas');
 var score = 0;
-var link = '0,159,255';
-var hover = '251,158,59';
+var link = '31,154,207';
+var hover = '221,132,44';
 var bg = '9,46,109';
 var bg2 = '0,159,255';
 var text = '255,255,255';
@@ -310,8 +310,8 @@ function SetTheme() {
 		footer = '10,10,10';
 	}
 	else if (theme == "p4" || theme == "p4g" || theme == "p4d" || theme == "p4au") {
-		link = '255,175,57';
-		hover = '255,216,0';
+		link = '89,57,0';
+		hover = '255,175,57';
 		bg = '89,57,0';
 		bg2 = '255,175,57';
 		text = '255,255,255';
@@ -322,15 +322,15 @@ function SetTheme() {
 	else if (theme == "p3fes" || theme == "p3p" || theme == "p3d") {
 		link = '9,255,0';
 		hover = '4,112,0';
-		bg = '2,43,0';
-		bg2 = '0,0,0';
+		bg = '0,0,0';
+		bg2 = '2,43,0';
 		text = '255,255,255';
 		post = '0,0,0';
 		textinner = '255,255,255';
 		footer = '0,0,0';
 	}
 	else if (theme == "cfb" || theme == "pq" || theme == "pq2") {
-		link = '255,135,185';
+		link = '185,95,165';
 		hover = '255,55,155';
 		bg = '83,9,88';
 		bg2 = '255,135,185';
@@ -363,8 +363,8 @@ function SetTheme() {
 	}
 	else {
 		/* Default Theme */
-		link = '0,159,255';
-		hover = '251,158,59';
+		link = '31,154,207';
+		hover = '221,132,44';
 		bg = '9,46,109';
 		bg2 = '0,159,255';
 		text = '255,255,255';

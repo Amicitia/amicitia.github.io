@@ -1,0 +1,272 @@
+﻿@@ -0,0 +1,74 @@ @import 'http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,cyrillic,latin-ext';
+
+ul#css3menu0, ul#css3menu0 ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    background-color:;
+    border-width: 0;
+    border-style: solid;
+    border-color:;
+}
+
+ul#css3menu0 * a {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 15pt !important;
+    color: rgba(var(--text), var(--opaque)) !important;
+}
+
+ul#css3menu0 ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 115%;
+    background: linear-gradient( 120deg, var(--gradient1) 0%, var(--gradient2) 100%) fixed;
+    border-radius: 0 0 0px 0px;
+    -moz-border-radius: 0 0 0px 0px;
+    -webkit-border-radius: 0;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    padding: 0 0 10px;
+    -webkit-box-shadow: rgb(0 0 0 / 30%) 0px 2px 9px 3px -moz-box-shadow: 0 -2px 7px #000;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 9px 3px
+}
+
+ul#css3menu0 li:hover > * {
+    display: block;
+}
+
+ul#css3menu0 li {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+    float: left;
+    border-bottom: 5px solid transparent;
+}
+
+ul#css3menu0 li:hover {
+    z-index: 1;
+    border-bottom: 5px solid rgba(var(--text), var(--opaque));
+}
+
+ul#css3menu0 {
+    font-size: 0;
+    z-index: 999;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: bottom;
+    padding: 10px 0px 0px 10px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    *display: inline;
+}
+
+* html ul#css3menu0 li a {
+    display: inline-block;
+}
+
+ul#css3menu0 > li {
+    margin: 0 0 0 10px;
+}
+
+ul#css3menu0 ul > li {
+    margin: 10px 0 0;
+}
+
+ul#css3menu0 a:active, ul#css3menu0 a:focus {
+    outline-style: none;
+}
+
+ul#css3menu0 a {
+    display: block;
+    vertical-align: middle;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(var(--text), var(--opaque));
+    padding: 3px;
+    background-color: transparent;
+    background-repeat: repeat;
+    border-width: 0px;
+    border-style: none;
+    border-color:;
+}
+
+ul#css3menu0 ul li {
+    float: none;
+    margin: 0;
+}
+
+ul#css3menu0 ul a {
+    text-align: left;
+    padding: 5px 50px 5px 10px;
+    background-color: transparent;
+    color: rgba(var(--text), var(--opaque));
+    text-decoration: none;
+}
+
+ul#css3menu0 li:hover > a, ul#css3menu0 li a.pressed {
+    background-color: transparent;
+    border-style: none;
+    color: rgba(var(--text), var(--opaque));
+}
+
+ul#css3menu0 img {
+    border: none;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+ul#css3menu0 span {
+    display: block;
+    overflow: visible;
+}
+
+ul#css3menu0 > li.switch {
+    display: none;
+    cursor: pointer;
+    width: 25px;
+    height: 30px;
+    padding: 3px 10px;
+    border-bottom: 5px solid transparent;
+}
+
+ul#css3menu0 > li.nohover, ul#css3menu0 > li.nohover:hover, ul#css3menu0 > li.nohover:hover:before {
+    border-bottom: 5px solid transparent !important;
+}
+
+ul#css3menu0 > li.switch:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 30px;
+    border-radius: 0px;
+    background: rgba(var(--text), var(--opaque));
+    -moz-box-shadow: 0 8px rgba(var(--text), var(--opaque)), 0 16px rgba(var(--text), var(--opaque));
+    -webkit-box-shadow: 0 8px rgba(var(--text), var(--opaque)), 0 16px rgba(var(--text), var(--opaque));
+    box-shadow: 0 8px rgba(var(--text), var(--opaque)), 0 16px rgba(var(--text), var(--opaque));
+    border-bottom: 3px solid transparent;
+}
+
+ul#css3menu0 > li.switch:hover:before {
+    background: rgba(var(--text), var(--opaque));
+    -moz-box-shadow: 0 8px rgba(var(--text), var(--opaque)), 0 16px rgba(var(--text), var(--opaque));
+    -webkit-box-shadow: 0 8px rgba(var(--text), var(--opaque)), 0 16px rgba(var(--text), var(--opaque));
+    box-shadow: 0 8px rgba(var(--text), var(--opaque)), 0 16px rgba(var(--text), var(--opaque));
+    border-bottom: 4px solid transparent;
+}
+
+.c3m-switch-input {
+    display: none;
+}
+
+ul#css3menu0 li:hover > a, ul#css3menu0 li > a.pressed {
+    background-color: transparent;
+    border-style: none;
+    color: rgba(var(--text), var(--opaque));
+    text-decoration: none;
+}
+
+ul#css3menu0 ul li:hover > a, ul#css3menu0 ul li > a.pressed {
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgba(var(--text), var(--opaque));
+    color: rgba(var(--text), var(--opaque));
+    text-decoration: none;
+}
+
+ul#css3menu0 > li > a {
+    padding: 3px 10px;
+}
+
+ul#css3menu0 li.topmenu > a {
+    border-width: 0 0 3px 0;
+    border-style: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    padding: 3px 10px;
+}
+
+ul#css3menu0 li.topmenu:hover > a, ul#css3menu0 li.topmenu > a.pressed {
+    border-style: none;
+}
+
+ul#css3menu0 li.toproot > a {
+    border-width: 0 0 3px 0;
+    border-style: none;
+    border-color: transparent;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 3px 10px;
+}
+
+ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+    ul#css3menu0 > li {
+        position: initial;
+    }
+
+    ul#css3menu0 ul .submenu, ul#css3menu0 li > ul {
+        left: 0;
+        right: auto;
+        top: 100%;
+        max-width: 300px;
+    }
+
+    ul#css3menu0 .submenu, ul#css3menu0 ul, ul#css3menu0 .column {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-right: 0;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    ul#css3menu0 {
+        width: 100%;
+    }
+
+    ul#css3menu0 > li {
+        display: none;
+        position: relative;
+        width: 100% !important;
+    }
+
+    ul#css3menu0 ul#side {
+        width: 35% !important;
+    }
+
+    .navbar {
+        -webkit-box-shadow: 0 -2px 7px transparent;
+        -moz-box-shadow: 0 -2px 7px transparent;
+        box-shadow: 0 -2px 7px transparent;
+    }
+
+    ul#css3menu0 > li.switch, .c3m-switch-input:checked + ul#css3menu0 > li + li {
+        display: block;
+    }
+
+    ul#css3menu0 > li.switch > label {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

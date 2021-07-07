@@ -44,29 +44,35 @@ namespace Amicitia.github.io.PageCreator
         public static void Create(string content, string url, int pageNumber, bool morePages)
         {
             //Html Head Tag contents
-            string html = Properties.Resources.IndexHeader;
-            //Top of page, site navigation
+            string html = "<!doctype html>\n<html>\n\t<head>\n" + Properties.Resources.IndexBeforeHeader;
+            // Top of page, site navigation and title
+            string game = "";
+            string gameFull = "";
+            string type = "";
             string pageName = "";
-
             foreach (var split in url.Replace(".html", "").Split('\\').Reverse())
-            {
                 if (gameList.Any(g => g.Item1.Equals(split)))
-                {
-                    html = html.Replace($"value=\"{split.ToUpper()}\">", $"value=\"{split.ToUpper()}\" selected>");
-                    pageName += gameList.Single(x => x.Item1.Equals(split)).Item2;
-                }
-                else if (split == "mods" || split == "tools" || split == "guides" || split == "cheats")
-                {
-                    html = html.Replace($"value=\"{split}\">", $"value=\"{split}\" selected>");
-                    pageName += $" {split} ";
-                }
+                    game = split;
+                else if (split == "Mods" || split == "Tools" || split == "Guides" || split == "Cheats")
+                    type = split;
+            if (!String.IsNullOrEmpty(game))
+            {
+                gameFull = gameList.Single(x => x.Item1.Equals(game)).Item2;
+                pageName = game;
             }
-            //Change page title
+            if (!String.IsNullOrEmpty(type))
+                pageName += $" {type}";
             if (!String.IsNullOrEmpty(pageName))
-                html = html.Replace("Amicitia Mods</title>", $"Amicitia - {pageName}</title>");
-
-            //Closing header div before content
-            html += Properties.Resources.IndexSidebar;
+                html += $"<title>Amicitia {pageName}</title>";
+            else
+                html += "<title>Amicitia Mods</title>";
+            html += Properties.Resources.IndexHeader + "</head>" + Properties.Resources.IndexAfterHeader 
+                + $"<center><a href=\"https://amicitia.github.io\"><img src=\"https://amicitia.github.io/images/logo.svg\" " +
+                $"style=\"width:150px;height:150px;\"><h1>{gameFull} {type}</h1></a></center>"
+                + Properties.Resources.IndexBeforeContent;
+            // Update selected navigation value
+            html = html.Replace("<div class=\"content\">", $"{Properties.Resources.Navigation}<div class=\"content\">");
+            html = html.Replace($"value=\"{game}\">", $"value=\"{game}\" selected>").Replace($"value=\"{type}\">", $"value=\"{type}\" selected>");
 
             // Set up for pagination and ref link depth
             int depth = url.Count(c => c == '\\');
@@ -75,7 +81,6 @@ namespace Amicitia.github.io.PageCreator
                 url2 = url2.Replace($"{url}\\{url}", $"{url}");
             // Table for pagination
             string pagination = "<center><nav class=\"pagination\" role=\"navigation\"><div class=\"nav-links\">";
-
             // Previous Page
             if (pageNumber > 1)
             {

@@ -13,20 +13,20 @@ namespace Amicitia.github.io
     {
         public static string indexPath; //Path to website root directory
         public static List<Tuple<string, string>> gameList = new List<Tuple<string, string>>() { //Games in dropdown
-            new Tuple<string, string>("p5", "Persona 5"),
-            new Tuple<string, string>("p5r", "Persona 5 Royal"),
-            new Tuple<string, string>("p5s", "Persona 5 Strikers"),
-            new Tuple<string, string>("p5d", "Persona 5 Dancing"),
-            new Tuple<string, string>("p4", "Persona 4"),
-            new Tuple<string, string>("p4g", "Persona 4 Golden"),
-            new Tuple<string, string>("p4au", "Persona 4 Arena Ultimax"),
-            new Tuple<string, string>("p4d", "Persona 4 Dancing"),
-            new Tuple<string, string>("p3fes", "Persona 3 FES"),
-            new Tuple<string, string>("p3p", "Persona 3 Portable"),
-            new Tuple<string, string>("pq", "Persona Q"),
-            new Tuple<string, string>("pq2", "Persona Q2"),
-            new Tuple<string, string>("cfb", "Catherine Full Body"),
-            new Tuple<string, string>("smt3", "SMT3: Nocturne")
+            new Tuple<string, string>("P5", "Persona 5"),
+            new Tuple<string, string>("P5R", "Persona 5 Royal"),
+            new Tuple<string, string>("P5S", "Persona 5 Strikers"),
+            new Tuple<string, string>("P5D", "Persona 5 Dancing"),
+            new Tuple<string, string>("P4", "Persona 4"),
+            new Tuple<string, string>("P4G", "Persona 4 Golden"),
+            new Tuple<string, string>("P4AU", "Persona 4 Arena Ultimax"),
+            new Tuple<string, string>("P4D", "Persona 4 Dancing"),
+            new Tuple<string, string>("P3FES", "Persona 3 FES"),
+            new Tuple<string, string>("P3P", "Persona 3 Portable"),
+            new Tuple<string, string>("PQ", "Persona Q"),
+            new Tuple<string, string>("PQ2", "Persona Q2"),
+            new Tuple<string, string>("CFB", "Catherine Full Body"),
+            new Tuple<string, string>("SMT3", "SMT3: Nocturne")
         };
         public static List<string> tagColors = new List<string>() { "F37E79", "F3BF79", "F3D979", "7AF379", "7998F3", "DE79F3" }; //Hex color values for tags
         public static List<Post> posts; //Posts

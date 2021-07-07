@@ -130,15 +130,11 @@ namespace Amicitia.github.io.PageCreator
             //Hide Post Details Unless Single Post
             if (single)
                 result = result.Replace("class=\"toggle-inner\" style=\"display: none;", "class=\"toggle-inner\" style=\"display: block;").Replace("min-width: 32%;", "min-width: 100%;");
-            //Updates & Description
-            if (post.Type != "cheat" && !String.IsNullOrEmpty(post.UpdateText))
-                result = result.Replace("POSTDESCRIPTION", $"{post.UpdateText}<br>{post.Description}");
-            else
-                result = result.Replace("POSTDESCRIPTION", $"{post.Description}");
+            //Description
+            result = result.Replace("POSTDESCRIPTION", $"{post.Description}");
             //Download
             if (post.Type != "cheat")
                 result = result.Replace("POSTURL", post.URL);
-
             //Tags
             string tags = "";
             foreach (string tag in post.Tags.Where(x => !String.IsNullOrWhiteSpace(x)))
