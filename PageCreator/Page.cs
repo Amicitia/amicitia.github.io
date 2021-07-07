@@ -129,6 +129,9 @@ namespace Amicitia.github.io.PageCreator
                 html = html.Replace("\"images", "\"../../../images");
             }
 
+            // Hacky workaround for navbar ul class being renamed
+            html = html.Replace("../css3menu0", "css3menu0");
+
             // Create page
             string htmlPath = Path.Combine(indexPath, url);
             Directory.CreateDirectory(Path.GetDirectoryName(htmlPath));
