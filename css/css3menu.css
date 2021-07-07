@@ -218,7 +218,9 @@ ul#css3menu0 li.toproot:hover > a, ul#css3menu0 li.toproot > a.pressed {
 
 @media screen and (max-width: 768px) {
     ul#css3menu0 > li {
-        position: initial;
+        display: none;
+        position: relative;
+        width: 100% !important;
     }
 
     ul#css3menu0 ul .submenu, ul#css3menu0 li > ul {
