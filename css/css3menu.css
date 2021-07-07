@@ -42,6 +42,7 @@ ul#css3menu0 li {
     display: block;
     white-space: nowrap;
     font-size: 0;
+    cursor: pointer;
     float: left;
     border-bottom: 5px solid transparent;
 }
