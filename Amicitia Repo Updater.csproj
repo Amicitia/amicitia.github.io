@@ -105,12 +105,9 @@
     <Compile Include="Webscraper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="db\amicitia.tsv" />
     <None Include="packages.config" />
     <None Include="PageCreator\App.config" />
-    <None Include="db\cheats.tsv" />
-    <None Include="db\guides.tsv" />
-    <None Include="db\mods.tsv" />
-    <None Include="db\tools.tsv" />
     <None Include="PageCreator\packages.config" />
   </ItemGroup>
   <ItemGroup>
